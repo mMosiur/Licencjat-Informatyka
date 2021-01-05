@@ -1,0 +1,557 @@
+Name	Is Data Set Multivariate	Is Data Set Univariate	Is Data Set Text	Is Data Set Data-Generator	Is Data Set Domain-Theory	Is Data Set Time-Series	Is Data Set Spatial	Is Data Set Relational	Is Data Set Sequential	Is Data Set Spatio-temporal	Is Data Set Transactional	Is Data Set Image	Has Categorical Attributes	Has Integer Attributes	Has Real Attributes	Associated Tasks	Number of Instances	Number of Attributes	Missing Values	Area	Date Donated	Days Available	Number of Web Hits	Number of Citations
+Adult	Yes	No	No	No	No	No	No	No	No	No	No	No	Yes	Yes	No	Classification	48842	14	Yes	Social	1996-05-01	8966	1986671	51
+Annealing	Yes	No	No	No	No	No	No	No	No	No	No	No	Yes	Yes	Yes	Classification	798	38	Yes	Physical			171695	6
+Anonymous Microsoft Web Data													Yes	No	No	Recommender-Systems	37711	294		Computer	1998-11-01	8052	185604	4
+Arrhythmia	Yes	No	No	No	No	No	No	No	No	No	No	No	Yes	Yes	Yes	Classification	452	279	Yes	Life	1998-01-01	8356	329799	3
+Artificial Characters	Yes	No	No	No	No	No	No	No	No	No	No	No	Yes	Yes	Yes	Classification	6000	7	No	Computer	1992-07-01	10366	253712	0
+Audiology (Original)	Yes	No	No	No	No	No	No	No	No	No	No	No	Yes	No	No	Classification	226		Yes	Life	1987-12-03	12038	114102	19
+Audiology (Standardized)	Yes	No	No	No	No	No	No	No	No	No	No	No	Yes	No	No	Classification	226	69	Yes	Life	1992-08-18	10318	108629	19
+Auto MPG	Yes	No	No	No	No	No	No	No	No	No	No	No	Yes	No	Yes	Regression	398	8	Yes		1993-07-07	9995	597729	12
+Automobile	Yes	No	No	No	No	No	No	No	No	No	No	No	Yes	Yes	Yes	Regression	205	26	Yes		1987-05-19	12236	560580	3
+Badges	No	Yes	Yes	No	No	No	No	No	No	No	No	No				Classification	294	1	No		1994-09-01	9574	120273	0
+Balance Scale	Yes	No	No	No	No	No	No	No	No	No	No	No	Yes	No	No	Classification	625	4	No	Social	1994-04-22	9706	265401	8
+Balloons	Yes	No	No	No	No	No	No	No	No	No	No	No	Yes	No	No	Classification	16	4	No	Social			300288	1
+Breast Cancer	Yes	No	No	No	No	No	No	No	No	No	No	No	Yes	No	No	Classification	286	9	Yes	Life	1988-07-11	11817	509776	91
+Breast Cancer Wisconsin (Original)	Yes	No	No	No	No	No	No	No	No	No	No	No	No	Yes	No	Classification	699	10	Yes	Life	1992-07-15	10352	645813	40
+Breast Cancer Wisconsin (Prognostic)	Yes	No	No	No	No	No	No	No	No	No	No	No	No	No	Yes	Classification, Regression	198	34	Yes	Life	1995-12-01	9118	222871	40
+Breast Cancer Wisconsin (Diagnostic)	Yes	No	No	No	No	No	No	No	No	No	No	No	No	No	Yes	Classification	569	32	No	Life	1995-11-01	9148	1371186	40
+Pittsburgh Bridges	Yes	No	No	No	No	No	No	No	No	No	No	No	Yes	Yes	No	Classification	108	13	Yes		1990-08-01	11066	106186	2
+Car Evaluation	Yes	No	No	No	No	No	No	No	No	No	No	No	Yes	No	No	Classification	1728	6	No		1997-06-01	8570	1272802	16
+Census Income	Yes	No	No	No	No	No	No	No	No	No	No	No	Yes	Yes	No	Classification	48842	14	Yes	Social	1996-05-01	8966	485177	24
+Chess (King-Rook vs. King-Knight)	Yes	No	No	Yes	No	No	No	No	No	No	No	No	Yes	Yes	No	Classification		22	No	Game	1988-10-03	11733	74500	26
+Chess (King-Rook vs. King-Pawn)	Yes	No	No	No	No	No	No	No	No	No	No	No	Yes	No	No	Classification	3196	36	No	Game	1989-08-01	11431	120318	26
+Chess (King-Rook vs. King)	Yes	No	No	No	No	No	No	No	No	No	No	No	Yes	Yes	No	Classification	28056	6	No	Game	1994-06-01	9666	131414	26
+Chess (Domain Theories)	No	No	No	No	Yes	No	No	No	No	No	No	No								Game			53766	1
+Bach Chorales	No	Yes	No	No	No	Yes	No	No	No	No	No	No	Yes	Yes	No		100	6	No				135949	5
+Connect-4	Yes	No	No	No	No	No	Yes	No	No	No	No	No	Yes	No	No	Classification	67557	42	No	Game	1995-02-04	9418	166682	2
+Credit Approval	Yes	No	No	No	No	No	No	No	No	No	No	No	Yes	Yes	Yes	Classification	690	15	Yes	Financial			447364	4
+Japanese Credit Screening	Yes	No	No	No	Yes	No	No	No	No	No	No	No	Yes	Yes	Yes	Classification	125			Financial	1992-03-19	10470	111457	1
+Computer Hardware	Yes	No	No	No	No	No	No	No	No	No	No	No	No	Yes	No	Regression	209	9	No	Computer	1987-10-01	12101	320811	2
+Contraceptive Method Choice	Yes	No	No	No	No	No	No	No	No	No	No	No	Yes	Yes	No	Classification	1473	9	No	Life	1997-07-07	8534	201440	3
+Covertype	Yes	No	No	No	No	No	No	No	No	No	No	No	Yes	Yes	No	Classification	581012	54	No	Life	1998-08-01	8144	298854	6
+Cylinder Bands	Yes	No	No	No	No	No	No	No	No	No	No	No	Yes	Yes	Yes	Classification	512	39	Yes	Physical	1995-08-01	9240	80117	6
+Dermatology	Yes	No	No	No	No	No	No	No	No	No	No	No	Yes	Yes	No	Classification	366	33	Yes	Life	1998-01-01	8356	231284	8
+Diabetes	Yes	No	No	No	No	Yes	No	No	No	No	No	No	Yes	Yes	No			20		Life			520492	53
+DGP2 - The Second Data Generation Program	No	No	No	Yes	No	No	No	No	No	No	No	No	No	No	Yes								32488	0
+Document Understanding																			No		1994-11-01	9513	45607	0
+EBL Domain Theories																				Computer			24810	0
+Echocardiogram	Yes	No	No	No	No	No	No	No	No	No	No	No	Yes	Yes	Yes	Classification	132	12	Yes	Life	1989-02-28	11585	195765	5
+Ecoli	Yes	No	No	No	No	No	No	No	No	No	No	No	No	No	Yes	Classification	336	8	No	Life	1996-09-01	8843	241298	12
+Flags	Yes	No	No	No	No	No	No	No	No	No	No	No	Yes	Yes	No	Classification	194	30	No		1990-05-15	11144	313938	3
+Function Finding													No	No	Yes	Function-Learning	352		No	Physical	1990-09-01	11035	55362	0
+Glass Identification	Yes	No	No	No	No	No	No	No	No	No	No	No	No	No	Yes	Classification	214	10	No	Physical	1987-09-01	12131	362396	52
+Haberman's Survival	Yes	No	No	No	No	No	No	No	No	No	No	No	No	Yes	No	Classification	306	3	No	Life	1999-03-04	7929	219969	4
+Hayes-Roth	Yes	No	No	No	No	No	No	No	No	No	No	No	Yes	No	No	Classification	160	5	No	Social	1989-03-01	11584	104622	5
+Heart Disease	Yes	No	No	No	No	No	No	No	No	No	No	No	Yes	Yes	Yes	Classification	303	75	Yes	Life	1988-07-01	11827	1361041	58
+Hepatitis	Yes	No	No	No	No	No	No	No	No	No	No	No	Yes	Yes	Yes	Classification	155	19	Yes	Life	1988-11-01	11704	268176	33
+Horse Colic	Yes	No	No	No	No	No	No	No	No	No	No	No	Yes	Yes	Yes	Classification	368	27	Yes	Life	1989-08-06	11426	154680	13
+ICU	Yes	No	No	No	No	Yes	No	No	No	No	No	No	No	No	Yes				No	Life			97444	0
+Image Segmentation	Yes	No	No	No	No	No	No	No	No	No	No	No	No	No	Yes	Classification	2310	19	No		1990-11-01	10974	204952	15
+Internet Advertisements	Yes	No	No	No	No	No	No	No	No	No	No	No	Yes	Yes	Yes	Classification	3279	1558	Yes	Computer	1998-07-01	8175	363637	3
+Ionosphere	Yes	No	No	No	No	No	No	No	No	No	No	No	No	Yes	Yes	Classification	351	34	No	Physical	1989-01-01	11643	240639	55
+Iris	Yes	No	No	No	No	No	No	No	No	No	No	No	No	No	Yes	Classification	150	4	No	Life	1988-07-01	11827	3659898	100
+ISOLET	Yes	No	No	No	No	No	No	No	No	No	No	No	No	No	Yes	Classification	7797	617	No	Computer	1994-09-12	9563	126863	11
+Kinship	No	No	No	No	No	No	No	Yes	No	No	No	No	Yes	No	No	Relational-Learning	104	12	No	Social	1990-07-01	11097	78602	0
+Labor Relations	Yes	No	No	No	No	No	No	No	No	No	No	No	Yes	Yes	Yes		57	16	No	Social	1988-11-01	11704	81371	17
+LED Display Domain	Yes	No	No	Yes	No	No	No	No	No	No	No	No	Yes	No	No	Classification		7	No	Computer	1988-11-10	11695	71399	9
+Lenses	Yes	No	No	No	No	No	No	No	No	No	No	No	Yes	No	No	Classification	24	4	No		1990-08-01	11066	179915	11
+Letter Recognition	Yes	No	No	No	No	No	No	No	No	No	No	No	No	Yes	No	Classification	20000	16	No	Computer	1991-01-01	10913	404155	16
+Liver Disorders	Yes	No	No	No	No	No	No	No	No	No	No	No	Yes	Yes	Yes		345	7	No	Life	1990-05-15	11144	185242	23
+Logic Theorist	No	No	No	No	Yes	No	No	No	No	No	No	No								Computer			34891	0
+Lung Cancer	Yes	No	No	No	No	No	No	No	No	No	No	No	No	Yes	No	Classification	32	56	Yes	Life	1992-05-01	10427	315652	3
+Lymphography	Yes	No	No	No	No	No	No	No	No	No	No	No	Yes	No	No	Classification	148	18	No	Life	1988-11-01	11704	93005	12
+Mechanical Analysis	Yes	No	No	No	No	No	No	No	No	No	No	No	Yes	Yes	Yes	Classification	209	8	No	Computer	1990-06-01	11127	102767	0
+Meta-data	Yes	No	No	No	No	No	No	No	No	No	No	No	Yes	Yes	Yes	Classification	528	22	Yes		1996-03-01	9027	76903	0
+Mobile Robots	No	No	No	No	Yes	No	No	No	No	No	No	No	Yes	Yes	Yes					Computer	1995-07-15	9257	76294	1
+Molecular Biology (Promoter Gene Sequences)	No	No	No	No	Yes	No	No	No	Yes	No	No	No	Yes	No	No	Classification	106	58	No	Life	1990-06-30	11098	80274	37
+Molecular Biology (Protein Secondary Structure)	No	No	No	No	No	No	No	No	Yes	No	No	No	Yes	No	No	Classification	128			Life			57465	6
+Molecular Biology (Splice-junction Gene Sequences)	No	No	No	No	Yes	No	No	No	Yes	No	No	No	Yes	No	No	Classification	3190	61	No	Life	1992-01-01	10548	104250	30
+MONK's Problems	Yes	No	No	No	No	No	No	No	No	No	No	No	Yes	No	No	Classification	432	7	No		1992-10-01	10274	214448	15
+Moral Reasoner	No	No	No	No	Yes	No	No	No	No	No	No	No					202			Computer	1994-06-01	9666	40812	0
+Multiple Features	Yes	No	No	No	No	No	No	No	No	No	No	No	No	Yes	Yes	Classification	2000	649	No	Computer			115138	5
+Mushroom	Yes	No	No	No	No	No	No	No	No	No	No	No	Yes	No	No	Classification	8124	22	Yes	Life	1987-04-27	12258	577047	46
+Musk (Version 1)	Yes	No	No	No	No	No	No	No	No	No	No	No	No	Yes	No	Classification	476	168	No	Physical	1994-09-12	9563	68910	13
+Musk (Version 2)	Yes	No	No	No	No	No	No	No	No	No	No	No	No	Yes	No	Classification	6598	168	No	Physical	1994-09-12	9563	74377	13
+Nursery	Yes	No	No	No	No	No	No	No	No	No	No	No	Yes	No	No	Classification	12960	8	No	Social	1997-06-01	8570	206068	12
+Othello Domain Theory	No	No	No	No	Yes	No	No	No	No	No	No	No							No	Game	1991-02-01	10882	28540	0
+Page Blocks Classification	Yes	No	No	No	No	No	No	No	No	No	No	No	No	Yes	Yes	Classification	5473	10	No	Computer	1995-07-01	9271	100672	3
+Optical Recognition of Handwritten Digits	Yes	No	No	No	No	No	No	No	No	No	No	No	No	Yes	No	Classification	5620	64	No	Computer	1998-07-01	8175	287733	6
+Pen-Based Recognition of Handwritten Digits	Yes	No	No	No	No	No	No	No	No	No	No	No	No	Yes	No	Classification	10992	16	No	Computer	1998-07-01	8175	234444	18
+Post-Operative Patient	Yes	No	No	No	No	No	No	No	No	No	No	No	Yes	Yes	No	Classification	90	8	Yes	Life	1993-06-01	10031	109965	3
+Primary Tumor	Yes	No	No	No	No	No	No	No	No	No	No	No	Yes	No	No	Classification	339	17	Yes	Life	1988-11-01	11704	137171	8
+Prodigy	No	No	No	No	Yes	No	No	No	No	No	No	No											34851	0
+Qualitative Structure Activity Relationships	No	No	No	No	Yes	No	No	No	No	No	No	No								Physical			27700	0
+Quadruped Mammals	Yes	No	No	Yes	No	No	No	No	No	No	No	No	No	No	Yes	Classification		72	No	Life	1992-08-25	10311	68899	0
+Servo	Yes	No	No	No	No	No	No	No	No	No	No	No	Yes	Yes	No	Regression	167	4	No	Computer	1993-05-01	10062	110019	10
+Shuttle Landing Control	Yes	No	No	No	No	No	No	No	No	No	No	No	Yes	No	No	Classification	15	6	No	Physical	1988-11-01	11704	107272	2
+Solar Flare	Yes	No	No	No	No	No	No	No	No	No	No	No	Yes	No	No	Regression	1389	10	No	Physical	1989-03-01	11584	155101	7
+Soybean (Large)	Yes	No	No	No	No	No	No	No	No	No	No	No	Yes	No	No	Classification	307	35	Yes	Life	1988-07-11	11817	131545	49
+Soybean (Small)	Yes	No	No	No	No	No	No	No	No	No	No	No	Yes	No	No	Classification	47	35	No	Life	1987-01-01	12374	105438	49
+Challenger USA Space Shuttle O-Ring	Yes	No	No	No	No	No	No	No	No	No	No	No	No	Yes	No	Regression	23	4	No	Physical	1993-08-05	9966	145383	3
+Low Resolution Spectrometer	Yes	No	No	No	No	No	No	No	No	No	No	No	No	Yes	Yes	Classification	531	102		Physical	1988-03-01	11949	54409	0
+Spambase	Yes	No	No	No	No	No	No	No	No	No	No	No	No	Yes	Yes	Classification	4601	57	Yes	Computer	1999-07-01	7810	541406	4
+SPECT Heart	Yes	No	No	No	No	No	No	No	No	No	No	No	Yes	No	No	Classification	267	22	No	Life	2001-10-01	6987	208770	4
+SPECTF Heart	Yes	No	No	No	No	No	No	No	No	No	No	No	No	Yes	No	Classification	267	44	No	Life	2001-10-01	6987	96761	1
+Sponge	Yes	No	No	No	No	No	No	No	No	No	No	No	Yes	Yes	No	Clustering	76	45	Yes	Life			96572	0
+Statlog Project																					1992-10-01	10274	48556	47
+Student Loan Relational	No	No	No	No	Yes	No	No	No	No	No	No	No					1000			Social	1993-01-01	10182	70202	0
+Teaching Assistant Evaluation	Yes	No	No	No	No	No	No	No	No	No	No	No	Yes	Yes	No	Classification	151	5	No		1997-06-07	8564	166900	0
+Tic-Tac-Toe Endgame	Yes	No	No	No	No	No	No	No	No	No	No	No	Yes	No	No	Classification	958	9	No	Game	1991-08-19	10683	250521	19
+Thyroid Disease	Yes	No	No	No	Yes	No	No	No	No	No	No	No	Yes	No	Yes	Classification	7200	21		Life	1987-01-01	12374	249361	26
+Trains	Yes	No	No	No	No	No	No	No	No	No	No	No	Yes	No	No	Classification	10	32			1994-06-24	9643	160218	1
+University	Yes	No	No	No	No	No	No	No	No	No	No	No	Yes	Yes	No	Classification	285	17	Yes		1988-07-01	11827	228959	0
+Congressional Voting Records	Yes	No	No	No	No	No	No	No	No	No	No	No	Yes	No	No	Classification	435	16	Yes	Social	1987-04-27	12258	230879	20
+Water Treatment Plant	Yes	No	No	No	No	No	No	No	No	No	No	No	No	Yes	Yes	Clustering	527	38		Physical	1993-06-01	10031	150530	0
+Waveform Database Generator (Version 1)	Yes	No	No	Yes	No	No	No	No	No	No	No	No	No	No	Yes	Classification	5000	21	No	Physical	1988-11-10	11695	76803	35
+Waveform Database Generator (Version 2)	Yes	No	No	Yes	No	No	No	No	No	No	No	No	No	No	Yes	Classification	5000	40	No	Physical	1988-11-10	11695	62064	35
+Wine	Yes	No	No	No	No	No	No	No	No	No	No	No	No	Yes	Yes	Classification	178	13	No	Physical	1991-07-01	10732	1534939	40
+Yeast	Yes	No	No	No	No	No	No	No	No	No	No	No	No	No	Yes	Classification	1484	8	No	Life	1996-09-01	8843	314865	11
+Zoo	Yes	No	No	No	No	No	No	No	No	No	No	No	Yes	Yes	No	Classification	101	17	No	Life	1990-05-15	11144	334220	16
+Undocumented																							28537	0
+Twenty Newsgroups	No	No	Yes	No	No	No	No	No	No	No	No	No					20000		No		1999-09-09	7740	118417	0
+Australian Sign Language signs	Yes	No	No	No	No	Yes	No	No	No	No	No	No	Yes	No	Yes	Classification	6650	15			1999-04-20	7882	102967	1
+Australian Sign Language signs (High Quality)	Yes	No	No	No	No	Yes	No	No	No	No	No	No	No	No	Yes	Classification	2565	22			2002-02-26	6839	114586	1
+US Census Data (1990)	Yes	No	No	No	No	No	No	No	No	No	No	No	Yes	No	No	Clustering	2458285	68		Social			161346	4
+Census-Income (KDD)	Yes	No	No	No	No	No	No	No	No	No	No	No	Yes	Yes	No	Classification	299285	40	Yes	Social	2000-03-07	7560	180961	4
+Coil 1999 Competition Data	Yes	No	No	No	No	No	No	No	No	No	No	No	Yes	No	Yes		340	17	No	Physical	1999-09-09	7740	51957	0
+Corel Image Features	Yes	No	No	No	No	No	No	No	No	No	No	No	No	No	Yes		68040	89			1999-07-01	7810	88833	1
+E. Coli Genes	No	No	No	No	No	No	No	Yes	No	No	No	No							Yes	Life	2001-07-14	7066	49249	7
+EEG Database	Yes	No	No	No	No	Yes	No	No	No	No	No	No	Yes	Yes	Yes		122	4	Yes	Life	1999-10-13	7706	220016	2
+El Nino	No	No	No	No	No	No	No	No	No	Yes	No	No	No	Yes	Yes		178080	12	Yes	Physical	1999-06-30	7811	102331	1
+Entree Chicago Recommendation Data	No	No	No	No	No	No	No	No	Yes	No	Yes	No	Yes	No	No	Recommender-Systems	50672		Yes		2000-03-09	7558	96276	1
+CMU Face Images	No	No	No	No	No	No	No	No	No	No	No	Yes	No	Yes	No	Classification	640		Yes		1999-06-24	7817	152037	2
+Insurance Company Benchmark (COIL 2000)	Yes	No	No	No	No	No	No	No	No	No	No	No	Yes	Yes	No	Regression, Description	9000	86	No	Social	2000-07-03	7442	160678	3
+Internet Usage Data	Yes	No	No	No	No	No	No	No	No	No	No	No	Yes	Yes	No		10104	72	No	Computer	1999-06-30	7811	119658	0
+IPUMS Census Database	Yes	No	No	No	No	No	No	No	No	No	No	No	Yes	Yes	No		256932	61		Social	1999-11-09	7679	42443	3
+Japanese Vowels	Yes	No	No	No	No	Yes	No	No	No	No	No	No	No	No	Yes	Classification	640	12					113481	0
+KDD Cup 1998 Data	Yes	No	No	No	No	No	No	No	No	No	No	No	Yes	Yes	No	Regression	191779	481	Yes		1998-07-20	8156	80330	1
+KDD Cup 1999 Data	Yes	No	No	No	No	No	No	No	No	No	No	No	Yes	Yes	No	Classification	4000000	42		Computer	1999-01-01	7991	160323	1
+M. Tuberculosis Genes	No	No	No	No	No	No	No	Yes	No	No	No	No								Life	2001-07-14	7066	38867	0
+Movie	Yes	No	No	No	No	No	No	Yes	No	No	No	No					10000		Yes		1999-07-07	7804	216849	1
+MSNBC.com Anonymous Web Data	No	No	No	No	No	No	No	No	Yes	No	No	No	Yes	No	No		989818			Computer			83247	0
+NSF Research Award Abstracts 1990-2003	No	No	Yes	No	No	No	No	No	No	No	No	No					129000				2003-11-18	6209	48646	0
+Pioneer-1 Mobile Robot Data	Yes	No	No	No	No	Yes	No	No	No	No	No	No	Yes	No	Yes					Computer	1999-01-28	7964	40154	0
+Pseudo Periodic Synthetic Time Series	No	Yes	No	No	No	Yes	No	No	No	No	No	No					100000				1999-02-08	7953	46804	0
+Reuters-21578 Text Categorization Collection	No	No	Yes	No	No	No	No	No	No	No	No	No	Yes	No	No	Classification	21578	5			1997-09-26	8453	196134	9
+Robot Execution Failures	Yes	No	No	No	No	Yes	No	No	No	No	No	No	No	Yes	No	Classification	463	90		Physical	1999-04-23	7879	105221	0
+Synthetic Control Chart Time Series	No	No	No	No	No	Yes	No	No	No	No	No	No	No	No	Yes	Classification, Clustering	600		No		1999-06-08	7833	81771	0
+Syskill and Webert Web Page Ratings	Yes	No	Yes	No	No	No	No	No	No	No	No	No	Yes	No	No	Classification	332	5		Computer	1998-10-20	8064	69250	1
+UNIX User Data	No	No	Yes	No	No	No	No	No	Yes	No	No	No								Computer			56500	1
+Volcanoes on Venus - JARtool experiment	No	No	No	No	No	No	No	No	No	No	No	Yes				Classification			Yes	Physical			49947	0
+Statlog (Australian Credit Approval)	Yes	No	No	No	No	No	No	No	No	No	No	No	Yes	Yes	Yes	Classification	690	14	Yes	Financial			174253	11
+Statlog (German Credit Data)	Yes	No	No	No	No	No	No	No	No	No	No	No	Yes	Yes	No	Classification	1000	20		Financial	1994-11-17	9497	656633	7
+Statlog (Heart)	Yes	No	No	No	No	No	No	No	No	No	No	No	Yes	No	Yes	Classification	270	13	No	Life			230908	4
+Statlog (Landsat Satellite)	Yes	No	No	No	No	No	No	No	No	No	No	No	No	Yes	No	Classification	6435	36		Physical	1993-02-13	10139	137293	28
+Statlog (Image Segmentation)	Yes	No	No	No	No	No	No	No	No	No	No	No	No	No	Yes	Classification	2310	19	No		1990-11-01	10974	62792	15
+Statlog (Shuttle)	Yes	No	No	No	No	No	No	No	No	No	No	No	No	Yes	No	Classification	58000	9		Physical			143407	24
+Statlog (Vehicle Silhouettes)	Yes	No	No	No	No	No	No	No	No	No	No	No	No	Yes	No	Classification	946	18					132245	25
+Connectionist Bench (Nettalk Corpus)	Yes	No	No	No	No	No	No	No	No	No	No	No	Yes	No	No		20008	4					47831	11
+Connectionist Bench (Sonar, Mines vs. Rocks)	Yes	No	No	No	No	No	No	No	No	No	No	No	No	No	Yes	Classification	208	60		Physical			191411	53
+Connectionist Bench (Vowel Recognition - Deterding Data)													No	No	Yes	Classification	528	10					76593	2
+Economic Sanctions	No	No	No	No	Yes	No	No	No	No	No	No	No								Financial			60955	1
+Protein Data																				Life			73560	16
+Cloud	Yes	No	No	No	No	No	No	No	No	No	No	No	No	No	Yes		1024	10		Physical	1989-08-03	11429	135379	4
+CalIt2 Building People Counts	Yes	No	No	No	No	Yes	No	No	No	No	No	No	Yes	Yes	No		10080	4	No		2006-12-01	5100	55437	0
+Dodgers Loop Sensor	Yes	No	No	No	No	Yes	No	No	No	No	No	No	Yes	Yes	No		50400	3	Yes		2006-12-01	5100	76188	0
+Poker Hand	Yes	No	No	No	No	No	No	No	No	No	No	No	Yes	Yes	No	Classification	1025010	11	No	Game	2007-01-01	5069	621039	0
+MAGIC Gamma Telescope	Yes	No	No	No	No	No	No	No	No	No	No	No	No	No	Yes	Classification	19020	11	No	Physical	2007-05-01	4949	119235	0
+UJI Pen Characters	Yes	No	No	No	No	No	No	No	Yes	No	No	No	No	Yes	No	Classification	1364		No	Computer	2007-06-01	4918	98950	0
+Mammographic Mass	Yes	No	No	No	No	No	No	No	No	No	No	No	No	Yes	No	Classification	961	6	Yes	Life	2007-10-29	4768	178901	0
+Forest Fires	Yes	No	No	No	No	No	No	No	No	No	No	No	No	No	Yes	Regression	517	13		Physical	2008-02-29	4645	942930	0
+Reuters Transcribed Subset	No	No	Yes	No	No	No	No	No	No	No	No	No				Classification	200			Business	2008-03-08	4637	57837	0
+Bag of Words	No	No	Yes	No	No	No	No	No	No	No	No	No	No	Yes	No	Clustering	8000000	100000			2008-03-12	4633	317912	0
+Concrete Compressive Strength	Yes	No	No	No	No	No	No	No	No	No	No	No	No	No	Yes	Regression	1030	9		Physical	2007-08-03	4855	219055	0
+Hill-Valley	No	No	No	No	No	No	No	No	Yes	No	No	No	No	No	Yes	Classification	606	101			2008-03-20	4625	72425	0
+Arcene	Yes	No	No	No	No	No	No	No	No	No	No	No	No	No	Yes	Classification	900	10000		Life	2008-02-29	4645	136812	0
+Dexter	Yes	No	No	No	No	No	No	No	No	No	No	No	No	Yes	No	Classification	2600	20000			2008-02-29	4645	105877	0
+Dorothea	Yes	No	No	No	No	No	No	No	No	No	No	No	No	Yes	No	Classification	1950	100000		Life	2008-02-29	4645	112086	0
+Gisette	Yes	No	No	No	No	No	No	No	No	No	No	No	No	Yes	No	Classification	13500	5000		Computer	2008-02-29	4645	120733	0
+Madelon	Yes	No	No	No	No	No	No	No	No	No	No	No	No	No	Yes	Classification	4400	500			2008-02-29	4645	138623	0
+Ozone Level Detection	Yes	No	No	No	No	Yes	No	No	Yes	No	No	No	No	No	Yes	Classification	2536	73	Yes	Physical	2008-04-21	4593	144007	0
+Abscisic Acid Signaling Network	Yes	No	No	No	No	No	No	No	No	No	No	No	No	Yes	No	Causal-Discovery	300	43		Life	2008-04-03	4611	57579	0
+Parkinsons	Yes	No	No	No	No	No	No	No	No	No	No	No	No	No	Yes	Classification	197	23		Life	2008-06-26	4527	278672	0
+Character Trajectories	No	No	No	No	No	Yes	No	No	No	No	No	No	No	No	Yes	Classification, Clustering	2858	3		Computer	2008-08-20	4472	151143	0
+Blood Transfusion Service Center	Yes	No	No	No	No	No	No	No	No	No	No	No	No	No	Yes	Classification	748	5		Business	2008-10-03	4428	340420	0
+UJI Pen Characters (Version 2)	Yes	No	No	No	No	No	No	No	Yes	No	No	No	No	Yes	No	Classification	11640			Computer	2009-01-22	4317	66101	0
+Semeion Handwritten Digit	Yes	No	No	No	No	No	No	No	No	No	No	No	No	Yes	No	Classification	1593	256		Computer	2008-11-11	4389	130508	0
+SECOM	Yes	No	No	No	No	No	No	No	No	No	No	No	No	No	Yes	Classification, Causal-Discovery	1567	591	Yes	Computer	2008-11-19	4381	127328	0
+Plants	Yes	No	No	No	No	No	No	No	No	No	No	No	Yes	No	No	Clustering	22632	70	Yes	Life	2008-12-31	4339	198243	0
+Libras Movement	Yes	No	No	No	No	No	No	No	Yes	No	No	No	No	No	Yes	Classification, Clustering	360	91			2009-08-17	4110	86876	0
+Concrete Slump Test	Yes	No	No	No	No	No	No	No	No	No	No	No	No	No	Yes	Regression	103	10		Computer	2009-04-30	4219	103363	0
+Communities and Crime	Yes	No	No	No	No	No	No	No	No	No	No	No	No	No	Yes	Regression	1994	128	Yes	Social	2009-07-13	4145	298858	0
+Acute Inflammations	Yes	No	No	No	No	No	No	No	No	No	No	No	Yes	Yes	No	Classification	120	6	No	Life	2009-02-11	4297	182134	0
+Wine Quality	Yes	No	No	No	No	No	No	No	No	No	No	No	No	No	Yes	Classification, Regression	4898	12		Business	2009-10-07	4059	1357722	0
+URL Reputation	Yes	No	No	No	No	Yes	No	No	No	No	No	No	No	Yes	Yes	Classification	2396130	3231961		Computer	2009-10-15	4051	141574	0
+p53 Mutants	Yes	No	No	No	No	No	No	No	No	No	No	No	No	No	Yes	Classification	16772	5409	Yes	Life	2010-02-09	3934	81208	0
+Parkinsons Telemonitoring	Yes	No	No	No	No	No	No	No	No	No	No	No	No	Yes	Yes	Regression	5875	26		Life	2009-10-29	4037	155794	0
+Demospongiae	Yes	No	No	No	No	No	No	No	No	No	No	No	No	Yes	No	Classification	503		Yes	Life	2010-01-21	3953	56823	0
+Opinosis Opinion ⁄ Review	No	No	Yes	No	No	No	No	No	No	No	No	No					51			Computer	2010-07-06	3787	50356	0
+Breast Tissue	Yes	No	No	No	No	No	No	No	No	No	No	No	No	No	Yes	Classification	106	10		Life	2010-05-10	3844	129545	0
+Cardiotocography	Yes	No	No	No	No	No	No	No	No	No	No	No	No	No	Yes	Classification	2126	23		Life	2010-09-07	3724	175851	0
+Wall-Following Robot Navigation Data	Yes	No	No	No	No	No	No	No	Yes	No	No	No	No	No	Yes	Classification	5456	24		Computer	2010-08-04	3758	64389	0
+Spoken Arabic Digit	Yes	No	No	No	No	Yes	No	No	No	No	No	No	No	No	Yes	Classification	8800	13	No		2010-09-13	3718	79810	0
+Localization Data for Person Activity	No	Yes	No	No	No	Yes	No	No	Yes	No	No	No	No	No	Yes	Classification	164860	8		Life	2010-11-03	3667	108647	0
+AutoUniv	Yes	No	No	No	No	No	No	No	No	No	No	No	Yes	Yes	Yes	Classification					2010-11-03	3667	60527	0
+Steel Plates Faults	Yes	No	No	No	No	No	No	No	No	No	No	No	No	Yes	Yes	Classification	1941	27		Physical	2010-10-26	3675	85274	0
+MiniBooNE particle identification	Yes	No	No	No	No	No	No	No	No	No	No	No	No	No	Yes	Classification	130065	50		Physical	2010-12-13	3627	53612	0
+YearPredictionMSD	Yes	No	No	No	No	No	No	No	No	No	No	No	No	No	Yes	Regression	515345	90			2011-02-07	3571	183649	0
+PEMS-SF	Yes	No	No	No	No	Yes	No	No	No	No	No	No	No	No	Yes	Classification	440	138672		Computer	2011-05-22	3467	72497	0
+OpinRank Review Dataset	No	No	Yes	No	No	No	No	No	No	No	No	No								Computer	2011-07-26	3402	52291	0
+Relative location of CT slices on axial axis	No	No	No	No	Yes	No	No	No	No	No	No	No	No	No	Yes	Regression	53500	386		Computer	2011-07-07	3421	58565	0
+Online Handwritten Assamese Characters Dataset	Yes	No	No	No	No	No	No	No	Yes	No	No	No	No	Yes	No	Classification	8235			Computer	2011-04-01	3518	48489	0
+PubChem Bioassay Data	Yes	No	No	No	No	No	No	No	No	No	No	No	No	Yes	Yes	Classification				Life	2011-03-29	3521	40124	0
+Record Linkage Comparison Patterns	Yes	No	No	No	No	No	No	No	No	No	No	No	No	No	Yes	Classification	5749132	12	Yes		2011-03-10	3540	82148	0
+Communities and Crime Unnormalized	Yes	No	No	No	No	No	No	No	No	No	No	No	No	No	Yes	Regression	2215	147	Yes	Social	2011-03-02	3548	150123	0
+Vertebral Column	Yes	No	No	No	No	No	No	No	No	No	No	No	No	No	Yes	Classification	310	6			2011-08-09	3388	175235	0
+EMG Physical Action Data Set	No	No	No	No	No	Yes	No	No	No	No	No	No	No	No	Yes	Classification	10000	8		Physical	2011-07-27	3401	88231	0
+Vicon Physical Action Data Set	No	No	No	No	No	Yes	No	No	No	No	No	No	No	No	Yes	Classification	3000	27		Physical	2011-07-27	3401	54055	0
+Amazon Commerce reviews set	Yes	No	Yes	No	Yes	No	No	No	No	No	No	No	No	No	Yes	Classification	1500	10000		Physical	2011-06-11	3447	205610	0
+Amazon Access Samples	No	No	No	No	Yes	Yes	No	No	No	No	No	No				Regression, Clustering, Causal-Discovery	30000	20000		Business	2011-09-13	3353	211560	0
+Reuter_50_50	Yes	No	Yes	No	Yes	No	No	No	No	No	No	No	No	No	Yes	Classification, Clustering	2500	10000		Computer	2011-09-08	3358	66928	0
+Farm Ads	No	No	Yes	No	No	No	No	No	No	No	No	No				Classification	4143	54877		Business	2011-10-18	3318	76637	0
+DBWorld e-mails	No	No	Yes	No	No	No	No	No	No	No	No	No				Classification	64	4702		Computer	2011-11-06	3299	60760	0
+KEGG Metabolic Relation Network (Directed)	Yes	Yes	Yes	No	No	No	No	No	No	No	No	No	No	Yes	Yes	Classification, Regression, Clustering	53414	24		Life	2011-11-28	3277	58168	0
+KEGG Metabolic Reaction Network (Undirected)	Yes	Yes	Yes	No	No	No	No	No	No	No	No	No	No	Yes	Yes	Classification, Regression, Clustering	65554	29	Yes	Life	2011-11-28	3277	55411	0
+Bank Marketing	Yes	No	No	No	No	No	No	No	No	No	No	No	No	No	Yes	Classification	45211	17		Business	2012-02-14	3199	1324241	0
+YouTube Comedy Slam Preference Data	No	No	Yes	No	No	No	No	No	No	No	No	No				Classification	1138562	3		Computer	2012-04-10	3143	94374	0
+Gas Sensor Array Drift Dataset	Yes	No	No	No	No	No	No	No	No	No	No	No	No	No	Yes	Classification	13910	128		Computer	2012-04-25	3128	146411	0
+ILPD (Indian Liver Patient Dataset)	Yes	No	No	No	No	No	No	No	No	No	No	No	No	Yes	Yes	Classification	583	10		Life	2012-05-21	3102	139041	0
+OPPORTUNITY Activity Recognition	Yes	No	No	No	No	Yes	No	No	No	No	No	No	No	No	Yes	Classification	2551	242	Yes	Computer	2012-06-09	3083	102694	0
+Nomao	No	Yes	No	No	No	No	No	No	No	No	No	No	No	No	Yes	Classification	34465	120	Yes	Computer	2012-07-04	3058	53572	0
+SMS Spam Collection	Yes	No	Yes	No	Yes	No	No	No	No	No	No	No	No	No	Yes	Classification, Clustering	5574			Computer	2012-06-22	3070	328736	0
+Skin Segmentation	No	Yes	No	No	No	No	No	No	No	No	No	No	No	No	Yes	Classification	245057	4		Computer	2012-07-17	3045	210264	0
+Planning Relax	No	Yes	No	No	No	No	No	No	No	No	No	No	No	No	Yes	Classification	182	13		Computer	2012-07-17	3045	61361	0
+PAMAP2 Physical Activity Monitoring	Yes	No	No	No	No	Yes	No	No	No	No	No	No	No	No	Yes	Classification	3850505	52	Yes	Computer	2012-08-06	3025	97910	0
+Restaurant & consumer data	Yes	No	No	No	No	No	No	No	No	No	No	No					138	47	Yes	Computer	2012-08-04	3027	147789	0
+CNAE-9	Yes	No	Yes	No	No	No	No	No	No	No	No	No	No	Yes	No	Classification	1080	857		Business	2012-08-03	3028	67303	0
+Individual household electric power consumption	Yes	No	No	No	No	Yes	No	No	No	No	No	No	No	No	Yes	Regression, Clustering	2075259	9	Yes	Physical	2012-08-30	3001	387231	0
+seeds	Yes	No	No	No	No	No	No	No	No	No	No	No	No	No	Yes	Classification, Clustering	210	7		Life	2012-09-29	2971	322867	0
+Northix	Yes	Yes	Yes	No	No	No	No	No	No	No	No	No	No	Yes	Yes	Classification	115	200		Computer	2012-08-15	3016	39105	0
+QtyT40I10D100K	No	No	No	No	No	No	No	No	Yes	No	No	No	No	Yes	No		3960456	4			2012-10-21	2949	42109	0
+Legal Case Reports	No	No	Yes	No	No	No	No	No	No	No	No	No				Classification					2012-10-19	2951	92379	0
+Human Activity Recognition Using Smartphones	Yes	No	No	No	No	Yes	No	No	No	No	No	No				Classification, Clustering	10299	561		Computer	2012-12-10	2899	1055781	0
+One-hundred plant species leaves data set													No	No	Yes	Classification	1600	64		Life	2012-12-03	2906	74973	0
+Energy efficiency	Yes	No	No	No	No	No	No	No	No	No	No	No	No	Yes	Yes	Classification, Regression	768	8		Computer	2012-11-30	2909	322416	0
+Yacht Hydrodynamics	Yes	No	No	No	No	No	No	No	No	No	No	No	No	No	Yes	Regression	308	7		Physical	2013-01-03	2875	104072	0
+Fertility	Yes	No	No	No	No	No	No	No	No	No	No	No	No	No	Yes	Classification, Regression	100	10		Life	2013-01-17	2861	209911	0
+Daphnet Freezing of Gait	Yes	No	No	No	No	Yes	No	No	No	No	No	No	No	No	Yes	Classification	237	9		Life	2013-03-07	2812	73482	0
+3D Road Network (North Jutland, Denmark)	No	No	Yes	No	No	No	No	No	Yes	No	No	No	No	No	Yes	Regression, Clustering	434874	4		Computer	2013-04-16	2772	193578	0
+ISTANBUL STOCK EXCHANGE	Yes	Yes	No	No	No	Yes	No	No	No	No	No	No	No	No	Yes	Classification, Regression	536	8		Business	2013-06-01	2726	140877	0
+Buzz in social media 	Yes	No	No	No	No	Yes	No	No	No	No	No	No	No	Yes	Yes	Regression, Classification	140000	77		Computer	2013-05-27	2731	163413	0
+First-order theorem proving	Yes	No	No	No	No	No	No	No	No	No	No	No	No	No	Yes	Classification	6118	51		Computer	2013-04-17	2771	44411	0
+Wearable Computing: Classification of Body Postures and Movements (PUC-Rio)	No	No	No	No	No	No	No	No	Yes	No	No	No	No	Yes	Yes	Classification	165632	18		Computer	2013-04-09	2779	60663	0
+Gas sensor arrays in open sampling settings	Yes	No	No	No	No	Yes	No	No	No	No	No	No	No	No	Yes	Classification	18000	1950000		Computer	2013-06-05	2722	47788	0
+Climate Model Simulation Crashes	Yes	No	No	No	No	No	No	No	No	No	No	No	No	No	Yes	Classification	540	18		Physical	2013-06-18	2709	89502	0
+MicroMass	Yes	No	No	No	No	No	No	No	No	No	No	No	No	No	Yes	Classification	931	1300		Life	2013-08-12	2654	48533	0
+QSAR biodegradation	Yes	No	No	No	No	No	No	No	No	No	No	No	No	Yes	Yes	Classification	1055	41			2013-06-21	2706	49524	0
+BLOGGER	Yes	No	No	No	No	No	No	No	No	No	No	No				Classification	100	6		Computer	2013-07-06	2691	84685	0
+Daily and Sports Activities	Yes	No	No	No	No	Yes	No	No	No	No	No	No	No	No	Yes	Classification, Clustering	9120	5625		Computer	2013-07-08	2689	195854	0
+User Knowledge Modeling	Yes	No	No	No	No	No	No	No	No	No	No	No	No	Yes	No	Classification, Clustering	403	5		Computer	2013-06-26	2701	131119	0
+Reuters RCV1 RCV2 Multilingual, Multiview Text Categorization Test collection	Yes	No	No	No	No	No	No	No	No	No	No	No	No	No	Yes	Classification	111740			Life	2013-09-06	2629	62076	0
+NYSK	Yes	No	Yes	No	No	No	No	No	Yes	No	No	No				Clustering	10421	7		Social	2013-10-11	2594	54755	0
+Turkiye Student Evaluation	Yes	No	No	No	No	No	No	No	No	No	No	No				Classification, Clustering	5820	33			2013-09-01	2634	104008	0
+ser Knowledge Modeling Data (Students' Knowledge Levels on DC Electrical Machines)	Yes	No	No	No	No	No	No	No	No	No	No	No	No	No	Yes	Classification	403	5		Computer	2013-06-20	2707	39158	0
+EEG Eye State	Yes	No	No	No	No	Yes	No	No	Yes	No	No	No	No	Yes	Yes	Classification	14980	15		Life	2013-06-10	2717	127394	0
+Physicochemical Properties of Protein Tertiary Structure	Yes	No	No	No	No	No	No	No	No	No	No	No	No	No	Yes	Regression	45730	9		Life	2013-03-31	2788	57640	0
+seismic-bumps	Yes	No	No	No	No	No	No	No	No	No	No	No	No	No	Yes	Classification	2584	19			2013-04-03	2785	68655	0
+banknote authentication	Yes	No	No	No	No	No	No	No	No	No	No	No	No	No	Yes	Classification	1372	5		Computer	2013-04-16	2772	274243	0
+USPTO Algorithm Challenge, run by NASA-Harvard Tournament Lab and TopCoder    Problem: Pat	No	No	No	No	Yes	No	No	No	No	No	No	No	No	Yes	No	Classification	306	5			2013-10-13	2592	34596	0
+YouTube Multiview Video Games Dataset	Yes	No	Yes	No	No	No	No	No	No	No	No	No	No	Yes	Yes	Classification, Clustering	120000	1000000	Yes	Computer	2013-10-16	2589	133283	0
+Gas Sensor Array Drift Dataset at Different Concentrations	Yes	No	No	No	No	Yes	No	No	No	No	No	No	No	No	Yes	Classification, Regression, Clustering, Causa	13910	129		Computer	2013-10-23	2582	72574	0
+Activities of Daily Living (ADLs) Recognition Using Binary Sensors	Yes	No	No	No	No	Yes	No	No	Yes	No	No	No				Classification, Clustering	2747			Computer	2013-10-28	2577	93173	0
+SkillCraft1 Master Table Dataset	Yes	No	No	No	No	No	No	No	No	No	No	No	No	Yes	Yes	Regression	3395	20	Yes	Game	2013-10-22	2583	66331	0
+Weight Lifting Exercises monitored with Inertial Measurement Units	Yes	No	No	No	No	No	No	No	No	No	No	No	No	No	Yes	Classification	39242	152	Yes	Physical	2013-11-24	2550	46640	0
+SML2010	Yes	No	Yes	No	No	Yes	No	No	Yes	No	No	No	No	No	Yes	Regression	4137	24	Yes	Computer	2014-01-09	2504	130020	0
+Bike Sharing Dataset	No	Yes	No	No	No	No	No	No	No	No	No	No	No	Yes	Yes	Regression	17389	16		Social	2013-12-20	2524	523916	0
+Predict keywords activities in a online social media	Yes	No	No	No	No	Yes	No	No	Yes	No	No	No	No	Yes	Yes		51	35		Computer	2013-12-12	2532	46535	0
+Thoracic Surgery Data	Yes	No	No	No	No	No	No	No	No	No	No	No	No	Yes	Yes	Classification	470	17		Life	2013-11-13	2561	104565	0
+EMG dataset in Lower Limb	Yes	No	No	No	No	Yes	No	No	No	No	No	No	No	No	Yes		132	5		Computer	2014-02-05	2477	51147	0
+SUSY													No	No	Yes	Classification	5000000	18		Physical	2014-02-12	2470	72542	0
+HIGGS													No	No	Yes	Classification	11000000	28		Physical	2014-02-12	2470	157406	0
+Qualitative_Bankruptcy	Yes	No	No	No	No	No	No	No	No	No	No	No				Classification	250	7		Computer	2014-02-09	2473	84097	0
+LSVT Voice Rehabilitation	Yes	No	No	No	No	No	No	No	No	No	No	No	No	No	Yes	Classification	126	309		Life	2014-02-19	2463	35898	0
+Dataset for ADL Recognition with Wrist-worn Accelerometer	Yes	No	No	No	No	Yes	No	No	No	No	No	No				Classification, Clustering		3		Computer	2014-02-11	2471	81587	0
+Wilt	Yes	No	No	No	No	No	No	No	No	No	No	No				Classification	4889	6		Life	2014-03-13	2441	61955	0
+User Identification From Walking Activity	No	Yes	No	No	No	Yes	No	No	Yes	No	No	No	No	No	Yes	Classification, Clustering					2014-03-02	2452	75617	0
+Activity Recognition from Single Chest-Mounted Accelerometer	No	Yes	No	No	No	Yes	No	No	Yes	No	No	No	No	No	Yes	Classification, Clustering					2014-03-02	2452	113864	0
+Leaf	Yes	No	No	No	No	No	No	No	No	No	No	No	No	No	Yes	Classification	340	16		Computer	2014-02-24	2458	131614	0
+Dresses_Attribute_Sales	No	No	Yes	No	No	No	No	No	No	No	No	No				Classification, Clustering	501	13	Yes	Computer	2014-02-19	2463	113266	0
+Tamilnadu Electricity Board Hourly Readings	Yes	No	No	No	No	No	No	No	No	No	No	No	No	No	Yes	Classification, Regression, Clustering	45781	5		Life	2013-12-22	2522	76681	0
+Airfoil Self-Noise	Yes	No	No	No	No	No	No	No	No	No	No	No	No	No	Yes	Regression	1503	6		Physical	2014-03-04	2450	139067	0
+Wholesale customers	Yes	No	No	No	No	No	No	No	No	No	No	No	No	Yes	No	Classification, Clustering	440	8		Business	2014-03-31	2423	363377	0
+Twitter Data set for Arabic Sentiment Analysis	No	No	Yes	No	No	No	No	No	No	No	No	No				Classification	2000	2		Social	2014-04-11	2412	93511	0
+Combined Cycle Power Plant	Yes	No	No	No	No	No	No	No	No	No	No	No	No	No	Yes	Regression	9568	4		Computer	2014-03-26	2428	182003	0
+Urban Land Cover	Yes	No	No	No	No	No	No	No	No	No	No	No				Classification	168	148		Physical	2014-03-27	2427	48830	0
+Diabetes 130-US hospitals for years 1999-2008	Yes	No	No	No	No	No	No	No	No	No	No	No	No	Yes	No	Classification, Clustering	100000	55	Yes	Life	2014-05-03	2390	329230	0
+Bach Choral Harmony	No	No	No	No	No	No	No	No	Yes	No	No	No				Classification	5665	17			2014-05-20	2373	51347	0
+StoneFlakes	Yes	No	No	No	No	No	No	No	No	No	No	No	No	No	Yes	Classification, Clustering, Causal-Discovery	79	8	Yes		2014-05-20	2373	64749	0
+Tennis Major Tournament Match Statistics	Yes	No	No	No	No	No	No	No	No	No	No	No	No	Yes	Yes	Classification, Regression, Clustering	127	42	Yes		2014-06-01	2361	104149	0
+Parkinson Speech Dataset with  Multiple Types of Sound Recordings	Yes	No	No	No	No	No	No	No	No	No	No	No	No	Yes	Yes	Classification, Regression	1040	26		Life	2014-06-12	2350	104223	0
+Gesture Phase Segmentation	Yes	No	No	No	No	Yes	No	No	Yes	No	No	No	No	No	Yes	Classification, Clustering	9900	50			2014-06-18	2344	54067	0
+Perfume Data	No	Yes	No	No	Yes	No	No	No	No	No	No	No	No	Yes	No	Classification, Clustering	560	2		Computer	2014-07-22	2310	146743	0
+BlogFeedback	Yes	No	No	No	No	No	No	No	No	No	No	No	No	Yes	Yes	Regression	60021	281		Social	2014-05-29	2364	100529	0
+REALDISP Activity Recognition Dataset	Yes	No	No	No	No	Yes	No	No	No	No	No	No	No	No	Yes	Classification	1419	120		Computer	2014-07-25	2307	46476	0
+Newspaper and magazine images segmentation dataset																Classification	101			Computer	2014-07-15	2317	28723	0
+AAAI 2014 Accepted Papers	Yes	No	No	No	No	No	No	No	No	No	No	No				Clustering	399	6		Computer	2014-07-30	2302	55712	0
+Gas sensor array under flow modulation	Yes	No	No	No	No	Yes	No	No	No	No	No	No	No	No	Yes	Classification, Regression	58	120432		Computer	2014-09-10	2260	39945	0
+Gas sensor array exposed to turbulent gas mixtures	Yes	No	No	No	No	Yes	No	No	No	No	No	No	No	No	Yes	Classification, Regression	180	150000		Computer	2014-10-10	2230	42822	0
+UJIIndoorLoc	Yes	No	No	No	No	No	No	No	No	No	No	No	No	Yes	Yes	Classification, Regression	21048	529		Computer	2014-09-18	2252	101911	0
+Sentence Classification	No	No	Yes	No	No	No	No	No	No	No	No	No	No	Yes	No	Classification					2014-11-05	2204	77900	0
+Dow Jones Index	No	No	No	No	No	Yes	No	No	No	No	No	No	No	Yes	Yes	Classification, Clustering	750	16		Business	2014-10-23	2217	223361	0
+sEMG for Basic Hand movements	No	No	No	No	No	Yes	No	No	No	No	No	No	No	No	Yes	Classification	3000	2500		Life	2014-11-18	2191	70781	0
+AAAI 2013 Accepted Papers	Yes	No	No	No	No	No	No	No	No	No	No	No				Clustering	150	5		Computer	2014-07-30	2302	58209	0
+Geographical Original of Music	Yes	No	No	No	No	No	No	No	No	No	No	No	No	No	Yes	Classification, Regression	1059	68			2014-10-18	2222	89972	0
+Condition Based Maintenance of Naval Propulsion Plants	Yes	No	No	No	No	No	No	No	No	No	No	No	No	No	Yes	Regression	11934	16		Computer	2014-09-11	2259	62542	0
+Grammatical Facial Expressions	Yes	No	No	No	No	No	No	No	Yes	No	No	No	No	No	Yes	Classification, Clustering	27965	100		Computer	2014-10-06	2234	74103	0
+NoisyOffice	Yes	No	No	No	No	No	No	No	No	No	No	No	No	No	Yes	Classification, Regression	216	216		Computer	2015-01-03	2145	69372	0
+MHEALTH Dataset	Yes	No	No	No	No	Yes	No	No	No	No	No	No	No	No	Yes	Classification	120	23		Computer	2014-12-07	2172	105812	0
+Student Performance	Yes	No	No	No	No	No	No	No	No	No	No	No	No	Yes	No	Classification, Regression	649	33		Social	2014-11-27	2182	811750	0
+ElectricityLoadDiagrams20112014	No	No	No	No	No	Yes	No	No	No	No	No	No	No	No	Yes	Regression, Clustering	370	140256		Computer	2015-03-13	2076	80649	0
+Gas sensor array under dynamic gas mixtures	Yes	No	No	No	No	Yes	No	No	No	No	No	No	No	No	Yes	Classification, Regression	4178504	19		Computer	2015-03-20	2069	55217	0
+microblogPCU	Yes	Yes	Yes	No	No	No	No	No	Yes	No	No	No	No	Yes	Yes	Classification, Causal-Discovery	221579	20	Yes	Computer	2015-03-17	2072	51664	0
+Firm-Teacher_Clave-Direction_Classification	Yes	No	No	No	No	No	No	No	No	No	No	No				Classification	10800	20			2015-04-24	2034	29991	0
+Dataset for Sensorless Drive Diagnosis	Yes	No	No	No	No	No	No	No	No	No	No	No	No	No	Yes	Classification	58509	49		Computer	2015-02-24	2093	75829	0
+TV News Channel Commercial Detection Dataset	Yes	No	No	No	No	No	No	No	No	No	No	No	No	No	Yes	Classification, Clustering	129685	12		Computer	2015-03-27	2062	75340	0
+Phishing Websites													No	Yes	No	Classification	2456	30		Computer Security	2015-03-26	2063	155318	0
+Greenhouse Gas Observing Network	Yes	No	No	No	No	Yes	No	No	No	No	No	No	No	No	Yes	Regression	2921	5232		Physical	2015-04-16	2042	59836	0
+Diabetic Retinopathy Debrecen Data Set	Yes	No	No	No	No	No	No	No	No	No	No	No	No	Yes	Yes	Classification	1151	20		Life	2014-11-03	2206	112545	0
+HIV-1 protease cleavage	Yes	No	No	No	No	No	No	No	No	No	No	No	Yes	No	No	Classification	6590	1		Life	2015-04-25	2033	63129	0
+Sentiment Labelled Sentences	No	No	Yes	No	No	No	No	No	No	No	No	No				Classification	3000				2015-05-30	1998	183858	0
+Online News Popularity	Yes	No	No	No	No	No	No	No	No	No	No	No	No	Yes	Yes	Classification, Regression	39797	61		Business	2015-05-31	1997	308470	0
+Forest type mapping	Yes	No	No	No	No	No	No	No	No	No	No	No				Classification	326	27		Life	2015-05-25	2003	61339	0
+wiki4HE	Yes	No	No	No	No	No	No	No	No	No	No	No				Regression, Clustering, Causal-Discovery	913	53	Yes	Social	2015-05-04	2024	49924	0
+Online Video Characteristics and Transcoding Time Dataset	Yes	No	No	No	No	No	No	No	No	No	No	No	No	Yes	Yes	Regression	168286	11		Computer	2015-05-19	2009	44705	0
+Chronic_Kidney_Disease	Yes	No	No	No	No	No	No	No	No	No	No	No	No	No	Yes	Classification	400	25	Yes		2015-07-03	1964	180997	0
+Machine Learning based ZZAlpha Ltd. Stock Recommendations 2012-2014	No	No	No	No	No	Yes	No	No	Yes	No	No	No	No	No	Yes	Classification	314080		Yes	Business	2015-06-06	1991	53550	0
+Folio	Yes	No	No	No	No	No	No	No	No	No	No	No				Classification, Clustering	637	20	Yes		2015-07-05	1962	60610	0
+Taxi Service Trajectory - Prediction Challenge, ECML PKDD 2015	Yes	No	No	No	Yes	Yes	No	No	Yes	No	No	No	No	No	Yes	Clustering, Causal-Discovery	1710671	9	Yes	Computer	2015-07-11	1956	84392	0
+Cuff-Less Blood Pressure Estimation	Yes	No	No	No	No	No	No	No	No	No	No	No	No	No	Yes	Classification, Regression	12000	3	Yes	Life	2015-07-27	1940	119493	0
+Smartphone-Based Recognition of Human Activities and Postural Transitions	Yes	No	No	No	No	Yes	No	No	No	No	No	No	No	No	Yes	Classification	10929	561		Life	2015-07-29	1938	180945	0
+Mice Protein Expression	Yes	No	No	No	No	No	No	No	No	No	No	No	No	No	Yes	Classification, Clustering	1080	82	Yes	Life	2015-08-04	1932	82671	0
+UJIIndoorLoc-Mag	Yes	No	No	No	No	Yes	No	No	Yes	No	No	No	No	Yes	Yes	Classification, Regression, Clustering	40000	13		Computer	2015-09-10	1895	44389	0
+Heterogeneity Activity Recognition	Yes	No	No	No	No	Yes	No	No	No	No	No	No	No	No	Yes	Classification, Clustering	43930257	16	Yes	Computer	2015-10-26	1849	105898	0
+Educational Process Mining (EPM): A Learning Analytics Data Set	Yes	No	No	No	No	Yes	No	No	Yes	No	No	No	No	Yes	No	Classification, Regression, Clustering	230318	13		Computer	2015-09-24	1881	103688	0
+HEPMASS	Yes	No	No	No	No	No	No	No	No	No	No	No	No	No	Yes	Classification	10500000	28		Physical	2016-01-28	1755	66895	0
+Indoor User Movement Prediction from RSS data	Yes	No	No	No	No	Yes	No	No	Yes	No	No	No	No	No	Yes	Classification	13197	4		Computer	2016-02-04	1748	65574	0
+Open University Learning Analytics dataset	Yes	No	No	No	No	Yes	No	No	Yes	No	No	No	No	Yes	No	Classification, Regression, Clustering			Yes	Computer	2015-12-21	1793	65594	0
+default of credit card clients	Yes	No	No	No	No	No	No	No	No	No	No	No	No	Yes	Yes	Classification	30000	24		Business	2016-01-26	1757	519437	0
+Mesothelioma’s disease data set 	Yes	No	No	No	No	No	No	No	No	No	No	No	No	No	Yes	Classification	324	34		Computer	2016-01-11	1772	16289	0
+Online Retail	Yes	No	No	No	No	Yes	No	No	Yes	No	No	No	No	Yes	Yes	Classification, Clustering	541909	8		Business	2015-11-06	1838	528065	0
+SIFT10M	Yes	No	No	No	No	No	No	No	No	No	No	No	No	Yes	No	Causal-Discovery	11164866	128		Computer	2016-02-23	1729	33150	0
+GPS Trajectories	Yes	No	No	No	No	No	No	No	No	No	No	No	No	No	Yes	Classification, Regression	163	15	Yes	Computer	2016-02-29	1723	112295	0
+Detect Malacious Executable(AntiVirus)	Yes	No	No	No	No	No	No	No	No	No	No	No	No	No	Yes	Classification	373	513	Yes	Computer	2016-03-03	1720	258573	0
+Occupancy Detection 	Yes	No	No	No	No	Yes	No	No	No	No	No	No	No	No	Yes	Classification	20560	7		Computer	2016-02-29	1723	148584	0
+Improved Spiral Test Using Digitized Graphics Tablet for Monitoring Parkinson’s Disease	Yes	No	No	No	No	No	No	No	No	No	No	No	No	No	Yes	Classification, Regression, Clustering	40	7		Computer	2016-03-05	1718	11189	0
+News Aggregator	Yes	No	No	No	No	No	No	No	No	No	No	No				Classification, Clustering	422937	5			2016-02-28	1724	92553	0
+Air Quality	Yes	No	No	No	No	Yes	No	No	No	No	No	No	No	No	Yes	Regression	9358	15	Yes	Computer	2016-03-23	1700	474306	0
+Twin gas sensor arrays	Yes	No	No	No	Yes	Yes	No	No	No	No	No	No	No	No	Yes	Classification, Regression	640	480000		Computer	2016-05-19	1643	49183	0
+Gas sensors for home activity monitoring	Yes	No	No	No	No	Yes	No	No	No	No	No	No	No	No	Yes	Classification	919438	11		Computer	2016-07-15	1586	85065	0
+Facebook Comment Volume Dataset	Yes	No	No	No	No	No	No	No	No	No	No	No	No	Yes	Yes	Regression	40949	54			2016-03-11	1712	99039	0
+Smartphone Dataset for Human Activity Recognition (HAR) in Ambient Assisted Living (AAL)	No	No	No	No	No	Yes	No	No	No	No	No	No	No	No	Yes	Classification	5744	561		Computer	2016-03-09	1714	50891	0
+Polish companies bankruptcy data	Yes	No	No	No	No	No	No	No	No	No	No	No	No	No	Yes	Classification	10503	64	Yes	Business	2016-04-11	1681	112404	0
+Activity Recognition system based on Multisensor data fusion (AReM)	Yes	No	No	No	No	Yes	No	No	Yes	No	No	No	No	No	Yes	Classification	42240	6		Computer	2016-05-18	1644	65979	0
+Dota2 Games Results	Yes	No	No	No	No	No	No	No	No	No	No	No				Classification	102944	116		Game	2016-08-14	1556	105015	0
+Facebook metrics	Yes	No	No	No	No	No	No	No	No	No	No	No	No	Yes	No	Regression	500	19		Business	2016-08-05	1565	173388	0
+UbiqLog (smartphone lifelogging)	Yes	No	No	No	No	No	No	No	No	No	No	No				Causal-Discovery	9782222			Computer	2016-06-16	1615	31564	0
+NIPS Conference Papers 1987-2015	No	No	Yes	No	No	No	No	No	No	No	No	No	No	Yes	No	Clustering	11463	5812		Computer	2016-11-23	1455	51905	0
+HTRU2	Yes	No	No	No	No	No	No	No	No	No	No	No	No	No	Yes	Classification, Clustering	17898	9		Physical	2017-02-14	1372	66861	0
+Drug consumption (quantified)	Yes	No	No	No	No	No	No	No	No	No	No	No	No	No	Yes	Classification	1885	32		Social	2016-10-17	1492	137126	0
+Appliances energy prediction	Yes	No	No	No	No	Yes	No	No	No	No	No	No	No	No	Yes	Regression	19735	29		Computer	2017-02-15	1371	134056	0
+Miskolc IIS Hybrid IPS	No	No	Yes	No	No	No	No	No	No	No	No	No	No	Yes	No	Classification, Clustering, Causal-Discovery	1540	67	Yes	Computer	2016-07-04	1597	14099	0
+KDC-4007 dataset Collection	Yes	No	Yes	No	No	No	No	No	No	No	No	No	No	Yes	No	Classification, Regression	4007			Computer	2017-04-27	1300	32255	0
+Geo-Magnetic field and WLAN dataset for indoor localisation from wristband and smartphone	Yes	No	No	No	No	Yes	No	No	Yes	No	No	No	No	Yes	Yes	Classification, Regression, Clustering	153540	25		Computer	2017-01-10	1407	33585	0
+DrivFace	Yes	No	No	No	No	No	No	No	No	No	No	No	No	No	Yes	Classification, Regression, Clustering	606	6400		Computer	2016-05-26	1636	38243	0
+Website Phishing	Yes	No	No	No	No	No	No	No	No	No	No	No	No	Yes	No	Classification	1353	10		Computer	2016-11-02	1476	89147	0
+YouTube Spam Collection	No	No	Yes	No	No	No	No	No	No	No	No	No				Classification	1956	5		Computer	2017-03-26	1332	86839	0
+Beijing PM2.5 Data	Yes	No	No	No	No	Yes	No	No	No	No	No	No	No	Yes	Yes	Regression	43824	13	Yes	Physical	2017-01-19	1398	187416	0
+Cargo 2000 Freight Tracking and Tracing	Yes	No	No	No	No	No	No	No	Yes	No	No	No	No	Yes	No	Classification, Regression	3942	98	Yes	Business	2016-11-03	1475	46015	0
+Cervical cancer (Risk Factors)	Yes	No	No	No	No	No	No	No	No	No	No	No	No	Yes	Yes	Classification	858	36	Yes	Life	2017-03-03	1355	130323	0
+Quality Assessment of Digital Colposcopies	Yes	No	No	No	No	No	No	No	No	No	No	No	No	No	Yes	Classification	287	69		Life	2017-03-08	1350	20712	0
+KASANDR	Yes	No	No	No	No	No	No	No	No	No	No	No	No	Yes	No	Causal-Discovery	17764280	2158859		Life	2017-05-16	1281	35473	0
+FMA: A Dataset For Music Analysis	Yes	No	No	No	No	Yes	No	No	No	No	No	No	No	No	Yes	Classification, Clustering	106574	518		Computer	2017-05-24	1273	88970	0
+Air quality	Yes	No	No	No	No	Yes	No	No	No	No	No	No	No	No	Yes	Regression	9358	15	Yes	Computer	2016-03-23	1700	474307	0
+Epileptic Seizure Recognition	Yes	No	No	No	No	Yes	No	No	No	No	No	No	No	Yes	Yes	Classification, Clustering	11500	179		Life	2017-05-24	1273	119926	0
+Devanagari Handwritten Character Dataset													No	Yes	No	Classification	92000			Computer	2016-09-01	1538	30351	0
+Stock portfolio performance	Yes	No	No	No	No	No	No	No	No	No	No	No	No	No	Yes	Regression	315	12		Business	2016-04-22	1670	70187	0
+MoCap Hand Postures	Yes	No	No	No	No	No	No	No	No	No	No	No	No	Yes	Yes	Classification, Clustering	78095	38	Yes	Computer	2016-11-22	1456	22887	0
+Early biomarkers of Parkinson's disease based on natural connected speech	Yes	No	No	No	No	No	No	No	No	No	No	No	No	Yes	Yes	Classification, Regression	130	65	Yes	Life	2017-02-15	1371	3558	0
+Data for Software Engineering Teamwork Assessment in Education Setting	No	No	No	No	No	Yes	No	No	Yes	No	No	No	No	Yes	Yes	Classification	74	102	Yes	Computer	2017-06-29	1237	36406	0
+PM2.5 Data of Five Chinese Cities	Yes	No	No	No	No	Yes	No	No	No	No	No	No	No	Yes	Yes	Regression	52854	86	Yes	Physical	2017-07-18	1218	87245	0
+Parkinson Disease Spiral Drawings Using Digitized Graphics Tablet	Yes	No	No	No	No	No	No	No	No	No	No	No	No	Yes	No	Classification, Regression, Clustering	77	7		Computer	2017-07-20	1216	47997	0
+Sales_Transactions_Dataset_Weekly	Yes	No	No	No	No	Yes	No	No	No	No	No	No	No	Yes	Yes	Clustering	811	53			2017-07-16	1220	75114	0
+Las Vegas Strip													No	Yes	No	Classification, Regression	504	20		Business	2017-07-23	1213	98215	0
+Eco-hotel	No	No	Yes	No	No	No	No	No	No	No	No	No					401	1		Business	2017-07-23	1213	39346	0
+MEU-Mobile KSD	Yes	No	No	No	No	No	No	No	No	No	No	No	No	Yes	Yes	Classification	2856	71		Computer	2016-05-14	1648	13565	0
+Crowdsourced Mapping	Yes	No	No	No	No	No	No	No	No	No	No	No				Classification	10546	29		Physical	2016-05-25	1637	24167	0
+gene expression cancer RNA-Seq	Yes	No	No	No	No	No	No	No	No	No	No	No	No	No	Yes	Classification, Clustering	801	20531		Life	2016-06-09	1622	65037	0
+Hybrid Indoor Positioning Dataset from WiFi RSSI, Bluetooth and magnetometer	Yes	No	No	No	No	Yes	No	No	Yes	No	No	No	No	No	Yes	Classification	1540	65	Yes	Computer	2016-12-18	1430	15852	0
+Burst Header Packet (BHP) flooding attack on Optical Burst Switching (OBS) Network	No	No	Yes	No	No	No	No	No	No	No	No	No	No	Yes	No	Classification	1075	22		Computer	2017-08-28	1177	31468	0
+Motion Capture Hand Postures	Yes	No	No	No	No	No	No	No	No	No	No	No	No	No	Yes	Classification, Clustering	78095	38	Yes	Computer	2017-01-27	1390	31567	0
+Anuran Calls (MFCCs)	Yes	No	No	No	No	No	No	No	No	No	No	No	No	No	Yes	Classification, Clustering	7195	22		Life	2017-02-24	1362	50763	0
+TTC-3600: Benchmark dataset for Turkish text categorization	No	No	Yes	No	No	No	No	No	No	No	No	No	No	Yes	No	Classification, Clustering	3600	4814		Computer	2017-02-08	1378	15609	0
+Gastrointestinal Lesions in Regular Colonoscopy	Yes	No	No	No	No	No	No	No	No	No	No	No	No	No	Yes	Classification	76	698		Computer	2016-10-15	1494	18993	0
+Daily Demand Forecasting Orders	No	No	No	No	No	Yes	No	No	No	No	No	No	No	Yes	No	Regression	60	13		Business	2017-11-21	1092	84652	0
+Paper Reviews	No	No	Yes	No	No	No	No	No	No	No	No	No	No	Yes	No	Classification, Regression	405	10	Yes	Computer	2017-10-23	1121	55016	0
+extention of Z-Alizadeh sani dataset													No	Yes	Yes	Classification	303	59		Life	2017-11-17	1096	12500	0
+Z-Alizadeh Sani													No	Yes	Yes	Classification	303	56		Life	2017-11-17	1096	23734	0
+Dynamic Features of VirusShare Executables	Yes	No	No	No	No	Yes	No	No	No	No	No	No	No	Yes	No	Classification, Regression	107888	482		Computer	2017-11-29	1084	31908	0
+IDA2016Challenge	Yes	No	No	No	No	No	No	No	No	No	No	No	No	Yes	No	Classification	76000	171	Yes	Computer	2017-01-17	1400	18173	0
+DSRC Vehicle Communications	No	No	Yes	No	No	No	No	No	Yes	No	No	No	No	No	Yes	Clustering	10000	5		Computer	2017-12-13	1070	31997	0
+Mturk User-Perceived Clusters over Images	Yes	No	Yes	No	No	No	No	No	No	No	No	No	No	Yes	No	Clustering	180	500		Computer	2016-11-02	1476	9485	0
+Character Font Images	Yes	No	No	No	No	No	No	No	No	No	No	No	No	Yes	Yes	Classification	745000	411		Computer	2016-08-14	1556	36123	0
+DeliciousMIL: A Data Set for Multi-Label Multi-Instance Learning with Instance Labels	No	No	Yes	No	No	No	No	No	No	No	No	No	No	Yes	No	Classification	12234	8519		Computer	2016-10-27	1482	19420	0
+Autistic Spectrum Disorder Screening Data for Children  	Yes	No	No	No	No	No	No	No	No	No	No	No	No	Yes	No	Classification	292	21	Yes	Life	2017-12-24	1059	47270	0
+Autistic Spectrum Disorder Screening Data for Adolescent   	Yes	No	No	No	No	No	No	No	No	No	No	No	No	Yes	No	Classification	104	21	Yes	Life	2017-12-24	1059	32527	0
+APS Failure at Scania Trucks	Yes	No	No	No	No	No	No	No	No	No	No	No	No	Yes	Yes	Classification	60000	171	Yes	Computer	2017-12-08	1075	60102	0
+Wireless Indoor Localization	Yes	No	No	No	No	No	No	No	No	No	No	No	No	No	Yes	Classification	2000	7		Computer	2017-12-04	1079	48587	0
+HCC Survival	Yes	No	No	No	No	No	No	No	No	No	No	No	No	Yes	Yes	Classification	165	49	Yes	Life	2017-11-29	1084	36102	0
+CSM (Conventional and Social Media Movies) Dataset 2014 and 2015	Yes	No	No	No	No	No	No	No	No	No	No	No	No	Yes	No	Classification, Regression	217	12	Yes	Computer	2017-10-11	1133	32891	0
+University of Tehran Question Dataset 2016 (UTQD.2016)	No	No	Yes	No	No	No	No	No	No	No	No	No				Classification	1175	3	Yes		2017-09-27	1147	13417	0
+Autism Screening Adult													No	Yes	No	Classification	704	21	Yes	Social	2017-12-24	1059	64515	0
+Activity recognition with healthy older people using a batteryless wearable sensor	No	No	No	No	No	No	No	No	Yes	No	No	No	No	No	Yes	Classification	75128	9		Life	2016-12-12	1436	37377	0
+Immunotherapy Dataset	No	Yes	No	No	No	No	No	No	No	No	No	No	No	Yes	Yes	Classification	90	8		Life	2018-01-04	1048	53314	0
+Cryotherapy Dataset 	No	Yes	No	No	No	No	No	No	No	No	No	No	No	Yes	Yes	Classification	90	7		Life	2018-01-04	1048	45899	0
+OCT data & Color Fundus Images of Left & Right Eyes	Yes	No	No	No	No	No	No	No	No	No	No	No	No	No	Yes	Classification	50	2		Computer	2016-11-01	1477	17078	0
+Discrete Tone Image Dataset	Yes	No	No	No	No	No	No	No	No	No	No	No				Classification	71	11		Computer	2018-01-20	1032	20874	0
+News Popularity in Multiple Social Media Platforms	Yes	No	Yes	No	No	Yes	No	No	No	No	No	No	No	Yes	Yes	Regression	93239	11		Computer	2018-02-20	1001	61120	0
+Ultrasonic flowmeter diagnostics	Yes	No	No	No	No	No	No	No	No	No	No	No	No	No	Yes	Classification	540	173		Computer	2018-01-13	1039	18266	0
+ICMLA 2014 Accepted Papers Data Set	Yes	No	No	No	No	No	No	No	No	No	No	No				Classification, Clustering	105	5			2018-02-19	1002	16286	0
+BLE RSSI Dataset for Indoor localization and Navigation	Yes	No	No	No	No	Yes	No	No	Yes	No	No	No	No	Yes	No	Classification, Clustering	6611	15	Yes	Computer	2018-01-25	1027	32604	0
+Container Crane Controller Data Set	No	Yes	No	No	Yes	No	No	No	No	No	No	No	No	No	Yes	Classification, Regression	15	3		Computer	2018-01-01	1051	33053	0
+Residential Building Data Set	Yes	No	No	No	No	No	No	No	No	No	No	No	No	No	Yes	Regression	372	105		Computer	2018-02-19	1002	50024	0
+Health News in Twitter	No	No	Yes	No	No	No	No	No	No	No	No	No	No	No	Yes	Clustering	58000	25000		Computer	2018-02-19	1002	52525	0
+chipseq	No	No	No	No	No	No	No	No	Yes	No	No	No	No	Yes	No	Classification	4960			Life	2018-02-21	1000	22217	0
+SGEMM GPU kernel performance	Yes	No	No	No	No	No	No	No	No	No	No	No	No	Yes	No	Regression	241600	18		Computer	2018-02-27	994	27563	0
+Repeat Consumption Matrices	Yes	No	No	No	No	No	No	No	No	No	No	No	No	No	Yes	Clustering	130000	21000		Computer	2018-03-22	971	22296	0
+detection_of_IoT_botnet_attacks_N_BaIoT	Yes	No	No	No	No	No	No	No	Yes	No	No	No	No	No	Yes	Classification, Clustering	7062606	115		Computer	2018-03-19	974	71745	0
+Absenteeism at work	Yes	No	No	No	No	Yes	No	No	No	No	No	No	No	Yes	Yes	Classification, Clustering	740	21		Business	2018-04-05	957	189132	0
+SCADI	Yes	No	No	No	No	No	No	No	No	No	No	No				Classification, Clustering	70	206		Life	2018-04-14	948	31023	0
+Condition monitoring of hydraulic systems	Yes	No	No	No	No	Yes	No	No	No	No	No	No	No	No	Yes	Classification, Regression	2205	43680		Computer	2018-04-26	936	56608	0
+Carbon Nanotubes	No	Yes	No	No	No	No	No	No	No	No	No	No	No	No	Yes	Regression	10721	8		Computer	2018-04-05	957	41034	0
+Optical Interconnection Network 	Yes	No	No	No	No	No	No	No	No	No	No	No	No	Yes	Yes	Classification, Regression	640	10		Computer	2018-03-29	964	27658	0
+Sports articles for objectivity analysis	Yes	No	Yes	No	No	No	No	No	No	No	No	No	No	Yes	No	Classification	1000	59		Social	2018-04-09	953	36981	0
+Breast Cancer Coimbra	Yes	No	No	No	No	No	No	No	No	No	No	No	No	Yes	No	Classification	116	10		Life	2018-03-06	987	96556	0
+GNFUV Unmanned Surface Vehicles Sensor Data	Yes	No	No	No	No	Yes	No	No	No	No	No	No	No	No	Yes	Regression	1672	5		Computer	2018-05-06	926	22744	0
+Dishonest Internet users Dataset	Yes	No	No	No	No	No	No	No	No	No	No	No				Classification, Clustering	322	5		Computer	2018-03-20	973	48847	0
+Victorian Era Authorship Attribution	No	No	Yes	No	No	No	No	No	No	No	No	No				Classification	93600	1000		Computer	2018-05-31	901	17645	0
+Simulated Falls and Daily Living Activities Data Set	No	No	No	No	No	Yes	No	No	No	No	No	No	No	Yes	No	Classification	3060	138	Yes	Life	2018-06-06	895	82915	0
+Multimodal Damage Identification for Humanitarian Computing	Yes	No	Yes	No	No	No	No	No	No	No	No	No	No	Yes	No	Classification	5879			Social	2018-06-01	900	13114	0
+EEG Steady-State Visual Evoked Potential Signals	Yes	No	No	No	No	Yes	No	No	No	No	No	No	No	Yes	No	Classification, Regression	9200	16		Life	2018-07-13	858	36499	0
+Roman Urdu Data Set	No	No	Yes	No	No	No	No	No	No	No	No	No				Classification	20000	2		Computer	2018-08-29	811	22498	0
+Avila	Yes	No	No	No	No	No	No	No	No	No	No	No	No	No	Yes	Classification	20867	10		Computer	2018-06-20	881	34741	0
+PANDOR	Yes	No	No	No	No	No	No	No	No	No	No	No	Yes	No	No	Recommendation				Life	2018-10-02	777	15463	0
+Drug Review Dataset (Druglib.com)	Yes	No	Yes	No	No	No	No	No	No	No	No	No	No	Yes	No	Classification, Regression, Clustering	4143	8			2018-10-02	777	55877	0
+Drug Review Dataset (Drugs.com)	Yes	No	Yes	No	No	No	No	No	No	No	No	No	No	Yes	No	Classification, Regression, Clustering	215063	6		Life	2018-10-04	775	83417	0
+Physical Unclonable Functions	Yes	No	No	No	No	No	No	No	No	No	No	No	No	Yes	No	Classification	6000000	129		Computer	2018-10-08	771	16832	0
+Superconductivty Data	Yes	No	No	No	No	No	No	No	No	No	No	No	No	No	Yes	Regression	21263	81		Physical	2018-10-12	767	46625	0
+WESAD (Wearable Stress and Affect Detection)	Yes	No	No	No	No	Yes	No	No	No	No	No	No	No	No	Yes	Classification, Regression	63000000	12		Computer	2018-09-14	795	44227	0
+GNFUV Unmanned Surface Vehicles Sensor Data Set 2	Yes	No	No	No	No	Yes	No	No	Yes	No	No	No	No	No	Yes	Regression	10190	6	Yes	Computer	2018-09-13	796	10970	0
+Student Academics Performance	Yes	No	No	No	No	No	No	No	No	No	No	No				Classification	300	22		Computer	2018-09-16	793	69123	0
+Online Shoppers Purchasing Intention Dataset	Yes	No	No	No	No	No	No	No	No	No	No	No	No	Yes	Yes	Classification, Clustering	12330	18		Business	2018-08-31	809	102694	0
+PMU-UD	No	Yes	No	No	No	No	No	No	No	No	No	No				Classification	5180	9		Computer	2018-08-05	835	11547	0
+Parkinson's Disease Classification	Yes	No	No	No	No	No	No	No	No	No	No	No	No	Yes	Yes	Classification	756	754		Computer	2018-11-05	743	66025	0
+Electrical Grid Stability Simulated Data 	Yes	No	No	No	No	No	No	No	No	No	No	No	No	No	Yes	Classification, Regression	10000	14		Physical	2018-11-16	732	50220	0
+Caesarian Section Classification Dataset	No	Yes	No	No	No	No	No	No	No	No	No	No	No	Yes	No	Classification	80	5		Life	2018-11-02	746	42462	0
+BAUM-1	No	No	No	No	No	Yes	No	No	No	No	No	No				Classification	1184			Computer	2018-11-09	739	17245	0
+BAUM-2	No	No	No	No	No	Yes	No	No	No	No	No	No				Classification	1047			Computer	2018-11-09	739	11266	0
+Audit Data	Yes	No	No	No	No	No	No	No	No	No	No	No	No	No	Yes	Classification	777	18	Yes		2018-07-14	857	44865	0
+BuddyMove Data Set	Yes	No	Yes	No	No	No	No	No	No	No	No	No	No	No	Yes	Classification, Clustering	249	7			2018-07-01	870	30455	0
+Real estate valuation data set	Yes	No	No	No	No	No	No	No	No	No	No	No	No	Yes	Yes	Regression	414	7		Business	2018-08-18	822	85622	0
+Somerville Happiness Survey													No	Yes	No	Classification	143	7		Life	2018-05-24	908	21562	0
+2.4 GHZ Indoor Channel Measurements	Yes	No	No	No	No	No	No	No	No	No	No	No	No	No	Yes	Classification	7840	5		Computer	2018-11-30	718	65445	0
+EMG data for gestures	No	No	No	No	No	Yes	No	No	No	No	No	No	No	No	Yes	Classification	30000	6		Life	2019-01-07	680	52566	0
+Parking Birmingham	Yes	Yes	No	No	No	Yes	No	No	Yes	No	No	No	No	No	Yes	Classification, Regression, Clustering	35717	4	Yes	Computer	2019-01-02	685	53639	0
+Behavior of the urban traffic of the city of Sao Paulo in Brazil	Yes	No	No	No	No	Yes	No	No	No	No	No	No	No	Yes	Yes	Classification, Regression	135	18		Computer	2018-12-12	706	50942	0
+Travel Reviews	Yes	No	Yes	No	No	No	No	No	No	No	No	No	No	No	Yes	Classification, Clustering	980	11			2018-12-19	699	77103	0
+Tarvel Review Ratings	Yes	No	Yes	No	No	No	No	No	No	No	No	No	No	No	Yes	Classification, Clustering	5456	25			2018-12-19	699	55001	0
+Rice Leaf Diseases	Yes	No	No	No	No	No	No	No	No	No	No	No	No	Yes	No	Classification	120			Computer	2019-04-14	583	45107	0
+Gas sensor array temperature modulation	Yes	No	No	No	No	Yes	No	No	No	No	No	No	No	No	Yes	Classification, Regression	4095000	20		Computer	2019-04-15	582	23633	0
+Facebook Live Sellers in Thailand	Yes	No	No	No	No	No	No	No	No	No	No	No	No	Yes	No	Clustering	7051	12		Business	2019-04-22	575	39279	0
+Parkinson Dataset with replicated acoustic features 	Yes	No	No	No	No	No	No	No	No	No	No	No				Classification	240	46		Life	2019-04-10	587	22009	0
+Metro Interstate Traffic Volume	Yes	No	No	No	No	Yes	No	No	Yes	No	No	No	No	Yes	Yes	Regression	48204	9			2019-05-07	560	53243	0
+Query Analytics Workloads Dataset	Yes	No	No	No	No	No	No	No	No	No	No	No	No	No	Yes	Regression, Clustering	260000	8		Computer	2019-06-22	514	15728	0
+Wave Energy Converters	Yes	No	No	No	No	No	No	No	No	No	No	No	No	No	Yes	Regression	288000	49	Yes	Computer	2019-06-30	506	20857	0
+PPG-DaLiA	Yes	No	No	No	No	Yes	No	No	No	No	No	No	No	No	Yes	Regression	8300000	11		Computer	2019-07-30	476	20543	0
+Alcohol QCM Sensor Dataset	Yes	No	No	No	No	No	No	No	No	No	No	No	No	No	Yes	Classification, Regression, Clustering	125	8		Computer	2019-07-22	484	51366	0
+Divorce Predictors data set	Yes	Yes	No	No	No	No	No	No	No	No	No	No	No	Yes	No	Classification	170	54		Life	2019-07-24	482	87656	0
+Incident management process enriched event log	Yes	No	No	No	No	No	No	No	Yes	No	No	No	No	Yes	No	Regression, Clustering	141712	36	Yes	Business	2019-07-14	492	25225	0
+Opinion Corpus for Lebanese Arabic Reviews (OCLAR)	No	No	Yes	No	No	No	No	No	No	No	No	No	No	Yes	No	Classification	3916	3916		Computer	2019-06-17	519	4750	0
+MEx	No	No	No	No	No	Yes	No	No	No	No	No	No	No	No	Yes	Classification, Clustering	6262	710		Computer	2019-09-20	424	13479	0
+Beijing Multi-Site Air-Quality Data	Yes	No	No	No	No	Yes	No	No	No	No	No	No	No	Yes	Yes	Regression	420768	18	Yes	Physical	2019-09-20	424	49758	0
+Online Retail II	Yes	No	Yes	No	No	Yes	No	No	Yes	No	No	No	No	Yes	Yes	Classification, Regression, Clustering	1067371	8	Yes	Business	2019-09-21	423	87599	0
+Hepatitis C Virus (HCV) for Egyptian patients	Yes	No	No	No	No	No	No	No	No	No	No	No	No	Yes	Yes	Classification	1385	29		Life	2019-09-30	414	51872	0
+QSAR fish toxicity	Yes	No	No	No	No	No	No	No	No	No	No	No	No	No	Yes	Regression	908	7		Physical	2019-09-23	421	28341	0
+QSAR aquatic toxicity	Yes	No	No	No	No	No	No	No	No	No	No	No	No	No	Yes	Regression	546	9		Physical	2019-09-23	421	16977	0
+Human Activity Recognition from Continuous Ambient Sensor Data	Yes	No	No	No	No	Yes	No	No	Yes	No	No	No	No	Yes	Yes	Classification	13956534	37	Yes		2019-09-20	424	26131	0
+WISDM Smartphone and Smartwatch Activity and Biometrics Dataset 	Yes	No	No	No	No	Yes	No	No	No	No	No	No	No	No	Yes	Classification	15630426	6		Computer	2019-10-06	408	60955	0
+QSAR oral toxicity	Yes	No	No	No	No	No	No	No	No	No	No	No				Classification	8992	1024		Physical	2019-10-01	413	7803	0
+QSAR androgen receptor	Yes	No	No	No	No	No	No	No	No	No	No	No				Classification	1687	1024		Physical	2019-10-01	413	4094	0
+QSAR Bioconcentration classes dataset	Yes	No	No	No	No	No	No	No	No	No	No	No				Classification, Regression	779	14		Life	2019-10-11	403	7440	0
+QSAR fish bioconcentration factor (BCF)	Yes	No	No	No	No	No	No	No	No	No	No	No	No	Yes	Yes	Regression	1056	7		Life	2019-11-27	356	7521	0
+A study of  Asian Religious and Biblical Texts	Yes	No	Yes	No	No	No	No	No	No	No	No	No	No	Yes	No	Classification, Clustering	590	8265		Social	2019-12-24	329	21810	0
+Real-time Election Results: Portugal 2019	Yes	No	Yes	No	No	Yes	No	No	No	No	No	No	No	Yes	Yes	Regression	21643	29		Social	2019-12-05	348	14845	0
+Bias correction of numerical prediction model temperature forecast	Yes	No	No	No	No	No	No	No	No	No	No	No	No	No	Yes	Regression	7750	25	Yes	Physical	2020-02-18	273	18245	0
+Bar Crawl: Detecting Heavy Drinking	Yes	No	No	No	No	Yes	No	No	No	No	No	No	No	No	Yes	Classification, Regression	14057567	3		Life	2020-02-24	267	59713	0
+Kitsune Network Attack Dataset	Yes	No	No	No	No	Yes	No	No	Yes	No	No	No	No	No	Yes	Classification, Clustering, Causal-Discovery	27170754	115		Computer	2019-10-16	398	119692	0
+Shoulder Implant X-Ray Manufacturer Classification	Yes	No	No	No	No	No	No	No	No	No	No	No	No	No	Yes	Classification	597	1		Life	2020-05-20	181	4323	0
+Speaker Accent Recognition	Yes	No	No	No	No	No	No	No	No	No	No	No	No	No	Yes	Classification	329	12		Social	2020-03-04	258	7249	0
+Heart failure clinical records	Yes	No	No	No	No	No	No	No	No	No	No	No	No	Yes	Yes	Classification, Regression, Clustering	299	13		Life	2020-02-05	286	27032	0
+Deepfakes: Medical Image Tamper Detection	Yes	No	No	No	No	No	No	No	No	No	No	No	No	No	Yes	Classification	20000	200000		Computer	2020-03-11	251	5789	0
+selfBACK	No	No	No	No	No	Yes	No	No	No	No	No	No	No	No	Yes	Classification, Clustering	26136	6		Computer	2020-06-15	155	8113	0
+South German Credit	Yes	No	No	No	No	No	No	No	No	No	No	No	No	Yes	Yes	Classification, Regression, Clustering	1000	21		Business	2019-11-29	354	7102	0
+Exasens	Yes	No	No	No	No	No	No	No	No	No	No	No	No	Yes	No	Classification, Clustering	399	4	Yes	Life	2020-04-22	209	7858	0
+Swarm Behaviour	Yes	No	No	No	No	No	No	No	No	No	No	No	No	No	Yes	Classification	24017	2400		Computer	2020-06-16	154	12640	0
+Crop mapping using fused optical-radar data set	Yes	No	No	No	No	Yes	No	No	No	No	No	No	No	No	Yes	Classification	325834	175			2020-06-16	154	7573	0
+BitcoinHeistRansomwareAddressDataset	Yes	No	No	No	No	Yes	No	No	No	No	No	No	No	Yes	Yes	Classification, Clustering	2916697	10		Computer	2020-06-17	153	15092	0
+Facebook Large Page-Page Network	Yes	No	No	No	No	No	No	No	No	No	No	No				Classification	22470	4714		Social	2020-07-22	118	21181	0
+Amphibians	Yes	No	No	No	No	No	No	No	No	No	No	No	No	Yes	Yes	Classification	189	23		Life	2020-07-17	123	17161	0
+Early stage diabetes risk prediction dataset.	Yes	No	No	No	No	No	No	No	No	No	No	No				Classification	520	17	Yes	Computer	2020-07-12	128	25700	0
+Turkish Spam V01	No	No	Yes	No	No	No	No	No	No	No	No	No				Classification	826	2		Social	2019-04-07	590	1159	0
+Stock keeping units	Yes	No	No	No	No	No	No	No	No	No	No	No	No	Yes	Yes	Clustering	2279	9	Yes	Business	2019-04-10	587	2618	0
+Demand Forecasting for a store	Yes	No	No	No	No	No	No	No	No	No	No	No	No	Yes	No	Regression	28764	8			2019-05-14	553	6030	0
+Detect Malware Types	Yes	No	Yes	No	No	Yes	No	No	No	No	No	No				Classification	7107	280		Computer	2019-06-03	533	4074	0
+Wave Energy Converters	Yes	No	No	No	No	No	No	No	No	No	No	No	No	No	Yes	Regression	288000	49	Yes	Computer	2019-06-30	506	20858	0
+Youtube cookery channels viewers comments in Hinglish	Yes	No	Yes	No	No	No	No	No	No	No	No	No				Classification	9800	3		Computer	2019-07-03	503	1523	0
+Pedestrian in Traffic Dataset	Yes	No	No	No	No	Yes	No	No	Yes	No	No	No	No	No	Yes	Classification, Regression, Causal-Discovery	4760	14	Yes	Computer	2019-07-04	502	4635	0
+Cervical Cancer Behavior Risk	Yes	Yes	No	No	No	No	No	No	No	No	No	No	No	Yes	No	Classification, Clustering	72	19		Life	2019-07-17	489	4302	0
+Sattriya_Dance_Single_Hand_Gestures Dataset	Yes	No	No	No	No	No	No	No	No	No	No	No				Classification	1450			Computer	2019-07-22	484	498	0
+Divorce Predictors data set	Yes	Yes	No	No	No	No	No	No	No	No	No	No	No	Yes	No	Classification	170	54		Life	2019-07-24	482	87657	0
+3W dataset	Yes	No	No	No	No	Yes	No	No	No	No	No	No	No	Yes	Yes	Classification, Clustering	1984	8	Yes	Computer	2019-08-15	460	6820	0
+Malware static and dynamic features VxHeaven and Virus Total	Yes	No	No	No	No	No	No	No	No	No	No	No	No	Yes	Yes	Classification	2955	1087		Computer	2019-01-31	656	1171	0
+Internet Firewall Data	Yes	No	No	No	No	No	No	No	No	No	No	No				Classification	65532	12		Computer	2019-02-04	652	3726	0
+User Profiling and Abusive Language Detection Dataset																Classification	65919	3		Computer	2019-04-25	572	1452	0
+Estimation of obesity levels based on eating habits and physical condition 	Yes	No	No	No	No	No	No	No	No	No	No	No	No	Yes	No	Classification, Regression, Clustering	2111	17		Life	2019-08-27	448	10868	0
+Rice (Cammeo and Osmancik)	Yes	No	No	No	No	No	No	No	No	No	No	No	No	No	Yes	Classification	3810	8		Computer	2019-10-06	408	3250	0
+Vehicle routing and scheduling problems	Yes	No	No	No	No	No	No	No	No	No	No	No	No	Yes	Yes	Clustering	18	9		Business	2019-10-07	407	2790	0
+Algerian Forest Fires Dataset  	Yes	No	No	No	No	No	No	No	No	No	No	No	No	No	Yes	Classification, Regression	244	12		Life	2019-10-22	392	6217	0
+Breath Metabolomics	Yes	No	No	No	No	Yes	No	No	No	No	No	No	No	No	Yes	Classification, Clustering	104	1656		Life	2019-11-08	375	2925	0
+Horton General Hospital	Yes	No	No	No	No	Yes	No	No	No	No	No	No	No	Yes	No	Causal-Discovery	139	6		Life	2019-11-13	370	1904	0
+UrbanGB, urban road accidents coordinates labelled by the urban center	No	Yes	No	No	No	No	No	No	No	No	No	No	No	No	Yes	Clustering	360177	2		Computer	2019-11-22	361	1531	0
+Gas Turbine CO and NOx Emission Data Set	Yes	No	No	No	No	No	No	No	No	No	No	No	No	No	Yes	Regression, Clustering	36733	11		Computer	2019-11-29	354	4015	0
+Activity recognition using wearable physiological measurements	Yes	No	No	No	No	No	No	No	No	No	No	No	No	No	Yes	Classification	4480	533		Life	2019-12-04	349	3608	0
+clickstream data for online shopping	Yes	No	No	No	No	No	No	No	Yes	No	No	No	No	Yes	Yes	Classification, Regression, Clustering	165474	14		Business	2019-12-09	344	9942	0
+CNNpred: CNN-based stock market prediction using a diverse set of variables	No	No	No	No	No	Yes	No	No	Yes	No	No	No	No	No	Yes	Classification, Regression	1985	84	Yes	Computer	2019-12-26	327	3317	0
+Apartment for rent classified	Yes	No	No	No	No	No	No	No	No	No	No	No				Classification, Regression, Clustering	10000	22		Business	2019-12-26	327	13634	0
+: Simulated Data set of Iraqi tourism places	Yes	No	No	No	No	No	No	No	No	No	No	No				Classification, Clustering	232	16		Computer	2020-01-10	312	2806	0
+Nasarian CAD Dataset	Yes	No	No	No	No	No	No	No	No	No	No	No				Classification	150	52		Life	2020-02-28	263	1002	0
+Monolithic Columns in Troad and Mysia Region	Yes	No	No	No	No	No	No	No	No	No	No	No	No	No	Yes	Classification	11	19		Computer	2020-02-08	283	656	0
+Bar Crawl: Detecting Heavy Drinking	Yes	No	No	No	No	Yes	No	No	No	No	No	No	No	No	Yes	Classification, Regression	14057567	3		Life	2020-02-24	267	59714	0
+Seoul Bike Sharing Demand	Yes	No	No	No	No	No	No	No	No	No	No	No	No	Yes	Yes	Regression	8760	14		Computer	2020-03-01	261	7874	0
+Person Classification Gait Data	Yes	No	No	No	No	No	No	No	No	No	No	No	No	No	Yes	Classification	48	321		Computer	2020-03-02	260	1909	0
+Shill Bidding Dataset	Yes	No	No	No	No	No	No	No	No	No	No	No				Classification, Clustering	6321	13		Computer	2020-03-10	252	2549	0
+Iranian Churn Dataset	Yes	No	No	No	No	No	No	No	No	No	No	No	No	Yes	No	Classification, Regression	3150	13		Business	2020-04-09	222	5845	0
+Unmanned Aerial Vehicle (UAV) Intrusion Detection	Yes	No	No	No	No	No	No	No	No	No	No	No	No	No	Yes	Classification	17256	55		Computer	2020-04-12	219	3054	0
+Bone marrow transplant: children	Yes	No	No	No	No	No	No	No	No	No	No	No	No	Yes	Yes	Classification, Regression	187	39	Yes	Life	2020-04-21	210	5546	0
+Exasens	Yes	No	No	No	No	No	No	No	No	No	No	No	No	Yes	No	Classification, Clustering	399	4	Yes	Life	2020-04-22	209	7859	0
+COVID-19 Surveillance	Yes	No	No	No	No	No	No	No	No	No	No	No				Classification	14	7		Computer	2020-04-24	207	11731	0
+Refractive errors	Yes	No	No	No	No	No	No	No	No	No	No	No	No	Yes	No	Classification	467	79	Yes	Life	2020-04-27	204	1858	0
+Shoulder Implant X-Ray Manufacturer Classification	Yes	No	No	No	No	No	No	No	No	No	No	No	No	No	Yes	Classification	597	1		Life	2020-05-20	181	4324	0
+CLINC150	No	No	Yes	No	No	No	No	No	No	No	No	No				Classification	23700				2020-05-08	193	2052	0
+HCV data	Yes	No	No	No	No	No	No	No	No	No	No	No	No	Yes	Yes	Classification, Clustering	615	14	Yes	Life	2020-06-10	160	17082	0
+Taiwanese Bankruptcy Prediction	Yes	No	No	No	No	No	No	No	No	No	No	No	No	Yes	No	Classification	6819	96		Business	2020-06-28	142	15699	0
+South German Credit (UPDATE)	Yes	No	No	No	No	No	No	No	No	No	No	No	No	Yes	Yes	Classification, Regression, Clustering	1000	21		Business	2020-06-20	150	11822	0
+IIWA14-R820-Gazebo-Dataset-10Trajectories													No	Yes	No	Regression				Computer	2020-06-09	161	2138	0
+Guitar Chords finger positions	No	No	Yes	No	No	No	No	No	No	No	No	No				Classification	2633	5			2020-06-05	165	8484	0
+Russian Corpus of Biographical Texts	No	No	Yes	No	No	No	No	No	No	No	No	No				Classification	200	2			2020-06-03	167	1514	0
+Codon usage	Yes	No	No	No	No	No	No	No	No	No	No	No				Classification, Clustering	13028	69	Yes	Life	2020-10-03	45	7781	0
+Intelligent Media Accelerometer and Gyroscope (IM-AccGyro) Dataset	No	No	No	No	No	Yes	No	No	No	No	No	No	No	No	Yes	Classification	800	9		Physical	2020-09-03	75	2433	0
