@@ -21,7 +21,7 @@
 \raggedbottom
 
 %define the default submitted text
-\newcommand{\submittedtext}{{Praca licencjacka}}
+\newcommand{\submittedtext}{{Praca dyplomowa}}
 
 %
 % DECLARATIONS
@@ -65,7 +65,7 @@
 {
 % Latest Logo, Square version (the default!)
 % you need an oxlogo.eps or oxlogo.pdf file as appropriate
-\def\logo{{\includegraphics[width=32mm]{oxlogo}}}
+\def\logo{{\includegraphics[height=32mm]{Logo/UMCS_rozsz_12G_PL_P431}}}
 }{}
 
 %
