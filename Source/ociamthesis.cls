@@ -145,7 +145,7 @@
 {\begin{alwayssingle} \thispagestyle{empty}
 \begin{center}
 \vspace*{1.5cm}
-{\Large \bfseries Acknowledgements}
+{\Large \bfseries Podziękowania}
 \end{center}
 \vspace{0.5cm}
 \begin{quote}}
@@ -159,7 +159,7 @@
 {\begin{alwayssingle} \thispagestyle{empty}
 \begin{center}
 \vspace*{1.5cm}
-{\Large \bfseries Acknowledgements}
+{\Large \bfseries Podziękowania}
 \end{center}
 \vspace{0.5cm}}
 {\end{alwayssingle}}
@@ -175,7 +175,7 @@
 {\begin{alwayssingle} \thispagestyle{empty}
 \begin{center}
 \vspace*{1.5cm}
-{\Large \bfseries Statement of Originality}
+{\Large \bfseries Oświadczenie o Oryginalności}
 \end{center}
 \vspace{0.5cm}
 \begin{quote}}
@@ -190,7 +190,7 @@
 {\begin{alwayssingle} \thispagestyle{empty}
 \begin{center}
 \vspace*{1.5cm}
-{\Large \bfseries Statement of Originality}
+{\Large \bfseries Oświadczenie o Oryginalności}
 \end{center}
 \vspace{0.5cm}}
 {\end{alwayssingle}}
@@ -205,7 +205,7 @@
 \renewenvironment{abstract} {\begin{alwayssingle} \thispagestyle{empty}
   \begin{center}
   \vspace*{1.5cm}
-  {\Large \bfseries  Abstract}
+  {\Large \bfseries  Streszczenie}
   \end{center}
   \vspace{0.5cm}
    \begin{quote}}
@@ -218,7 +218,7 @@
 \newenvironment{abstractlong} {\begin{alwayssingle} \thispagestyle{empty}
   \begin{center}
   \vspace*{1.5cm}
-  {\Large \bfseries  Abstract}
+  {\Large \bfseries  Streszczenie}
   \end{center}
   \vspace{0.5cm}}
 {\end{alwayssingle}}
@@ -233,7 +233,7 @@
     {{\large \vspace*{1ex} \@author} \par}
 {\large \vspace*{1ex}
     {{\@college} \par}
-    {University of Oxford \par}
+    {Uniwersytet Marii Curie-Skłodowskiej w Lublinie \par}
 \vspace*{1ex}
     {{\it \submittedtext} \par}
     {\it {\@degree} \par}
