@@ -1,0 +1,25 @@
+\chapter{Wstęp}
+\label{ch:introduction}
+
+Analiza danych o otaczającym nas świecie jest jedną z kluczowych metod postępu, zarówno naukowego jak i technologicznego.
+Skuteczność takiej analizy jest jednak zależna od jakości dostępnych danych.
+Otacza nas niemal nieskończony zasób informacji o świecie.
+Nawet biorąc pod uwagę jedynie dane cyfrowe IDC (\textit{International Data Corporation}) estymowała, że rocznie w roku 2020 wytwarzanych będzie 35 zetabajtów danych \cite{tien2013big}.
+Ilość ta została osiągnięta już dwa lata wcześniej; W 2018 pojawiały się wzmianki mówiące, że już wtedy roczna ilość wytwarzanych danych osiągnęła 33 zetabajty \cite{Patrizio:2018}, a aktualnie IDC mówi o nawet 59 zetabajtach \cite{IDC:2020}.
+Mimo, że generowane są tak potężne zasoby danych, aby móc je wykorzystać trzeba do nich dotrzeć oraz odpowiednio przygotować.
+Bez tego ich analiza staje się niezwykle trudna lub niemal niemożliwa.
+
+Problem z nieustrukturyzowanymi danymi zauważalny był jeszcze długo zanim ilości generowanych danych sięgały ułamka dzisiejszego natłoku informacji \cite{blumberg2003problem}, a wraz z czasem problem ten się tylko nasila.
+Aby móc skutecznie wnioskować z użyciem danego zbioru informacji powinien on być ustrukturyzowany.
+Najpowszechniejszym przykładem ustrukturyzowanych zbiorów danych są zbiory danych (\textit{datasets}), najczęściej w postaci tabelarycznej.
+Istnieją archiwa przechowujące tego typu ustrukturyzowane zbiory danych i udostępniające je publicznie do wykorzystania najczęściej do celów badawczych.
+Jedno z nich to UC Irvin Machine Learning Repository (\url{https://archive.ics.uci.edu/}), gdzie poza samymi zbiorami danych znajdują się na ich metadane.
+
+Metadane zbioru danych to cechy opisujące sam zbiór, takie jak ilość rekordów (krotek, wierszy) czy atrybutów (kolumn).
+Oczywistym jest, że w użyteczności danego zbioru najistotniejsza jest jego semantyka, informacje w nim zawarte.
+Jednak syntaktyka również odgrywa swoją rolę; jednym z bardziej oczywistych przykładów może być ilość danych.
+W zdecydowanej większości im więcej danych zawartych jest w zbiorze tym lepiej, chociaż i od tej reguły pojawiają się wyjątki \cite{gasco2012does,boivin2006more}.
+Na jakość zbioru wpływ ma także obecność brakujących danych, mimo istnienia algorytmów pozwalających na ich uzupełnienie \cite{acuna2004treatment}.
+
+W tej pracy przeanalizuję metadane zbiorów danych i ich wpływ na popularność i użyteczność zbioru.
+Przedstawię również projekt badawczy analogiczny do mojego pozwalający na dokładniejszą i rozszerzoną metaanalizę, aby docelowo odnaleźć zależności syntaktyczne i pomóc w tworzeniu zbiorów danych bogatszych i łatwiejszych w analizie.
