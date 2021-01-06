@@ -4,6 +4,10 @@
 \usepackage[utf8]{inputenc}
 \usepackage{polski}
 \usepackage[polish]{babel}
+\usepackage{url}
+\usepackage{hyperref}
+
+\AtBeginDocument{\let\textlabel\label}
 
 \title{Metaanaliza użyteczności i popularności zbiorów danych}
 
@@ -28,15 +32,19 @@
 \maketitle                  % create a title page from the preamble info
 % \include{dedication}        % include a dedication.tex file
 % \include{acknowledgements}  % include an acknowledgements.tex file
-\include{abstract}          % include the abstract
+% \include{abstract}          % include the abstract
 
 \begin{romanpages}          % start roman page numbering
 	\tableofcontents            % generate and include a table of contents
 	% \listoffigures              % generate and include a list of figures
+	% \listoftables              % generate and include a list of tables
 \end{romanpages}            % end roman page numbering
 
 %now include the files of latex for each of the chapters etc
+\include{introduction}
 \include{chapter1}
+\include{chapter2}
+\include{chapter3}
 
 %now enable appendix numbering format and include any appendices
 %\appendix
@@ -48,7 +56,8 @@
 %uncomment next line to change bibliography name to references
 %\renewcommand{\bibname}{References}
 \bibliography{refs}        %use a bibtex bibliography file refs.bib
-\bibliographystyle{plain}  %use the plain bibliography style
+% \bibliographystyle{plain}  %use the plain bibliography style
+\bibliographystyle{unsrt}  %use the plain bibliography style ordered by citation
 
 \end{document}
 
