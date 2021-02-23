@@ -1,4 +1,3 @@
-from typing import Generator
 from bs4 import BeautifulSoup
 from requests import get
 
@@ -8,7 +7,8 @@ class UCIScraper:
 		self.verbose = verbose
 		# self.base_url = "https://archive.ics.uci.edu/ml/"
 		self.base_url = "https://web.archive.org/web/20071229225652/http://archive.ics.uci.edu/ml/"
-		self.links_location = "datasets.php"
+		# self.links_location = "datasets.php"
+		self.links_location = "datasets.html"
 		return
 
 	def log(self, msg: str, end="\n") -> None:
@@ -115,7 +115,7 @@ def generate_databases_file_from_linksfile(filename: str, links_filename: str) -
 	with open(filename, "w", encoding="utf-8") as out:
 		headers = scraper.get_headers()
 		print("\t".join(headers), file=out, flush=True)
-		for db in scraper.get_databases(links):
+		for db in scraper.get_databases_from_links(links):
 			print("\t".join(db.values()), file=out, flush=True)
 	print("Finished")
 
@@ -123,6 +123,6 @@ def generate_databases_file_from_linksfile(filename: str, links_filename: str) -
 
 
 if __name__ == "__main__":
-	# generate_links_file("links.tsv")
-	generate_databases_file("2007databases.tsv") # Links to databases are downloaded
-	# generate_databases_file_from_linksfile("databases.tsv", "fixed_links.tsv") # Links to databases are imported from file
+	generate_links_file("2007links.tsv")
+	# generate_databases_file("2007databases.tsv") # Links to databases are downloaded
+	generate_databases_file_from_linksfile("2007databases.tsv", "2007links.tsv") # Links to databases are imported from file
