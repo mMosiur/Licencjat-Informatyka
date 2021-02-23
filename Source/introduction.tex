@@ -1,25 +1,50 @@
+% Analiza danych o otaczającym nas świecie jest jedną z kluczowych metod postępu, zarówno naukowego jak i technologicznego.
+% Skuteczność takiej analizy jest jednak zależna od jakości dostępnych danych.
+
+% Problem z nieustrukturyzowanymi danymi zauważalny był jeszcze długo zanim ilości generowanych danych sięgały ułamka dzisiejszego natłoku informacji \cite{blumberg2003problem}, a wraz z czasem problem ten się tylko nasila.
+% Aby móc skutecznie wnioskować z użyciem danego zbioru informacji powinien on być ustrukturyzowany.
+% Najpowszechniejszym przykładem ustrukturyzowania są zbiory danych (\textit{datasets}), najczęściej w postaci tabelarycznej.
+% Często używane jest pojęcie \textit{baz danych} zamiennie ze zbiorami danych, jednak nie jest to prawidłowe.
+% Bazy danych to kontenery zawierające zarówno zbiory danych, jak i całą infrastrukturę służącą do interakcji i manipulacji danymi znajdującymi się wewnątrz.
+% Zawartych zbiorów często jest więcej niż jeden i są powiązane relacyjnie między sobą.
+% Istnieją archiwa przechowujące tego typu ustrukturyzowane zbiory danych i udostępniające je publicznie do wykorzystania najczęściej do celów badawczych.
+% Jedno z nich to UC Irvin Machine Learning Repository (\url{https://archive.ics.uci.edu/}), gdzie poza samymi zbiorami danych znajdują się na ich metadane.
+
+% Metadane zbioru danych to cechy opisujące sam zbiór, takie jak ilość rekordów (krotek, wierszy) czy atrybutów (kolumn).
+% Oczywistym jest, że w użyteczności danego zbioru najistotniejsza jest jego semantyka, informacje w nim zawarte.
+% Jednak syntaktyka również odgrywa swoją rolę; jednym z bardziej oczywistych przykładów może być ilość danych.
+% W zdecydowanej większości im więcej danych zawartych jest w zbiorze tym lepiej, chociaż i od tej reguły pojawiają się wyjątki \cite{gasco2012does,boivin2006more}.
+% Na jakość zbioru wpływ ma także obecność brakujących danych, mimo istnienia algorytmów pozwalających na ich uzupełnienie \cite{acuna2004treatment}.
+
+% W tej pracy przeanalizuję metadane zbiorów danych i ich wpływ na popularność i użyteczność zbioru.
+% Przedstawię również projekt badawczy analogiczny do mojego pozwalający na dokładniejszą i rozszerzoną metaanalizę, aby docelowo odnaleźć zależności syntaktyczne i pomóc w tworzeniu zbiorów danych bogatszych i łatwiejszych w analizie.
+
 \chapter{Wstęp}
 \label{ch:introduction}
 
-Analiza danych o otaczającym nas świecie jest jedną z kluczowych metod postępu, zarówno naukowego jak i technologicznego.
-Skuteczność takiej analizy jest jednak zależna od jakości dostępnych danych.
-Otacza nas niemal nieskończony zasób informacji o świecie.
-Nawet biorąc pod uwagę jedynie dane cyfrowe IDC (\textit{International Data Corporation}) estymowała, że rocznie w roku 2020 wytwarzanych będzie 35 zetabajtów danych \cite{tien2013big}.
-Ilość ta została osiągnięta już dwa lata wcześniej; W 2018 pojawiały się wzmianki mówiące, że już wtedy roczna ilość wytwarzanych danych osiągnęła 33 zetabajty \cite{Patrizio:2018}, a aktualnie IDC mówi o nawet 59 zetabajtach \cite{IDC:2020}.
-Mimo, że generowane są tak potężne zasoby danych, aby móc je wykorzystać trzeba do nich dotrzeć oraz odpowiednio przygotować.
-Bez tego ich analiza staje się niezwykle trudna lub niemal niemożliwa.
+Uczenie maszynowe jest fantastycznym narzędziem pozwalającym na wykonywanie zadań dotychczas niedostępnych tradycyjnym algorytmom poprzez wykorzystanie kluczowej zdolności uczenia się i samo-ulepszenia.
+Trzema najważniejszymi jego zastosowaniami są programy samo-przystosowujące, aplikacje, których nie można zaprogramować ręcznie ze względu na ich złożoność oraz użycie danych historycznych w celu ulepszenia przewidywania i podejmowania decyzji \cite{mitchell1997machine}.
+Żadne z tych zastosowań nie byłoby jednak możliwe bez dostępności odpowiednich danych.
 
-Problem z nieustrukturyzowanymi danymi zauważalny był jeszcze długo zanim ilości generowanych danych sięgały ułamka dzisiejszego natłoku informacji \cite{blumberg2003problem}, a wraz z czasem problem ten się tylko nasila.
-Aby móc skutecznie wnioskować z użyciem danego zbioru informacji powinien on być ustrukturyzowany.
-Najpowszechniejszym przykładem ustrukturyzowanych zbiorów danych są zbiory danych (\textit{datasets}), najczęściej w postaci tabelarycznej.
-Istnieją archiwa przechowujące tego typu ustrukturyzowane zbiory danych i udostępniające je publicznie do wykorzystania najczęściej do celów badawczych.
-Jedno z nich to UC Irvin Machine Learning Repository (\url{https://archive.ics.uci.edu/}), gdzie poza samymi zbiorami danych znajdują się na ich metadane.
+Dane i zbiory danych są kluczowym elementem systemów uczenia maszynowego.
+Potrzebne w konkretnym zastosowaniu dane można wygenerować lub zebrać osobiście, jednak istnieją dedykowane repozytoria pozwalające na wyszukanie i wykorzystanie interesujących zbiorów danych oraz dotację tych przez nas zebranych.
+Taka ogólnodostępność pozwala to na wielokrotne użycie tych samych danych w różnych zastosowaniach lub przez różne osoby.
+Jako przykład można podać znany wielu osobom zbiór odręcznie zapisanych cyfr MNIST.
+Autorzy zbioru zadbali o jego jakość, znormalizowali wielkość obecnych tam cyfr, zastosowali antyaliasing oraz wycentrowali powstałe obrazki względem ich środka ciężkości \cite{mnist}.
+Zabieg ten był niezwykle istotny, ponieważ pośrednio wpłynął na jakość wszystkich badań i analiz prowadzonych z użyciem tego zbioru danych.
 
-Metadane zbioru danych to cechy opisujące sam zbiór, takie jak ilość rekordów (krotek, wierszy) czy atrybutów (kolumn).
-Oczywistym jest, że w użyteczności danego zbioru najistotniejsza jest jego semantyka, informacje w nim zawarte.
-Jednak syntaktyka również odgrywa swoją rolę; jednym z bardziej oczywistych przykładów może być ilość danych.
-W zdecydowanej większości im więcej danych zawartych jest w zbiorze tym lepiej, chociaż i od tej reguły pojawiają się wyjątki \cite{gasco2012does,boivin2006more}.
-Na jakość zbioru wpływ ma także obecność brakujących danych, mimo istnienia algorytmów pozwalających na ich uzupełnienie \cite{acuna2004treatment}.
+Obrazuje to wagę, jaką powinno się przykładać do utrzymania jakości zbiorów danych.
+Ma tutaj bowiem zastosowanie popularna w informatyce zasada \textit{śmieci na wejściu - śmieci na wyjściu} (ang. \textit{"garbage in - garbage out"}).
+Mówi ona, że nawet w przypadku idealnej logiki programu, podanie na wejściu niepoprawnych danych wygeneruje niepoprawne wyniki.
+W tym kontekście uczenie systemu z wykorzystaniem danych o niskiej jakości spowoduje, że rezultaty generowane przez ten system również będą niskiej jakości czy nieprecyzyjne.
 
-W tej pracy przeanalizuję metadane zbiorów danych i ich wpływ na popularność i użyteczność zbioru.
-Przedstawię również projekt badawczy analogiczny do mojego pozwalający na dokładniejszą i rozszerzoną metaanalizę, aby docelowo odnaleźć zależności syntaktyczne i pomóc w tworzeniu zbiorów danych bogatszych i łatwiejszych w analizie.
+Przez taką jakość można rozumieć semantyczną zawartość zbioru, gdzie obecność błędnych danych w sposób oczywisty wpływa na działanie systemu.
+Jednak często pomijana jest \textit{syntaktyka zbioru danych}, czyli sposób ustrukturyzowania czy reprezentacji zawartych danych.
+Zmiany wprowadzone do zbioru MNIST przez jego autorów można,przynajmniej częściowo, uznać za zmiany tego właśnie typu.
+Ilość zawartych danych również jest wartością syntaktyczną i w sposób oczywisty wpływa na jakość uczenia.
+
+W kontekście zbiorów danych ich syntaktyka jest reprezentowana przez \textit{metadane}.
+Zależności i wpływ metadanych na jakość i użyteczność zbiorów danych nie był dotychczas dobrze przebadany.
+Dotychczas pojawiały się podobne metaanalizy, jednak w innych kontekstach, takich jak aplikowalność algorytmów \cite{brazdil1994characterizing}.
+
+W tej pracy przeanalizuję metadane w ręcznie zebranej bazie zbiorów danych, określając jednocześnie projekt przeprowadzenia w przyszłych pracach podobnej metaanalizy dla danych z poprawionymi metrykami.
