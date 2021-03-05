@@ -26,7 +26,7 @@ Tim O'Reilly zdefiniował w tym temacie trzy główne aspekty \cite{o2009web}:
 	\item \emph{Myślenie o syndykacji\footnotemark, nie koordynacji}.
 	Proste serwisy internetowe powinny syndykować dane, nie próbując kontrolować co się z nimi dzieje po drugiej stronie połączenia.
     \footnotetext{Syndykacja (sieciowa) to architektura bazująca na gromadzeniu przez klienta informacji z wielu serwerów zewnętrznych, gdzie rolą serwera jest zebranie danych z różnych źródeł. Przykładem technologii wykorzystującej syndykację jest RSS.}
-	\item \emph{Projektowanie dla "hackowalności" oraz reużywalności}.
+	\item \emph{Projektowanie dla ``hackowalności'' oraz reużywalności}.
 	Bariery reużywalności powinny być bardzo niskie.
 \end{enumerate}
 
@@ -61,7 +61,7 @@ for tr in tab.find_all("tr", recursive=False)[1:]:
 	...
 \end{lstlisting}
 Obiekt \texttt{BeautifulSoup} jest specjalną wersją obiektu \texttt{Tag}, która reprezentuje cały sparsowany dokument \cite{richardson2007beautiful}.
-Za pomocą \lstinline{soup.body.find\_all("table")[1]} odwołujemy się więc kolejno do znacznika \texttt{body} i jego zawartości (w postaci obiektu klasy \texttt{Tag}),  tablicy wszystkich znaczników \texttt{table} znajdujących się wewnątrz ciała i przypisujemy jej drugą wartość do nazwy \texttt{tab}.
+Za pomocą \lstinline{soup.body.find_all("table")[1]} odwołujemy się więc kolejno do znacznika \texttt{body} i jego zawartości (w postaci obiektu klasy \texttt{Tag}),  tablicy wszystkich znaczników \texttt{table} znajdujących się wewnątrz ciała i przypisujemy jej drugą wartość do nazwy \texttt{tab}.
 W następnej linijce przeszukujemy znaleziony \texttt{Tag} w celu odnalezienia znajdujących się w nim kolejnych znaczników \texttt{table}.
 Użycie parametru \lstinline{recursive=True}, mówi, że poszukiwanie zagnieżdżonych tabel powinno odbywać się w obecnym znaczniku a także rekursywnie w każdym niżej.
 W ten sposób odnajdujemy wszystkie tabele w aktualnym znaczniku, wybieramy z nich czwartą i przypisujemy do nazwy \texttt{tab}.
@@ -93,10 +93,11 @@ Jednak użycie tej biblioteki nie jest idealnym rozwiązaniem, gdy głównym cel
 \begin{figure}[ht]
 	\includegraphics[width=\textwidth]{AzureML_interface}
 	\caption{Interfejs programu Microsoft Azure Machine Learning Studio (classic)}
+	\label{fig:interface}
 \end{figure}
 
 Microsoft Azure Machine Learning Studio (dalej \emph{Azure ML}) to platforma stworzona przez firmę Microsoft oferująca interaktywną, wizualną przestrzeń roboczą przeznaczoną do tworzenia, testowania i wdrażania predykcyjnych modeli analitycznych.
-Jest to aplikacja webowa działająca w przeglądarce, na celu mająca tworzenie modeli uczenia maszynowego.
+Jest to aplikacja z interfejsem webowym działająca w przeglądarce (rysunek \ref{fig:interface}), na celu mająca tworzenie modeli uczenia maszynowego.
 Mimo to sprawdza się znakomicie jako narzędzie do samej analizy, pozwalając na stopniową obróbkę danych oraz ich wizualizację i przeglądanie na każdym kolejnym kroku.
 
 Platforma oferuje możliwość importu i eksportu \emph{zbiorów danych} do obszaru roboczego, w którym pracujemy.
@@ -109,6 +110,16 @@ W eksperymencie moduły (komponenty) połączone są ze sobą liniami wskazując
 
 \begin{figure}[ht]
 	\includegraphics[width=\textwidth]{AzureML_experiment.png}
-	\caption{Przykładowy schemat blokowy eksperymentu. Ten eksperyment przedstawia zastosowanie transformacji SQL na zbiorze danych wejściowych.}
+	\caption{Przykładowy schemat blokowy eksperymentu z interfejsem służącym do jego projektowania. Ten eksperyment przedstawia zastosowanie transformacji SQL na zbiorze danych wejściowych.}
+	\label{fig:experiment}
 \end{figure}
 
+Interfejs (rysunek \ref{fig:interface}) pozwala na intuicyjne, wizualne układanie i łączenie odpowiednich bloków z użyciem predefiniowanych modułów.
+Modułu są kategoryzowane z uwzględnieniem ich głównego przeznaczenia i sposobu działania.
+Można używać zbiorów danych zapisanych w serwisie, przekształcać je i modyfikować, wykorzystać i uczyć modele uczenia maszynowego oraz wykonywać obliczenia statystyczne.
+Poza modułami o ściśle określonym działaniu dostępne są również bloki pozwalające na wykonaniu na zbiorze danych zdefiniowanego przez użytkownika skryptu SQL (jak na rysunku \ref{fig:experiment}), skryptu napisanego w Pythonie oraz skryptu w języku R.
+Możliwość wykorzystania tych języków programowania w przetwarzaniu danych sprawia, że Azure ML staje się bardzo potężnym narzędziem, gdzie w razie potrzeby można zdefiniować niestandardowe i bardzo skomplikowane sposoby przetworzenia danych, jednocześnie nie tracąc na łatwości i intuicyjności wykonywania prostszych operacji za pomocą dostępnych modułów.
+
+Dodatkowo Azure ML posiada dwa bloki specjalne, ``web service input'' oraz ``web service output'', które pozwalają na utworzenie na bazie wykonywanego eksperymentu serwisu webowego wykonywanego w chmurze Azure.
+Umożliwia to udostępnienie wykonywanej obróbki danych do wykonania we wszelkich projektach deweloperskich z dostępem do internetu.
+Dane wejściowe wysyła się jako dane zapytania na serwer pod otrzymanym adresem wraz z kluczem API danego serwisu webowego, a dane wyjściowe otrzymuje się jako odpowiedź serwera na to zapytanie.
