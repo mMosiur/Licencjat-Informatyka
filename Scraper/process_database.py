@@ -1,26 +1,19 @@
-# To add a new cell, type '# %%'
-# To add a new markdown cell, type '# %% [markdown]'
-
-# %%
 import pandas as pd
-import sys
+from sys import argv
+
 input_path = "databases.tsv"
 output_path = "extended_" + input_path
-if len(sys.argv) > 1:
-    input_path = sys.argv[1]
+if len(argv) > 1:
+    input_path = argv[1]
     output_path = "extended_" + input_path
-if len(sys.argv) > 2:
-    output_path = sys.argv[2]
-if len(sys.argv) > 3:
-    print("Wrong number of arguments, use {} [input_path [output_path]]".format(
-        sys.argv[0]))
+if len(argv) > 2:
+    output_path = argv[2]
+if len(argv) > 3:
+    print("Wrong number of arguments, use {} [input_path [output_path]]".format(argv[0]))
     exit(1)
 
-# %%
 data = pd.read_csv(input_path, sep="\t")
 
-
-# %%
 # Add a column with the number of days a given data set is available
 days_available_label = "Days Available"
 if days_available_label not in data.columns:
@@ -31,8 +24,6 @@ if days_available_label not in data.columns:
                  data["Date Donated"].astype("datetime64")).dt.days
                 )
 
-
-# %%
 # Add a column with the number of web hits a given data set gets per one day of it being available
 number_of_web_hits_per_day_label = "Number of Web Hits per Day"
 if number_of_web_hits_per_day_label not in data.columns:
@@ -41,8 +32,6 @@ if number_of_web_hits_per_day_label not in data.columns:
                  data[days_available_label]).astype(str).replace("nan", "")
                 )
 
-
-# %%
 # Add a column with the number of citations a given data set gets per one day of it being available
 number_of_citations_per_day_label = "Number of Citations per Day"
 if number_of_citations_per_day_label not in data.columns:
@@ -51,5 +40,4 @@ if number_of_citations_per_day_label not in data.columns:
                  data[days_available_label]).astype(str).replace("nan", "")
                 )
 
-# %%
 data.to_csv(output_path, sep="\t", index=False, float_format='%.f')
