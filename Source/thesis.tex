@@ -6,6 +6,18 @@
 \usepackage[polish]{babel}
 \usepackage{url}
 \usepackage{hyperref}
+\usepackage[table,xcdraw]{xcolor}
+\hypersetup{
+	pdftitle={Metaanaliza zbiorów danych do zastosowań w uczeniu maszynowym},
+	pdfsubject={Praca licencjacka},
+	pdfauthor={Mateusz Piotr Moruś},
+	pdfkeywords={}
+}
+\usepackage{graphicx}
+\include{code_setup}
+
+
+\graphicspath{ {./Images/} }
 
 \AtBeginDocument{\let\textlabel\label}
 
@@ -36,7 +48,7 @@
 
 \begin{romanpages}          % start roman page numbering
 	\tableofcontents            % generate and include a table of contents
-	% \listoffigures              % generate and include a list of figures
+	\listoffigures              % generate and include a list of figures
 	% \listoftables              % generate and include a list of tables
 \end{romanpages}            % end roman page numbering
 
@@ -60,4 +72,3 @@
 \bibliographystyle{unsrt}  %use the plain bibliography style ordered by citation
 
 \end{document}
-
