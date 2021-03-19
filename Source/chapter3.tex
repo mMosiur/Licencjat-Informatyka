@@ -113,7 +113,7 @@ Przeprowadzone eksperymenty objęły podziałów ze względu na:
   \item Powiązane zadania (\emph{Associated Tasks})
         W tej kolumnie znajdowało się 9 unikatowych, niewykluczających się wzajemnie zadań.
         Przynależność do podzbioru określałem analogicznie jak w eksperymencie z charakterystykami zbioru danych, podobnie za granicę dolną przyjmując 10 elementów podzbioru.
-  
+
   \item Obszar (\emph{Area})
         Obszar cyberbezpieczeństwa (\emph{Computer Security}) zaliczyłem do obszaru informatyki, a finansowy (\emph{Financial}) do danych biznesowych.
         Te obszary znacznie rzadziej pojawiały się w uzyskanych danych (kolejno jednorazowo i 5 razy) i ich analiza nie była możliwa a dostępne były bliskie im szersze obszary.
@@ -151,13 +151,13 @@ Nie można więc w tym wypadku wyciągnąć definitywnych konkluzji dotyczących
 \end{center}
 
 Znacznie więcej informacji przynosi analiza zbiorów danych przy podziale atrybutów kategorialnych.
-Analiza charakterystyk zbiorów danych (rysunek \ref{fig:datasetcharacteristics}) pokazuje, że najbardziej użyteczne zbiory danych zawierają szeregi czasowe.
+Analiza charakterystyk zbiorów danych (rysunek \ref{fig:datasetcharacteristics}) pokazuje, że najbardziej użyteczne zbiory danych zawierają szeregi czasowe (\emph{Time-Series}).
 Co ciekawe, dane tekstowe są raczej mniej popularne.
 Z kolei zbiory zawierające dane domenowe (\emph{Domain-Theory}) otrzymują wyraźnie najmniej zainteresowania.
 Dane jednowymiarowe są również popularniejsze niż wielowymiarowe, chociaż tutaj różnica jest znacznie mniejsza.
 
 \begin{figure}[ht]
-  \includegraphics[width=\textwidth]{DataSetCharacteristics.png}
+  \includegraphics[width=\textwidth]{DataSetCharacteristics}
   \caption{Analiza mediany i średniej liczby dziennych wyświetleń zbiorów danych względem ich charakterystyki}
   \label{fig:datasetcharacteristics}
 \end{figure}
@@ -167,7 +167,7 @@ Zawieranie liczb całkowitych jest blisko mediany ogólnej, co mówi, że ogóln
 Dane kategorialne bowiem znacznie odbiegają od reszty i są zdecydowanie mniej popularne.
 
 \begin{figure}[ht]
-  \includegraphics[width=\textwidth]{AttributeCharacteristics.png}
+  \includegraphics[width=\textwidth]{AttributeCharacteristics}
   \caption{Analiza mediany i średniej liczby dziennych wyświetleń zbiorów danych względem charakterystyki zawartych w nich danych}
   \label{fig:attributecharacteristics}
 \end{figure}
@@ -177,7 +177,7 @@ Najpopularniejsze są zbiory danych przeznaczone do przeprowadzania na nich regr
 Zbiory powiązane z klasyfikacją (\emph{Classification}) nie odbiegają od normy, a najmniejszym zainteresowaniem cieszą się te związane z analizą przyczynową (\emph{Causal-Discovery}).
 
 \begin{figure}[ht]
-  \includegraphics[width=\textwidth]{AssociatedTasks.png}
+  \includegraphics[width=\textwidth]{AssociatedTasks}
   \caption{Analiza mediany i średniej liczby dziennych wyświetleń zbiorów danych względem powiązanych z nimi zadań}
   \label{fig:associatedtasks}
 \end{figure}
@@ -194,10 +194,31 @@ Jedyną grupą wyróżniającą się z innych poza biznesową jest fizyczna.
 Są one mniej popularne zarówno patrząc na średnią, jak i medianę podzbioru.
 
 \begin{figure}[ht]
-  \includegraphics[width=\textwidth]{Area.png}
+  \includegraphics[width=\textwidth]{Area}
   \caption{Analiza mediany i średniej liczby dziennych wyświetleń zbiorów danych względem ich dziedziny}
   \label{fig:area}
 \end{figure}
 
-\section{Dyskusja}
+Ciekawą sytuację przedstawia analiza brakujących danych przedstawiona na rysunku \ref{fig:missingvalues}.
+Sugeruje ona, że zbiory posiadające brakujące dane przyciągają więcej osób niż te, które ich nie mają.
+Jest to sprzeczne z tym, czego można by się spodziewać zarówno intuicyjnie, jak i biorąc pod uwagę ocenę jakości zbiorów danych.
+Można to jednak wytłumaczyć biorąc pod uwagę inne cechy zbiorów.
+Biorąc pod uwagę szeregi czasowe, najpopularniejszy rodzaj danych, 27 z 32 rekordów zawierających na ten temat informacje posiada brakujące dane (\(~84\%\).
+Z kolei najmniej popularne dane domenowe wykazują odwrotną tendencję, gdzie \(75\%\) z nich nie zawiera brakujących danych.
 
+Podobna sytuacja ma miejsce gdy weźmiemy pod uwagę rodzaj atrybutów.
+Zdecydowanie najpopularniejsze zbiory zawierające liczby rzeczywiste posiadają brakujące dane w \(~72\%\) przypadków (71 z 98), a najmniej pożądane dane kategorialne odwrotnie, nie posiadają brakujących danych w \(55\%\) przypadków (40 z 73).
+Najpopularniejszy rodzaj docelowego przeznaczenia, regresja, także wykazuje ponadprzeciętną zawartość brakujących danych (34 z 39, czyli \(~87\%\)).
+
+Jak widać to popularniejsze kategorie danych mają dużą zawartość brakujących danych, natomiast mniej popularne mają ich znacznie mniej.
+Wynikać to może z natury charakterystyk popularniejszych zbiorów danych, które z założenia posiadają więcej braków, jednak są one mało istotne z perspektywy użyteczności.
+Jest również możliwość, że istniejące algorytmy uzupełniania brakujących danych takie jak MICE czy PCA są na tyle dobre, że nieduże ubytki nie wpływają na jakoś uczenia czy analizy.
+Tłumaczyłoby to w szczególności różnicę między wpływem brakujących danych na liczby rzeczywiste, a dane kategorialne, jako, że dane liczbowe można uzupełnić wspomnianymi wcześniej metodami.
+
+\begin{figure}[ht]
+  \includegraphics[width=\textwidth]{MissingValues}
+  \caption{Analiza mediany i średniej liczby dziennych wyświetleń zbiorów danych względem brakujących danych}
+  \label{fig:missingvalues}
+\end{figure}
+
+\section{Dyskusja}
