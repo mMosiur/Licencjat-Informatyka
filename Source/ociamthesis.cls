@@ -65,7 +65,7 @@
 {
 % Latest Logo, Square version (the default!)
 % you need an oxlogo.eps or oxlogo.pdf file as appropriate
-\def\logo{{\includegraphics[height=32mm]{Logo/UMCS_rozsz_12G_PL_P431}}}
+\def\logo{{\includegraphics[height=32mm]{Images/Logo/UMCS_rozsz_12G_PL_P431}}}
 }{}
 
 %
