@@ -27,6 +27,9 @@ jobs:
       
       - name: Go to Source folder
         run: cd Source
+      
+      - name: ls
+        run: ls
         
       - name: LaTeX compilation
         run: latexmk -synctex=1 -interaction=nonstopmode -file-line-error -pdf thesis.tex
