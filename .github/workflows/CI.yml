@@ -24,12 +24,8 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
-      
-      - name: Go to Source folder
-        run: cd Source
-      
-      - name: ls
-        run: ls
-        
+
       - name: LaTeX compilation
-        run: latexmk -synctex=1 -interaction=nonstopmode -file-line-error -pdf thesis.tex
+        run: |
+          cd Source
+          latexmk -synctex=1 -interaction=nonstopmode -file-line-error -pdf thesis.tex
