@@ -1,10 +1,6 @@
-# This is a basic workflow to help you get started with Actions
-
 name: build
 
-# Controls when the action will run. 
 on:
-  # Triggers the workflow on push or pull request events but only for the master branch
   pull_request:
     branches: [ main ]
 
@@ -15,8 +11,6 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - name: Go to Source folder
-        run: cd $GITHUB_WORKSPACE/Source
-          
       - name: Compile LaTeX source
         run: latexmk -synctex=1 -interaction=nonstopmode -file-line-error -pdf thesis.tex
+        working-directory: $GITHUB_WORKSPACE/Source
