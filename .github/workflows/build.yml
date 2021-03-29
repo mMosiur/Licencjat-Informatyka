@@ -13,4 +13,4 @@ jobs:
 
       - name: Compile LaTeX source
         run: latexmk -synctex=1 -interaction=nonstopmode -file-line-error -pdf thesis.tex
-        working-directory: $GITHUB_WORKSPACE/Source
+        working-directory: ./Source
