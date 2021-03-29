@@ -28,5 +28,74 @@ Bez tego ich analiza staje się niezwykle trudna lub niemal niemożliwa.
 
 	\subsection{Analiza danych}
 
-\section{Analiza metadanych}
+	Otrzymane i przetworzone dane zawierają w sobie potencjalną wartość, która jednak bez dalszej obróbki nie jest w żaden sposób pożyteczna.
+	Bardzo znana i popularna piramida DIWM (dane, informacja, wiedza, mądrość) \cite{rowley2007wisdom}, nazywana także hierarchią wiedzy, dobrze obrazuje ten koncept.
+	W tej piramidzie dane są najniższym stopniem, podstawą dla wszystkich pozostałych, najszersza ze względu na swój brak przetworzenia.
+	Dane są definiowane jako ilościowy lub jakościowy zbiór symboli.
+	Informacja natomiast to zbiór znaczących znaków, które mają możliwość wytworzenia wiedzy \cite{zins2007conceptual}.
+	Idąc za tym konceptualnym podziałem, zbiory danych, które zostały poddane obróbce czy przetworzeniu zawierają nie tylko dane, ale także informacje.
+	Poddanie takiego zbioru analizie można w uproszczeniu opisać jako proces zamiany tej informacji w wiedzę.
+	W rzeczywistości, trzymając się modelu piramidy DIWM analiza będzie odpowiednikiem przetworzenia dużej ilości informacji w mały podzbiór informacji, która będzie znacznie bogatsza znaczeniowo.
+	Jednak biorąc pod uwagę, że z samego założenia przetwarzania danych ten podzbiór ma docelowo być zinterpretowany i zamieniony w wiedzę, uproszczenie to nie odbiega bardzo od rzeczywistości.
+
+	Można zdefiniować dwa główne rodzaje rozróżnienia analiz danych: analizy wyjaśniające/potwierdzające, a także analizy deskryptywne/indukcyjne \cite{berthold2003intelligent}.
+	Pierwsze rozróżnienie jest dość oczywiste.
+	Analizę danych można przeprowadzać w celu wyjaśnienia zaistnienia pewnego zjawiska lub aby potwierdzić jego istnienie.
+	Drugie nie jest aż tak intuicyjne, chociaż nadal uzasadnione.
+	Analizy deskryptywne, inaczej nazywane podsumowującymi mają na celu znalezienia prawidłowości i cech o całości zebranych danych, na przykład jaki jest odsetek kobiet w populacji.
+	Natomiast analizy indukcyjne próbują wyciągnąć wnioski generalizujące zaobserwowane trendy, na przykład jaki będzie prawdopodobny odsetek kobiet w populacji w przyszłym roku.
+	Tego typu analiza jest szczególnie przydatna, kiedy nie ma dostępnych danych na temat całości populacji czy dziedziny danych zawartych w zbiorze, co ma miejsce w przeważającej części przypadków.
+	Wtedy za pomocą analizy indukcyjnej wyciąga się wnioski generalizując tendencje podzbioru populacji czy dziedziny na cały zbiór.
+
+\section{Metaanaliza}
 	\subsection{Metadane}
+
+	Metadane to dane, które dostarczają informacji na temat innych danych.
+	Zobrazować to można wysłaniem wiadomości na portalu społecznościowym, który zapisuje w serwisie nie tylko treść wiadomości, ale także inne informacje o niej: datę i godzinę wysłania, autora, adresata, status dostarczenia czy odczytania.
+
+	Wyróżnia się cztery główne grupy określane jako metadane \cite{riley2017understanding}:
+
+	\begin{itemize}
+		\item Metadane opisowe (\emph{Descriptive metadata})
+
+		Informacje na temat zawartości zasobu służące jego lepszemu zrozumieniu.
+
+		\item Metadane administracyjne (\emph{Administrative metadata})
+
+		Zawiera w sobie metadane techniczne służące dekodowaniu czy renderowaniu zawartych danych, a także metadane prawne do oznaczenia własności intelektualnej.
+
+		\item Metadane strukturalne (\emph{Structural metadata})
+
+		Opisuje wzajemne relacje między częściami zasobu.
+
+		\item Języki znacznikowe (\emph{Markup languages})
+
+		Języki mieszające zawartość oraz metadane w całość.
+		Przykładem takiego języka jest Markdown służący do pisania sformatowanego tekstu.
+
+	\end{itemize}
+
+	Wspomniane informacje o wiadomości na portalu społecznościowym zaliczyć można do \emph{metadanych opisowych}.
+	Z kolei treść zawarta w tagu \lstinline{<meta charset="UTF-8">} używany w języku HTML zaliczymy do \emph{metadanych technicznych}, służy bowiem rozpoznaniu kodowania, które powinno zostać użyte przy odczytywaniu zawartości.
+	Co więcej, sam HTML podpada pod kategorię \emph{języka znacznikowego}.
+
+	W odniesieniu do zbiorów danych metadanymi technicznymi będzie na przykład informacja, jaki jest używany separator: przecinek, tabulator czy inny, mniej popularny znak.
+	Natomiast szerzej niż się pierwotnie wydaje można objąć termin \emph{metadanych opisowych}.
+	Zaliczyć bowiem możemy tutaj informacje opisujące rodzaj danych zawartych w zbiorze, jak i samą jego strukturę.
+	Do przykładów takich informacji możemy zaliczyć liczbę zawartych rekordów czy opisanych atrybutów, dziedzina, typ danych, przeznaczenie zbioru oraz wiele innych danych nie wynikających bezpośrednio z zawartości, ale opisujących ją.
+
+	Dane takie, jak się okazuje, mogą pozwolić na wyciągnięcie z ich analizy wniosków, do których ciężej trafić innymi sposobami.
+
+	\subsection{Analiza metadanych}
+
+	Metaanaliza jest pojęciem szerszym niż analiza metadanych.
+	Pierwsze zajmuje się także badaniem, porównaniem i agregacją wyników różnych badań \cite{rosenthal2002meta}, gdzie drugie opiera się wyłącznie na analizie czystych danych meta-poziomu.
+
+	Metadane z założenia nie niosą tak wiele wartości semantycznej, co dane zawarte w zbiorze.
+	Jednak dotychczas przeprowadzanie metaanalizy sugerują, że otrzymane w ten sposób wyniki może prowadzić do istotnych wniosków czy konkluzji.
+	Badano, czy owe metadane pozwalają na przewidzenie skuteczności działania algorytmów klasyfikujących.
+	Wykorzystane dane zawierały liczbę rekordów w zbiorze, liczbę atrybutów, proporcje danych binarnych, kategorialnych, nieznanych oraz parę bardziej złożonych miar statystycznych.
+
+	Jak w każdej analizie, po zebraniu informacji w postaci rekordów danych istotne jest aby zestawić je ze sobą na bazie porównania przypisanej im metryki.
+	Wspomniane wcześniej badanie za metrykę obrało znormalizowany błąd generowany przez konkretny algorytm przy kategoryzacji konkretnego zbioru.
+	
