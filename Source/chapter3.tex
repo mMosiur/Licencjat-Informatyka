@@ -10,39 +10,39 @@ Serwis ten posiada informacje na temat wielu przekazanych im zbiorów danych, re
 Cechy te to:
 
 \begin{itemize}
-  \item Cechy zbioru danych (\emph{Data Set Characteristics})
+  \item Cechy zbioru danych (\emph{Data Set Characteristics}) \\
         Zawiera informacje o charakterystyce danego zbioru danych.
         Pojawia się tam, czy zbiór jest wielowymiarowy (\emph{Multivariate}), czy jednowymiarowy (\emph{Univariate}) \footnotemark.
         \footnotetext{Statystyka wielowymiarowa zajmuje się badaniem i obserwacją wielu zmiennych wyjścia (metryk) na raz. Statystyka jednowymiarowa bada wyłącznie zachowanie jednej zmiennej w zbiorze.}
         Zawarte jest również, czy zbiór ma charakter tekstowy \emph{Text}, czy może są to dane szeregu czasowego (\emph{Time-Series}).
 
-  \item Cechy atrybutów (\emph{Attribute Characteristics})
+  \item Cechy atrybutów (\emph{Attribute Characteristics}) \\
         Zawiera informacje na temat typów atrybutów danych w zbiorze.
         Sprecyzowane są trzy wartości: zawartość danych kategorialnych (\emph{Categorical}), liczb całkowitych (\emph{Integer}) oraz rzeczywistych (\emph{Real}).
 
-  \item Powiązane zadania (\emph{Associated Tasks})
+  \item Powiązane zadania (\emph{Associated Tasks}) \\
         Zawiera informacje na temat głównych zadań, dla których dany zbiór jest przeznaczony.
         Może być to klasyfikacja (\emph{Classification}), regresja (\emph{Regression}) czy odnajdywanie powiązań przyczynowych (\emph{Causal-Discovery}).
 
-  \item Liczba instancji (\emph{Number of Instances})
+  \item Liczba instancji (\emph{Number of Instances}) \\
         Ilość krotek (rekordów) danych zawartych w zbiorze.
         Jeśli zbiór ma postać tabelaryczną, będzie to ilość zawartych w nim wierszy.
 
-  \item Liczba atrybutów (\emph{Number of Attributes})
+  \item Liczba atrybutów (\emph{Number of Attributes}) \\
         Ilość cech, na temat których w rekordach zawarte są dane.
         Jeśli zbiór ma postać tabelaryczną, będzie to ilość zawartych w nim kolumn.
 
-  \item Brakujące wartości (\emph{Missing Values})
+  \item Brakujące wartości (\emph{Missing Values}) \\
         Zawiera informację, czy w zbiorze danych pojawiają się brakujące wartości.
 
-  \item Obszar (\emph{Area})
+  \item Obszar (\emph{Area}) \\
         Zawiera informację na temat przynależności zbioru danych do jednej z ogólnie pojętych dziedzin tematycznych.
         Najczęściej pojawiające się tu wartości to dziedzina społeczna (\emph{Social}), fizyka (\emph{Physical}), informatyka (\emph{Computer}) oraz życie (\emph{Life}).
 
-  \item Data dotacji (\emph{Date Donated})
+  \item Data dotacji (\emph{Date Donated}) \\
         Data przekazania zbioru danych przez jego właściciela czy autora administracji repozytorium UCI.
 
-  \item Ilość wyświetleń (\emph{Number of Web Hits})
+  \item Ilość wyświetleń (\emph{Number of Web Hits}) \\
         Liczba wszystkich osób odwiedzających stronę zawierającą zbiór danych.
 
 \end{itemize}
@@ -97,24 +97,24 @@ W każdym z nich zbiór został podzielony na kilka podzbiorów poprzez rozbicie
 Przeprowadzone eksperymenty objęły podziałów ze względu na:
 
 \begin{itemize}
-  \item Charakterystykę zbioru danych (\emph{Data Set Characteristics})
+  \item Charakterystykę zbioru danych (\emph{Data Set Characteristics}) \\
         W tej kolumnie znajdowało się 12 unikatowych charakterystyk.
         Każdy rekord mógł posiadał wiele z nich oddzielonych przecinkami.
         Przynależność do podzbioru określałem poprzez obecność słowa kluczowego w tym atrybucie.
         Za granicę przyjęcia podzbioru do analizy ustaliłem, że musi posiadać przynajmniej 10 elementów.
 
-  \item Charakterystykę atrybutów zbioru (\emph{Attribute Characteristics})
+  \item Charakterystykę atrybutów zbioru (\emph{Attribute Characteristics}) \\
         W tej kolumnie znajdowały się dokładnie 3 unikatowe charakterystyki niewykluczające się wzajemnie.
         Stąd powstały 3 podzbiory na podobnej zasadzie jak wyżej.
 
-  \item Obecność brakujących danych (\emph{Missing Values})
+  \item Obecność brakujących danych (\emph{Missing Values}) \\
         Tutaj utworzone zostały dokładnie dwa podzbiory: zbiory zawierające brakujące dane oraz te ich nie zawierające.
 
-  \item Powiązane zadania (\emph{Associated Tasks})
+  \item Powiązane zadania (\emph{Associated Tasks}) \\
         W tej kolumnie znajdowało się 9 unikatowych, niewykluczających się wzajemnie zadań.
         Przynależność do podzbioru określałem analogicznie jak w eksperymencie z charakterystykami zbioru danych, podobnie za granicę dolną przyjmując 10 elementów podzbioru.
 
-  \item Obszar (\emph{Area})
+  \item Obszar (\emph{Area}) \\
         Obszar cyberbezpieczeństwa (\emph{Computer Security}) zaliczyłem do obszaru informatyki, a finansowy (\emph{Financial}) do danych biznesowych.
         Te obszary znacznie rzadziej pojawiały się w uzyskanych danych (kolejno jednorazowo i 5 razy) i ich analiza nie była możliwa a dostępne były bliskie im szersze obszary.
         Obszar gier (\emph{Games}) również był ubogi (10 instancji) jednak nie przypasował się żadnej z większych dziedzin, stąd wykluczyłem go z analizy.
