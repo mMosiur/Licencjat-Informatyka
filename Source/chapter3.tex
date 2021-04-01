@@ -121,7 +121,9 @@ Przeprowadzone eksperymenty objęły podziałów ze względu na:
 
 \end{itemize}
 
-% Mediana lepsza niż średnia
+W badaniu posługuję się przede wszystkim medianą jako miarą tendencji centralnej analizowanych podzbiorów.
+Mediana jest znacznie odporniejsza na wysoki współczynnik skośności danych oraz elementy odstające.
+W przypadku, kiedy mediana i średnia przedstawiają inny obraz podsumowujący dane zwracam na to uwagę i podkreślam, dlaczego tak się dzieje.
 
 \section{Wyniki}
 
@@ -157,7 +159,7 @@ Z kolei zbiory zawierające dane domenowe (\emph{Domain-Theory}) otrzymują wyra
 Dane jednowymiarowe są również popularniejsze niż wielowymiarowe, chociaż tutaj różnica jest znacznie mniejsza.
 
 \begin{figure}[ht]
-  \includegraphics[width=\textwidth]{DataSetCharacteristics}
+  \includegraphics[width=\textwidth]{DataSetCharacteristicsPlot}
   \caption{Analiza mediany liczby dziennych wyświetleń zbiorów danych względem ich charakterystyki}
   \label{fig:datasetcharacteristics}
 \end{figure}
@@ -167,7 +169,7 @@ Zawieranie liczb całkowitych jest blisko mediany ogólnej, co mówi, że ogóln
 Dane kategorialne bowiem znacznie odbiegają od reszty i są zdecydowanie mniej popularne.
 
 \begin{figure}[ht]
-  \includegraphics[width=\textwidth]{AttributeCharacteristics}
+  \includegraphics[width=\textwidth]{AttributeCharacteristicsPlot}
   \caption{Analiza mediany liczby dziennych wyświetleń zbiorów danych względem charakterystyki zawartych w nich danych}
   \label{fig:attributecharacteristics}
 \end{figure}
@@ -177,7 +179,7 @@ Najpopularniejsze są zbiory danych przeznaczone do przeprowadzania na nich regr
 Zbiory powiązane z klasyfikacją (\emph{Classification}) nie odbiegają od normy, a najmniejszym zainteresowaniem cieszą się te związane z analizą przyczynową (\emph{Causal-Discovery}).
 
 \begin{figure}[ht]
-  \includegraphics[width=\textwidth]{AssociatedTasks}
+  \includegraphics[width=\textwidth]{AssociatedTasksPlot}
   \caption{Analiza mediany liczby dziennych wyświetleń zbiorów danych względem powiązanych z nimi zadań}
   \label{fig:associatedtasks}
 \end{figure}
@@ -194,7 +196,7 @@ Jedyną grupą wyróżniającą się z innych poza biznesową jest fizyczna.
 Są one mniej popularne zarówno patrząc na średnią, jak i medianę podzbioru.
 
 \begin{figure}[ht]
-  \includegraphics[width=\textwidth]{Area}
+  \includegraphics[width=\textwidth]{AreaPlot}
   \caption{Analiza mediany i średniej liczby dziennych wyświetleń zbiorów danych względem ich dziedziny}
   \label{fig:area}
 \end{figure}
@@ -216,7 +218,7 @@ Jest również możliwość, że istniejące algorytmy uzupełniania brakującyc
 Tłumaczyłoby to w szczególności różnicę między wpływem brakujących danych na liczby rzeczywiste, a dane kategorialne, jako, że dane liczbowe można uzupełnić wspomnianymi wcześniej metodami.
 
 \begin{figure}[ht]
-  \includegraphics[width=\textwidth]{MissingValues}
+  \includegraphics[width=\textwidth]{MissingValuesPlot}
   \caption{Analiza mediany liczby dziennych wyświetleń zbiorów danych względem brakujących danych}
   \label{fig:missingvalues}
 \end{figure}
