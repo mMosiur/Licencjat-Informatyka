@@ -20,9 +20,6 @@
 
 \raggedbottom
 
-%define the default submitted text
-\newcommand{\submittedtext}{{Praca dyplomowa}}
-
 %
 % DECLARATIONS
 %
@@ -33,9 +30,12 @@
 \def\degreedate#1{\gdef\@degreedate{#1}}
 % The full (unabbreviated) name of the degree
 \def\degree#1{\gdef\@degree{#1}}
-% The name of your Oxford college (e.g. Christ Church, Pembroke)
+% The name of your university college (e.g. Christ Church, Pembroke)
 \def\college#1{\gdef\@college{#1}}
-
+% The name of your univesity
+\def\university#1{\gdef\@university{#1}}
+% The name of the type of this paper
+\def\submittedtext#1{\gdef\@submittedtext{#1}}
 
 %
 % Setup choosen crest/logo
@@ -106,9 +106,9 @@
 {\large \vspace*{1ex}
     {{\@college} \par}
 \vspace*{1ex}
-    {Uniwersytet Marii Curie-Skłodowskiej w Lublinie \par}
+    {\@university \par}
 \vspace*{25mm}
-    {{\submittedtext} \par}
+    {{\@submittedtext} \par}
 \vspace*{1ex}
     {\it {\@degree} \par}
 \vspace*{2ex}
@@ -235,7 +235,7 @@
     {{\@college} \par}
     {Uniwersytet Marii Curie-Skłodowskiej w Lublinie \par}
 \vspace*{1ex}
-    {{\it \submittedtext} \par}
+    {{\it \@submittedtext} \par}
     {\it {\@degree} \par}
 \vspace*{2ex}
     {\@degreedate}}

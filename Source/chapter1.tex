@@ -56,23 +56,18 @@ Bez tego ich analiza staje się niezwykle trudna lub niemal niemożliwa.
 	Wyróżnia się cztery główne grupy określane jako metadane \cite{riley2017understanding}:
 
 	\begin{itemize}
-		\item Metadane opisowe (\emph{Descriptive metadata})
-
+		\item Metadane opisowe (\emph{Descriptive metadata}) \\
 		Informacje na temat zawartości zasobu służące jego lepszemu zrozumieniu.
 
-		\item Metadane administracyjne (\emph{Administrative metadata})
-
+		\item Metadane administracyjne (\emph{Administrative metadata}) \\
 		Zawiera w sobie metadane techniczne służące dekodowaniu czy renderowaniu zawartych danych, a także metadane prawne do oznaczenia własności intelektualnej.
 
-		\item Metadane strukturalne (\emph{Structural metadata})
-
+		\item Metadane strukturalne (\emph{Structural metadata}) \\
 		Opisuje wzajemne relacje między częściami zasobu.
 
-		\item Języki znacznikowe (\emph{Markup languages})
-
+		\item Języki znacznikowe (\emph{Markup languages}) \\
 		Języki mieszające zawartość oraz metadane w całość.
 		Przykładem takiego języka jest Markdown służący do pisania sformatowanego tekstu.
-
 	\end{itemize}
 
 	Wspomniane informacje o wiadomości na portalu społecznościowym zaliczyć można do \emph{metadanych opisowych}.
@@ -92,10 +87,34 @@ Bez tego ich analiza staje się niezwykle trudna lub niemal niemożliwa.
 	Pierwsze zajmuje się także badaniem, porównaniem i agregacją wyników różnych badań \cite{rosenthal2002meta}, gdzie drugie opiera się wyłącznie na analizie czystych danych meta-poziomu.
 
 	Metadane z założenia nie niosą tak wiele wartości semantycznej, co dane zawarte w zbiorze.
-	Jednak dotychczas przeprowadzanie metaanalizy sugerują, że otrzymane w ten sposób wyniki może prowadzić do istotnych wniosków czy konkluzji.
+	Jednak dotychczas przeprowadzane metaanalizy sugerują, że otrzymane w ten sposób wyniki może prowadzić do istotnych wniosków czy konkluzji.
 	Badano, czy owe metadane pozwalają na przewidzenie skuteczności działania algorytmów klasyfikujących.
 	Wykorzystane dane zawierały liczbę rekordów w zbiorze, liczbę atrybutów, proporcje danych binarnych, kategorialnych, nieznanych oraz parę bardziej złożonych miar statystycznych.
 
 	Jak w każdej analizie, po zebraniu informacji w postaci rekordów danych istotne jest aby zestawić je ze sobą na bazie porównania przypisanej im metryki.
-	Wspomniane wcześniej badanie za metrykę obrało znormalizowany błąd generowany przez konkretny algorytm przy kategoryzacji konkretnego zbioru.
-	
+	Wspomniane wcześniej badanie \cite{brazdil1994characterizing} za metrykę obrało znormalizowany błąd generowany przez konkretny algorytm przy kategoryzacji konkretnego zbioru.
+	Jeśli analiza opiera się na tylko jednym atrybucie przeznaczonym do oceny nazywa się ją \emph{jednowymiarową}, a gdy jest ich więcej - \emph{wielowymiarową}.
+
+	W innym badaniu przeprowadzono analizę problemów związanych z metadanymi \cite{yasser2011analysis}.
+	Obiektem analizy tutaj są więc same metadane oraz ich jakość.
+	Wyróżniono tam ich pięć kategorii:
+
+	\begin{enumerate}
+		\item Niepoprawne wartości \\
+		Dane są przypisane zgodnie ze semantyką schematu, ale są niepoprawne.
+
+		\item Niepoprawne elementy \\
+		Dane są przypisane niezgodnie ze semantyką schematu.
+
+		\item Brakujące informacje \\
+		Kluczowe dla systemu dane są niedostępne.
+
+		\item Utrata informacji \\
+		Wartość elementu jest przypisana do elementu, którego semantyka jest ogólniejsza.
+
+		\item Niekonsekwentna reprezentacja danych \\
+		Wartości są zapisywane w różnych formatach.
+	\end{enumerate}
+
+	Tylko jeden z tych problemów - brakujące dane - jest stosunkowo prosty do wykrycia.
+	Pozostałe często są praktycznie niewykrywalne lub wymagają recenzji specjalisty, osoby zaznajomionej z dziedziną albo głębszej analizy.
