@@ -95,6 +95,7 @@ Dodatkowo wartość bezwzględna współczynnika opisuje, jak silna jest zależn
 
 5 pozostałych eksperymentów badało wpływ danych kategorialnych na obraną metrykę zbioru.
 W każdym z nich zbiór został podzielony na kilka podzbiorów poprzez rozbicie jednej z kolumn kategorialnych na podkategorie, a następnie wyliczenie podstawowych statystyk numerycznych kolumny z metryką każdego z nich.
+Następnie na podstawie tych statystyk są wygenerowane wykresy słupkowe.
 Przeprowadzone eksperymenty objęły podziałów ze względu na:
 
 \begin{itemize}
@@ -124,7 +125,7 @@ Przeprowadzone eksperymenty objęły podziałów ze względu na:
 
 W badaniu posługuję się przede wszystkim medianą jako miarą tendencji centralnej analizowanych podzbiorów.
 Mediana jest znacznie odporniejsza na wysoki współczynnik skośności danych oraz elementy odstające.
-W przypadku, kiedy mediana i średnia przedstawiają inny obraz podsumowujący dane zwracam na to uwagę i podkreślam, dlaczego tak się dzieje.
+Na wykresach znajdą się słupki średniej (pomarańczowe) oraz mediany (jasne niebieskie) dziennych wyświetleń dla poszczególnych podzbiorów oraz dwie poziome linie będące odpowiednio ogólną średnią (czerwona) i ogólną medianą (niebieska) dla całego zbioru.
 
 \section{Wyniki}
 
@@ -153,7 +154,13 @@ Można z tego wyciągnąć wniosek, że ani ilość atrybutów, ani ilość inst
   \end{table}
 \end{center}
 
-Znacznie więcej informacji przynosi analiza zbiorów danych przy podziale atrybutów kategorialnych.
+Zanim zaczniemy wyjaśniać wyniki poszczególnych eksperymentów warto zaznaczyć i omówić ogólny trend, który się pojawił.
+Konsekwentnie przy każdym podziale ze względu na różne charakterystyki i cechy, każdy analizowany podzbiór przejawiał identyczną cechę.
+Wszędzie mediana jest dużo niższa od średniej, uśredniając jest to około \( ~ 35\% \).
+Pokazuje to wysoką skośność zbioru.
+Jest to sytuacja podobna, jak kiedy osoba niewiarygodnie bogata wprowadza się do podmiejskiej dzielnicy i w pojedynkę mocno zawyża średnią kapitału nie zmieniając przy tym szczególnie mediany.
+Tutaj mała część zbiorów posiada liczbę wyświetleń znacznie większą i odstającą od reszty, podnosząc tym samym średnią, jednak nie wpływając zasadniczo na medianę.
+
 Analiza charakterystyk zbiorów danych (rysunek \ref{fig:datasetcharacteristics}) pokazuje, że najbardziej użyteczne zbiory danych zawierają szeregi czasowe [\emph{Time-Series}].
 Co ciekawe, dane tekstowe są raczej mniej popularne.
 Z kolei zbiory zawierające dane domenowe [\emph{Domain-Theory}] otrzymują wyraźnie najmniej zainteresowania.
