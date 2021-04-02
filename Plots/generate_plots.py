@@ -5,7 +5,7 @@ import numpy as np
 
 # Set destination folder for the output
 # (must end with '/' or be empty)
-output_dir = "Source/Images/"
+output_dir = "Source/Images/Plots/"
 
 MEDIAN_COLOR = "#5B7EBD"
 ALL_MEDIAN_COLOR = "#0000CC"
@@ -54,7 +54,7 @@ web_hits_per_day_medians = [
 overall_mean = 48.0151966575709
 overall_median = 29.4331527591751
 plot_to_file(
-    output_dir+plotname+"Plot.pdf",
+    output_dir+plotname+".pdf",
 	"Dziedzina",
     labels,
     web_hits_per_day_means,
@@ -86,7 +86,7 @@ web_hits_per_day_medians = [
 overall_mean = 47.8447186857058
 overall_median = 29.7893674150147
 plot_to_file(
-    output_dir+plotname+"Plot.pdf",
+    output_dir+plotname+".pdf",
 	"Powiązane zadania",
     labels,
     web_hits_per_day_means,
@@ -115,7 +115,7 @@ web_hits_per_day_medians = [
 overall_mean = 47.7484250089279
 overall_median = 29.5409562727882
 plot_to_file(
-    output_dir+plotname+"Plot.pdf",
+    output_dir+plotname+".pdf",
 	"Cechy atrybutów",
     labels,
     web_hits_per_day_means,
@@ -153,7 +153,7 @@ web_hits_per_day_medians = [
 overall_mean = 46.3988901141464
 overall_median = 28.9655858084115
 plot_to_file(
-    output_dir+plotname+"Plot.pdf",
+    output_dir+plotname+".pdf",
 	"Cechy zbioru danych",
     labels,
     web_hits_per_day_means,
@@ -180,7 +180,7 @@ web_hits_per_day_medians = [
 overall_mean = 42.0871552222281
 overall_median = 26.4095238095238
 plot_to_file(
-    output_dir+plotname+"Plot.pdf",
+    output_dir+plotname+".pdf",
 	"Brakujące dane",
     labels,
     web_hits_per_day_means,
