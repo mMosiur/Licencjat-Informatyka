@@ -88,7 +88,7 @@ Jeden z eksperymentów bada zależności między atrybutami numerycznymi, a pozo
 
 W Azure ML moduł odpowiedzialny za badanie zależności przy kolumnach numerycznych bazuje na wyliczeniu współczynnika korelacji liniowej Pearsona.
 Zestawia on atrybuty na zasadzie ``każdy z każdym'' i liczy korelację liniową między nimi.
-W ten sposób powstaje macierz korelacji, która na przekątnej będzie miała wartości \( 1.0 \) (każdy atrybut zestawiony jest również ze sobą, jest to więc autokorelacja).
+W ten sposób powstaje macierz korelacji, która na przekątnej będzie miała wartości \( 1 \) (każdy atrybut zestawiony jest również ze sobą, jest to więc autokorelacja).
 Współczynnik korelacji mieści się w przedziale domkniętym \( [-1, 1] \).
 Wartość ujemna mówi, że gdy jeden atrybut rośnie, drugi maleje, a dodatnia, że oba atrybuty wspólnie rosną i maleją.
 Dodatkowo wartość bezwzględna współczynnika opisuje, jak silna jest zależność pomiędzy atrybutami.
@@ -133,9 +133,9 @@ Oprócz trywialnej autokorelacji nie pojawia się nigdzie żadna silna zależno�
 Najwyższa wartość ( \( \sim 0.13 \) ) występuje pomiędzy ilością instancji w zbiorze a obraną metryką liczby wyświetleń na dzień.
 Najniższa z kolei ( \( \sim -0.02 \) ) zachodzi między wyświetleniami a ilością atrybutów.
 Sugerowało by to, większa liczba instancji w zbiorze zwiększa jego popularność, natomiast liczba atrybutów na nią nie wpływa.
-Ma to intuicyjny sens jednak jest korelacja bardzo niska, tym bardziej biorąc pod uwagę stosunkowo niewielką ilość instancji w zbiorze danych.
-Tym samym generalizacje na niej bazujące będą przynajmniej niepewne, a prawdopodobnie również niepoprawne.
-Nie można więc w tym wypadku wyciągnąć definitywnych konkluzji dotyczących tych atrybutów.
+Korelacja ta jest jednak bardzo niska.
+Takie wartości w większości przypadków się określa po prostu jako brak korelacji.
+Można z tego wyciągnąć wniosek, że ani ilość atrybutów, ani ilość instancji nie ma wpływu na jakość i popularność zbioru danych.
 
 \begin{center}
   \begin{table}[ht]
