@@ -2,6 +2,7 @@
 
 W niniejszej pracy przeprowadziłem metaanalizę na zbiorze danych pozyskanych z repozytorium zbiorów danych do uczenia maszynowego UCI \cite{Dua:2021}.
 Większość kroków w badaniu (poza pozyskaniem danych) jest uniwersalnych i można je zastosować dla innych zbiorów danych o podobnej zawartości.
+W tym rozdziale w nawiasach kwadratowych umieszczam angielskie nazwy używanych pojęć, pod jakimi znajdują się w analizowanym źródłowym zbiorze danych.
 
 \section{Badanie}
 
@@ -10,39 +11,39 @@ Serwis ten posiada informacje na temat wielu przekazanych im zbiorów danych, re
 Cechy te to:
 
 \begin{itemize}
-  \item Cechy zbioru danych (\emph{Data Set Characteristics}) \\
-        Zawiera informacje o charakterystyce danego zbioru danych.
-        Pojawia się tam, czy zbiór jest wielowymiarowy (\emph{Multivariate}), czy jednowymiarowy (\emph{Univariate}) \footnotemark.
+  \item Cechy zbioru danych [\emph{Data Set Characteristics}] \\
+        Posiada informacje o charakterystyce danego zbioru danych.
+        Zawiera, czy zbiór jest wielowymiarowy [\emph{Multivariate}], czy jednowymiarowy [\emph{Univariate}]\footnotemark.
         \footnotetext{Statystyka wielowymiarowa zajmuje się badaniem i obserwacją wielu zmiennych wyjścia (metryk) na raz. Statystyka jednowymiarowa bada wyłącznie zachowanie jednej zmiennej w zbiorze.}
-        Zawarte jest również, czy zbiór ma charakter tekstowy \emph{Text}, czy może są to dane szeregu czasowego (\emph{Time-Series}).
+        Pojawia się również informacja czy zbiór ma charakter tekstowy [\emph{Text}], czy może są to dane szeregu czasowego [\emph{Time-Series}].
 
-  \item Cechy atrybutów (\emph{Attribute Characteristics}) \\
+  \item Cechy atrybutów [\emph{Attribute Characteristics}] \\
         Zawiera informacje na temat typów atrybutów danych w zbiorze.
-        Sprecyzowane są trzy wartości: zawartość danych kategorialnych (\emph{Categorical}), liczb całkowitych (\emph{Integer}) oraz rzeczywistych (\emph{Real}).
+        Sprecyzowane są trzy wartości: zawartość danych kategorialnych [\emph{Categorical}], liczb całkowitych [\emph{Integer}] oraz rzeczywistych [\emph{Real}].
 
-  \item Powiązane zadania (\emph{Associated Tasks}) \\
+  \item Powiązane zadania [\emph{Associated Tasks}] \\
         Zawiera informacje na temat głównych zadań, dla których dany zbiór jest przeznaczony.
-        Może być to klasyfikacja (\emph{Classification}), regresja (\emph{Regression}) czy odnajdywanie powiązań przyczynowych (\emph{Causal-Discovery}).
+        Może być to klasyfikacja [\emph{Classification}], regresja [\emph{Regression}] czy odnajdywanie powiązań przyczynowych [\emph{Causal-Discovery}].
 
-  \item Liczba instancji (\emph{Number of Instances}) \\
+  \item Liczba instancji [\emph{Number of Instances}] \\
         Ilość krotek (rekordów) danych zawartych w zbiorze.
         Jeśli zbiór ma postać tabelaryczną, będzie to ilość zawartych w nim wierszy.
 
-  \item Liczba atrybutów (\emph{Number of Attributes}) \\
+  \item Liczba atrybutów [\emph{Number of Attributes}] \\
         Ilość cech, na temat których w rekordach zawarte są dane.
         Jeśli zbiór ma postać tabelaryczną, będzie to ilość zawartych w nim kolumn.
 
-  \item Brakujące wartości (\emph{Missing Values}) \\
+  \item Brakujące wartości [\emph{Missing Values}] \\
         Zawiera informację, czy w zbiorze danych pojawiają się brakujące wartości.
 
-  \item Obszar (\emph{Area}) \\
+  \item Obszar [\emph{Area}] \\
         Zawiera informację na temat przynależności zbioru danych do jednej z ogólnie pojętych dziedzin tematycznych.
-        Najczęściej pojawiające się tu wartości to dziedzina społeczna (\emph{Social}), fizyka (\emph{Physical}), informatyka (\emph{Computer}) oraz życie (\emph{Life}).
+        Najczęściej pojawiające się tu wartości to dziedzina społeczna [\emph{Social}], fizyka [\emph{Physical}], tematy powiązane z komputerami [\emph{Computer}] oraz życie [\emph{Life}].
 
-  \item Data dotacji (\emph{Date Donated}) \\
+  \item Data dotacji [\emph{Date Donated}] \\
         Data przekazania zbioru danych przez jego właściciela czy autora administracji repozytorium UCI.
 
-  \item Ilość wyświetleń (\emph{Number of Web Hits}) \\
+  \item Ilość wyświetleń [\emph{Number of Web Hits}] \\
         Liczba wszystkich osób odwiedzających stronę zawierającą zbiór danych.
 
 \end{itemize}
@@ -53,7 +54,7 @@ Repozytorium UCI nie posiada API pozwalającego na dostęp do zawartych w nim da
 Aby uzyskać dane w nim zawarte napisałem więc w języku Python program typu Scraper.
 
 Część ze zbiorów danych na stronie posiada sekcję \emph{Papers That Cite This Data Set}.
-Pierwotnie Scraper miał liczyć wymienione tam prace i zapisać jako dodatkowy atrybut generowanego zbioru danych: liczbę cytacji (\emph{Number of Citations}).
+Pierwotnie Scraper miał liczyć wymienione tam prace i zapisać jako dodatkowy atrybut generowanego zbioru danych: liczbę cytacji [\emph{Number of Citations}].
 Jak się okazuje, listowanie prac cytujących dany zbiór wykonywane było automatycznie z pomocą portalu \emph{Rexa.info}.
 Niestety, portal ten już nie istnieje i bardzo trudno znaleźć o nim informacje.
 Co jest jednak pewne, to że w wygenerowanym zbiorze danych ostatni rekord, który posiada przynajmniej jedną cytację, ma datę dotacji w roku 2002.
@@ -72,16 +73,16 @@ Po poprawieniu linków do nich prowadzących w pliku i usunięciu tych, których
 Taki poprawiony plik następnie druga część Scrapera wykorzystała do wygenerowania zbioru składającego się z informacji o tych właśnie 557 zbiorach danych.
 
 Druga część Scrapera wzbogaca powstały zbiór danych w dwa dodatkowe atrybuty wyliczeniowe.
-Pierwszym jest ilość dni, jaką dany zbiór jest dostępny w repozytorium (\emph{Days Available}).
+Pierwszym jest ilość dni, jaką dany zbiór jest dostępny w repozytorium [\emph{Days Available}].
 Otrzymywany on jest poprzez obliczenie różnicy między datą uruchomienia Scrapera a datą dotacji zbioru do repozytorium.
-Następnie z użyciem tego pola skrypt dodaje jeszcze jedną kolumnę zawierającą liczbę wyświetleń danego zbioru na dzień (\emph{Number of Web Hits per Day}) poprzez podzielenie liczby wyświetleń przez liczbę dni dostępności zbioru.
+Następnie z użyciem tego pola skrypt dodaje jeszcze jedną kolumnę zawierającą liczbę wyświetleń danego zbioru na dzień [\emph{Number of Web Hits per Day}] poprzez podzielenie liczby wyświetleń przez liczbę dni dostępności zbioru.
 
 \subsection{Przeprowadzenie analizy}
 
 Za metrykę zbioru danych, względem której przeprowadzam analizę, obrałem ilość wyświetleń danego zbioru na dzień.
 Wartość ta jest znormalizowana czasowo, co pozwala na uwzględnienie jej jako odzwierciedlenia popularności zbioru.
 
-Analiza została przeprowadzona z użyciem portalu \emph{Azure Machine Learning Studio (classic)}.
+Analiza została przeprowadzona przy użyciu portalu \emph{Azure Machine Learning Studio (classic)}.
 Utworzyłem 6 eksperymentów wykorzystujący wygenerowany przez Scrapera zbiór danych.
 Jeden z eksperymentów bada zależności między atrybutami numerycznymi, a pozostałe 5 dzielą zbiór na podzbiory bazując na różnych danych kategorialnych oraz liczą statystyki związane z wyświetleniami dla każdego z nich.
 
@@ -97,27 +98,27 @@ W każdym z nich zbiór został podzielony na kilka podzbiorów poprzez rozbicie
 Przeprowadzone eksperymenty objęły podziałów ze względu na:
 
 \begin{itemize}
-  \item Charakterystykę zbioru danych (\emph{Data Set Characteristics}) \\
+  \item Charakterystykę zbioru danych [\emph{Data Set Characteristics}] \\
         W tej kolumnie znajdowało się 12 unikatowych charakterystyk.
         Każdy rekord mógł posiadał wiele z nich oddzielonych przecinkami.
         Przynależność do podzbioru określałem poprzez obecność słowa kluczowego w tym atrybucie.
         Za granicę przyjęcia podzbioru do analizy ustaliłem, że musi posiadać przynajmniej 10 elementów.
 
-  \item Charakterystykę atrybutów zbioru (\emph{Attribute Characteristics}) \\
+  \item Charakterystykę atrybutów zbioru [\emph{Attribute Characteristics}] \\
         W tej kolumnie znajdowały się dokładnie 3 unikatowe charakterystyki niewykluczające się wzajemnie.
         Stąd powstały 3 podzbiory na podobnej zasadzie jak wyżej.
 
-  \item Obecność brakujących danych (\emph{Missing Values}) \\
+  \item Obecność brakujących danych [\emph{Missing Values}] \\
         Tutaj utworzone zostały dokładnie dwa podzbiory: zbiory zawierające brakujące dane oraz te ich nie zawierające.
 
-  \item Powiązane zadania (\emph{Associated Tasks}) \\
+  \item Powiązane zadania [\emph{Associated Tasks}] \\
         W tej kolumnie znajdowało się 9 unikatowych, niewykluczających się wzajemnie zadań.
         Przynależność do podzbioru określałem analogicznie jak w eksperymencie z charakterystykami zbioru danych, podobnie za granicę dolną przyjmując 10 elementów podzbioru.
 
-  \item Obszar (\emph{Area}) \\
-        Obszar cyberbezpieczeństwa (\emph{Computer Security}) zaliczyłem do obszaru informatyki, a finansowy (\emph{Financial}) do danych biznesowych.
+  \item Obszar [\emph{Area}] \\
+        Obszar cyberbezpieczeństwa [\emph{Computer Security}] zaliczyłem do obszaru informatyki, a finansowy [\emph{Financial}] do danych biznesowych.
         Te obszary znacznie rzadziej pojawiały się w uzyskanych danych (kolejno jednorazowo i 5 razy) i ich analiza nie była możliwa a dostępne były bliskie im szersze obszary.
-        Obszar gier (\emph{Games}) również był ubogi (10 instancji) jednak nie przypasował się żadnej z większych dziedzin, stąd wykluczyłem go z analizy.
+        Obszar gier [\emph{Games}] również był ubogi (10 instancji) jednak nie przypasował się żadnej z większych dziedzin, stąd wykluczyłem go z analizy.
 
 \end{itemize}
 
@@ -140,11 +141,11 @@ Nie można więc w tym wypadku wyciągnąć definitywnych konkluzji dotyczących
   \begin{table}[ht]
     \begin{tabular}{|l|rrr|}
       \hline
-                           & Number of Instances & Number of Attributes & Web Hits per Day \\
+                          & Liczba instancji & Liczba atrybutów & Wyświetl. na dzień \\
       \hline
-      Number of Instances  & 1                   & 0.099287             & 0.126046         \\
-      Number of Attributes & 0.099287            & 1                    & -0.024657        \\
-      Web Hits per Day     & 0.126046            & -0.024657            & 1                \\
+      Liczba instancji    & 1                & 0.099287         & 0.126046           \\
+      Liczba atrybutów    & 0.099287         & 1                & -0.024657          \\
+      Wyświetl. na dzień  & 0.126046         & -0.024657        & 1                  \\
       \hline
     \end{tabular}
     \caption{Macierz korelacji liniowej między wartościami numerycznymi w zbiorze danych}
@@ -153,9 +154,9 @@ Nie można więc w tym wypadku wyciągnąć definitywnych konkluzji dotyczących
 \end{center}
 
 Znacznie więcej informacji przynosi analiza zbiorów danych przy podziale atrybutów kategorialnych.
-Analiza charakterystyk zbiorów danych (rysunek \ref{fig:datasetcharacteristics}) pokazuje, że najbardziej użyteczne zbiory danych zawierają szeregi czasowe (\emph{Time-Series}).
+Analiza charakterystyk zbiorów danych (rysunek \ref{fig:datasetcharacteristics}) pokazuje, że najbardziej użyteczne zbiory danych zawierają szeregi czasowe [\emph{Time-Series}].
 Co ciekawe, dane tekstowe są raczej mniej popularne.
-Z kolei zbiory zawierające dane domenowe (\emph{Domain-Theory}) otrzymują wyraźnie najmniej zainteresowania.
+Z kolei zbiory zawierające dane domenowe [\emph{Domain-Theory}] otrzymują wyraźnie najmniej zainteresowania.
 Dane jednowymiarowe są również popularniejsze niż wielowymiarowe, chociaż tutaj różnica jest znacznie mniejsza.
 
 \begin{figure}[ht]
@@ -175,8 +176,8 @@ Dane kategorialne bowiem znacznie odbiegają od reszty i są zdecydowanie mniej 
 \end{figure}
 
 Przy analizie powiązanych zadań (rysunek \ref{fig:associatedtasks}) również można wyciągnąć dość wyraźne wnioski.
-Najpopularniejsze są zbiory danych przeznaczone do przeprowadzania na nich regresji (\emph{Regression}), a tuż za nimi te przeznaczone do analizy skupień (\emph{Clustering}).
-Zbiory powiązane z klasyfikacją (\emph{Classification}) nie odbiegają od normy, a najmniejszym zainteresowaniem cieszą się te związane z analizą przyczynową (\emph{Causal-Discovery}).
+Najpopularniejsze są zbiory danych przeznaczone do przeprowadzania na nich regresji [\emph{Regression}], a tuż za nimi te przeznaczone do analizy skupień [\emph{Clustering}].
+Zbiory powiązane z klasyfikacją [\emph{Classification}] nie odbiegają od normy, a najmniejszym zainteresowaniem cieszą się te związane z analizą przyczynową [\emph{Causal-Discovery}].
 
 \begin{figure}[ht]
   \includegraphics[width=\textwidth]{Plots/AssociatedTasks}
