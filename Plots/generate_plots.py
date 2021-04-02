@@ -12,14 +12,30 @@ ALL_MEDIAN_COLOR = "#0000CC"
 MEAN_COLOR = "#EE854A"
 ALL_MEAN_COLOR = "#CC0000"
 
+
+def plot_to_file(filename, xlabel, labels, means, medians, overall_mean, overall_median, x_tick_rotation=0):
+    plt.xlabel(xlabel, fontsize="large")
+    plt.ylabel("Ilość wyświetleń na dzień", fontsize="large")
+    if x_tick_rotation > 0:
+        plt.xticks(rotation=x_tick_rotation)
+    plt.bar(labels, means, label="Średnia", color=MEAN_COLOR)
+    plt.bar(labels, medians, label="Mediana", color=MEDIAN_COLOR)
+    plt.axhline(y=overall_mean, color=ALL_MEAN_COLOR)
+    plt.axhline(y=overall_median, color=ALL_MEDIAN_COLOR)
+    plt.legend()
+    plt.tight_layout()
+    plt.savefig(filename)
+    plt.close()
+
+
 # Area
 plotname = "Area"
 labels = [
-    "Business",
-    "Life",
-    "Computer",
-    "Social",
-    "Physical"
+    "Biznes",
+    "Życie",
+    "Komputer",
+    "Społeczne",
+    "Fizyczne"
 ]
 web_hits_per_day_means = [
     97.5026251466547,
@@ -37,24 +53,23 @@ web_hits_per_day_medians = [
 ]
 overall_mean = 48.0151966575709
 overall_median = 29.4331527591751
-plt.xlabel("Dziedzina", fontsize = "large")
-plt.ylabel("Ilość wyświetleń na dzień", fontsize = "large")
-plt.bar(labels, web_hits_per_day_means, label = "Średnia", color = MEAN_COLOR)
-plt.bar(labels, web_hits_per_day_medians, label = "Mediana", color = MEDIAN_COLOR)
-plt.axhline(y = overall_mean, color = ALL_MEAN_COLOR)
-plt.axhline(y = overall_median, color = ALL_MEDIAN_COLOR)
-plt.legend()
-plt.savefig(output_dir+plotname.replace(" ", "")+"Plot.pdf")
-plt.close()
-
+plot_to_file(
+    output_dir+plotname+"Plot.pdf",
+	"Dziedzina",
+    labels,
+    web_hits_per_day_means,
+    web_hits_per_day_medians,
+    overall_mean,
+    overall_median
+)
 
 # Associated Tasks
-plotname = "Associated Tasks"
+plotname = "AssociatedTasks"
 labels = [
-    "Regression",
-    "Clustering",
-    "Classification",
-    "Causal-Discovery"
+    "Regresja",
+    "Klasteryzacja",
+    "Klasyfikacja",
+    "Analiza przyczynowa"
 ]
 web_hits_per_day_means = [
     60.8208282923251,
@@ -70,23 +85,22 @@ web_hits_per_day_medians = [
 ]
 overall_mean = 47.8447186857058
 overall_median = 29.7893674150147
-plt.xlabel("Dziedzina", fontsize = "large")
-plt.ylabel("Ilość wyświetleń na dzień", fontsize = "large")
-plt.bar(labels, web_hits_per_day_means, label = "Średnia", color = MEAN_COLOR)
-plt.bar(labels, web_hits_per_day_medians, label = "Mediana", color = MEDIAN_COLOR)
-plt.axhline(y = overall_mean, color = ALL_MEAN_COLOR)
-plt.axhline(y = overall_median, color = ALL_MEDIAN_COLOR)
-plt.legend()
-plt.savefig(output_dir+plotname.replace(" ", "")+"Plot.pdf")
-plt.close()
-
+plot_to_file(
+    output_dir+plotname+"Plot.pdf",
+	"Powiązane zadania",
+    labels,
+    web_hits_per_day_means,
+    web_hits_per_day_medians,
+    overall_mean,
+    overall_median
+)
 
 # Attribute Characteristics
-plotname = "Attribute Characteristics"
+plotname = "AttributeCharacteristics"
 labels = [
-    "Real",
-    "Integer",
-    "Categorical"
+    "Rzeczywiste",
+    "Całkowite",
+    "Kategorialne"
 ]
 web_hits_per_day_means = [
     52.4213793303745,
@@ -100,26 +114,25 @@ web_hits_per_day_medians = [
 ]
 overall_mean = 47.7484250089279
 overall_median = 29.5409562727882
-plt.xlabel("Dziedzina", fontsize = "large")
-plt.ylabel("Ilość wyświetleń na dzień", fontsize = "large")
-plt.bar(labels, web_hits_per_day_means, label = "Średnia", color = MEAN_COLOR)
-plt.bar(labels, web_hits_per_day_medians, label = "Mediana", color = MEDIAN_COLOR)
-plt.axhline(y = overall_mean, color = ALL_MEAN_COLOR)
-plt.axhline(y = overall_median, color = ALL_MEDIAN_COLOR)
-plt.legend()
-plt.savefig(output_dir+plotname.replace(" ", "")+"Plot.pdf")
-plt.close()
-
+plot_to_file(
+    output_dir+plotname+"Plot.pdf",
+	"Cechy atrybutów",
+    labels,
+    web_hits_per_day_means,
+    web_hits_per_day_medians,
+    overall_mean,
+    overall_median
+)
 
 # Data Set Characteristics
-plotname = "Data Set Characteristics"
+plotname = "DataSetCharacteristics"
 labels = [
-    "Time-Series",
-    "Univariate",
-    "Multivariate",
-    "Sequential",
-    "Text",
-    "Domain-Theory"
+    "Szeregi czasowe",
+    "Jednowymiarowe",
+    "Wielowymiarowe",
+    "Sekwencyjne",
+    "Tekstowe",
+    "Teorie domenowe"
 ]
 web_hits_per_day_means = [
     61.2964009809620,
@@ -132,29 +145,29 @@ web_hits_per_day_means = [
 web_hits_per_day_medians = [
     36.1556072953046,
     31.1440015568176,
-    29.843487621098 ,
+    29.8434876210980,
     29.1660219774022,
     25.8350659191781,
     18.5250873149915
 ]
 overall_mean = 46.3988901141464
 overall_median = 28.9655858084115
-plt.xlabel("Dziedzina", fontsize = "large")
-plt.ylabel("Ilość wyświetleń na dzień", fontsize = "large")
-plt.bar(labels, web_hits_per_day_means, label = "Średnia", color = MEAN_COLOR)
-plt.bar(labels, web_hits_per_day_medians, label = "Mediana", color = MEDIAN_COLOR)
-plt.axhline(y = overall_mean, color = ALL_MEAN_COLOR)
-plt.axhline(y = overall_median, color = ALL_MEDIAN_COLOR)
-plt.legend()
-plt.savefig(output_dir+plotname.replace(" ", "")+"Plot.pdf")
-plt.close()
-
+plot_to_file(
+    output_dir+plotname+"Plot.pdf",
+	"Cechy zbioru danych",
+    labels,
+    web_hits_per_day_means,
+    web_hits_per_day_medians,
+    overall_mean,
+    overall_median,
+    x_tick_rotation=10
+)
 
 # Missing Values
-plotname = "Missing Values"
+plotname = "MissingValues"
 labels = [
-    "Yes",
-    "No"
+    "Tak",
+    "Nie"
 ]
 web_hits_per_day_means = [
     49.3893245295069,
@@ -166,12 +179,12 @@ web_hits_per_day_medians = [
 ]
 overall_mean = 42.0871552222281
 overall_median = 26.4095238095238
-plt.xlabel("Dziedzina", fontsize = "large")
-plt.ylabel("Ilość wyświetleń na dzień", fontsize = "large")
-plt.bar(labels, web_hits_per_day_means, label = "Średnia", color = MEAN_COLOR)
-plt.bar(labels, web_hits_per_day_medians, label = "Mediana", color = MEDIAN_COLOR)
-plt.axhline(y = overall_mean, color = ALL_MEAN_COLOR)
-plt.axhline(y = overall_median, color = ALL_MEDIAN_COLOR)
-plt.legend()
-plt.savefig(output_dir+plotname.replace(" ", "")+"Plot.pdf")
-plt.close()
+plot_to_file(
+    output_dir+plotname+"Plot.pdf",
+	"Brakujące dane",
+    labels,
+    web_hits_per_day_means,
+    web_hits_per_day_medians,
+    overall_mean,
+    overall_median
+)
