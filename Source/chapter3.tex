@@ -51,10 +51,10 @@ Cechy te to:
 \subsection{Pozyskanie danych}
 
 Repozytorium UCI nie posiada API pozwalającego na dostęp do zawartych w nim danych.
-Aby uzyskać dane w nim zawarte napisałem więc w języku Python program typu Scraper.
+Aby uzyskać dane w nim zawarte napisałem więc w języku Python program typu scraper.
 
 Część ze zbiorów danych na stronie posiada sekcję \emph{Papers That Cite This Data Set}.
-Pierwotnie Scraper miał liczyć wymienione tam prace i zapisać jako dodatkowy atrybut generowanego zbioru danych: liczbę cytacji [\emph{Number of Citations}].
+Pierwotnie scraper miał liczyć wymienione tam prace i zapisać jako dodatkowy atrybut generowanego zbioru danych: liczbę cytacji [\emph{Number of Citations}].
 Jak się okazuje, listowanie prac cytujących dany zbiór wykonywane było automatycznie z pomocą portalu \emph{Rexa.info}.
 Niestety, portal ten już nie istnieje i bardzo trudno znaleźć o nim informacje.
 Co jest jednak pewne, to że w wygenerowanym zbiorze danych ostatni rekord, który posiada przynajmniej jedną cytację, ma datę dotacji w roku 2002.
@@ -62,7 +62,7 @@ Najprawdopodobniej mniej więcej w tamtym okresie portal \emph{Rexa.info} przest
 Tak czy inaczej, atrybut ten zebrany w ten sposób - mimo, że bardzo atrakcyjny jako metryka metaanalizy - nie nadaje się do tego badania z powodu jego bardzo ograniczonego zasięgu.
 Stąd w finalnej wersji zbioru danych został on pominięty.
 
-Program Scrapera został podzielony na dwie części, pierwsza odpowiedzialna za pobranie odpowiednich danych z sieci i zapisanie ich do pliku, a druga za przetworzenie powstałego pliku i dodanie do niego dodatkowych kolumn przydatnych przy analizie.
+Program scrapera został podzielony na dwie części, pierwsza odpowiedzialna za pobranie odpowiednich danych z sieci i zapisanie ich do pliku, a druga za przetworzenie powstałego pliku i dodanie do niego dodatkowych kolumn przydatnych przy analizie.
 Część pierwsza sama również działa dwuetapowo.
 Najpierw pobiera ze strony \url{http://archive.ics.uci.edu/ml/datasets} listę linków do poszczególnych zbiorów danych i zapisuje ją do pliku.
 Następnie wczytuje ten plik z listą linków i kolejno otwiera dane linki prowadzące do podstron konkretnych zbiorów danych, skąd pobiera szczegółowe informacje na temat tego zbioru.
@@ -70,11 +70,11 @@ Taki podział pozwala na ręczną ingerencję w linki pobrane ze strony główne
 Pierwotnie pobranych linków było dokładnie 559, jednak 5 z nich jest uszkodzonych.
 Ręczne wyszukanie zbiorów danych o podanej nazwie w internecie pozwoliło na odnalezienie trzech z nich.
 Po poprawieniu linków do nich prowadzących w pliku i usunięciu tych, których nie udało się odnaleźć, powstał plik zawierający dokładnie 557 linków do podstron zbiorów danych w repozytorium.
-Taki poprawiony plik następnie druga część Scrapera wykorzystała do wygenerowania zbioru składającego się z informacji o tych właśnie 557 zbiorach danych.
+Taki poprawiony plik następnie druga część scrapera wykorzystała do wygenerowania zbioru składającego się z informacji o tych właśnie 557 zbiorach danych.
 
-Druga część Scrapera wzbogaca powstały zbiór danych w dwa dodatkowe atrybuty wyliczeniowe.
+Druga część scrapera wzbogaca powstały zbiór danych w dwa dodatkowe atrybuty wyliczeniowe.
 Pierwszym jest ilość dni, jaką dany zbiór jest dostępny w repozytorium [\emph{Days Available}].
-Otrzymywany on jest poprzez obliczenie różnicy między datą uruchomienia Scrapera a datą dotacji zbioru do repozytorium.
+Otrzymywany on jest poprzez obliczenie różnicy między datą uruchomienia scrapera a datą dotacji zbioru do repozytorium.
 Następnie z użyciem tego pola skrypt dodaje jeszcze jedną kolumnę zawierającą liczbę wyświetleń danego zbioru na dzień [\emph{Number of Web Hits per Day}] poprzez podzielenie liczby wyświetleń przez liczbę dni dostępności zbioru.
 
 \subsection{Przeprowadzenie analizy}
@@ -83,7 +83,7 @@ Za metrykę zbioru danych, względem której przeprowadzam analizę, obrałem il
 Wartość ta jest znormalizowana czasowo, co pozwala na uwzględnienie jej jako odzwierciedlenia popularności zbioru.
 
 Analiza została przeprowadzona przy użyciu portalu \emph{Azure Machine Learning Studio (classic)}.
-Utworzyłem 6 eksperymentów wykorzystujący wygenerowany przez Scrapera zbiór danych.
+Utworzyłem 6 eksperymentów wykorzystujący wygenerowany przez scrapera zbiór danych.
 Jeden z eksperymentów bada zależności między atrybutami numerycznymi, a pozostałe 5 dzielą zbiór na podzbiory bazując na różnych danych kategorialnych oraz liczą statystyki związane z wyświetleniami dla każdego z nich.
 
 W Azure ML moduł odpowiedzialny za badanie zależności przy kolumnach numerycznych bazuje na wyliczeniu współczynnika korelacji liniowej Pearsona.
