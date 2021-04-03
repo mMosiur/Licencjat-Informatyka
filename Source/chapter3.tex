@@ -232,3 +232,26 @@ Jest również możliwość, że istniejące algorytmy uzupełniania brakującyc
 Tłumaczyłoby to w szczególności różnicę między wpływem brakujących danych na liczby rzeczywiste, a dane kategorialne, jako, że dane liczbowe można uzupełnić wspomnianymi wcześniej metodami.
 
 \section{Dyskusja}
+
+Otrzymane przeze mnie wyniki trudno zweryfikować poprzez zestawienie ich z innymi podobnymi badaniami, ponieważ zgodnie z moją wiedzą nikt nie przeprowadzał podobnych analiz w takim kontekście.
+
+Niektóre wyniki mogą być jednak częściowo porównane z innymi badaniami również opartymi na samej analizie metadanych, choć w innych kontekstach.
+
+Moje rezultaty odnoszące się do wpływu wielkości zbioru danych (tabela \ref{tab:correlation}) pokazują, że ilość instancji oraz atrybutów nie wpływają zasadniczo na wynik analizy.
+Pokrywa się to z innymi badaniami \cite{brazdil1994characterizing}, w których stwierdzono, że ilość danych zawartych w zbiorze nie wpływa zasadniczo na ich wyniki związane z aplikowalnością algorytmów uczenia maszynowego.
+
+Z kolei wpływ brakujących danych na atrakcyjność zbioru jest sprzeczny z innymi pracami oraz ogólną intuicją.
+Moje wyniki (rysunek \ref{fig:missingvalues}) pokazują, że brakujące dane w zbiorze nie wpływa negatywnie na jego atrakcyjność, a nawet przeciwnie.
+Inne prace \cite{yasser2011analysis} natomiast wyodrębniły brakujące dane jako jeden z zasadniczych problemów metadanych.
+
+Pozostałych analiz przeze mnie przeprowadzonych nie jestem w stanie zestawić z innymi.
+Warto jednak wspomnieć o możliwym powiązaniu między dwoma wynikami przez mnie osiągniętymi.
+Z analizy charakterystyki zbiorów danych (rysunek \ref{fig:datasetcharacteristics}) można wywnioskować, że najpopularniejsze są szeregi czasowe.
+Dalej, z analizy charakterystyki atrybutów w zbiorze (rysunek \ref{fig:attributecharacteristics}) otrzymujemy, że najpopularniejsze są zbiory zawierające liczby rzeczywiste.
+Istnieje tutaj możliwe powiązanie, jako że oczywistym jest, że szeregi czasowe w przeważającej większości zawierają liczby rzeczywiste.
+Natomiast przeciwko tej tezie może mówić brak podobnego podobieństwa między szeregami czasowymi a ilością danych, która -- jak było już wspomniane -- nie ma wpływu na atrakcyjność.
+Szeregi czasowe z reguły zawierają duże ilości danych (na przykład dane pobierane przez EEG), więc można by było spodziewać się podobnego powiązania.
+
+Wskazane jest porównanie wyciągniętych w~tej pracy wniosków z przyszłymi weryfikacjami, w szczególności przeprowadzonymi z pewniejszymi metrykami.
+Takimi mogłyby być tutaj niedoszła liczba cytacji, w~których dany zbiór się pojawia, albo -- nawet lepiej -- jego wpływ na \emph{wskaźnik cytowań} (ang. \emph{impact factor}) prac go używających.
+Należałoby jednak wziąć pod uwagę, że akurat te metryki skupiałyby się raczej na zastosowaniach naukowych, a omijały komercyjne.
