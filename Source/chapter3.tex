@@ -129,6 +129,22 @@ Na wykresach znajdą się słupki średniej (pomarańczowe) oraz mediany (jasne 
 
 \section{Wyniki}
 
+\begin{center}
+      \begin{table}[ht]
+        \begin{tabular}{|l|rrr|}
+          \hline
+                              & Liczba instancji & Liczba atrybutów & Wyświetl. na dzień \\
+          \hline
+          Liczba instancji    & 1                & 0.099287         & 0.126046           \\
+          Liczba atrybutów    & 0.099287         & 1                & -0.024657          \\
+          Wyświetl. na dzień  & 0.126046         & -0.024657        & 1                  \\
+          \hline
+        \end{tabular}
+        \caption{Macierz korelacji liniowej między wartościami numerycznymi w analizowanym zbiorze danych}
+        \label{tab:correlation}
+      \end{table}
+    \end{center}
+
 Tabela \ref{tab:correlation} przedstawia macierz korelacji atrybutów numerycznych zbioru.
 Oprócz trywialnej autokorelacji nie pojawia się nigdzie żadna silna zależność.
 Najwyższa wartość ( \( \sim 0.13 \) ) występuje pomiędzy ilością instancji w zbiorze a obraną metryką liczby wyświetleń na dzień.
@@ -138,22 +154,6 @@ Korelacja ta jest jednak bardzo niska.
 Takie wartości w większości przypadków się określa po prostu jako brak korelacji.
 Można z tego wyciągnąć wniosek, że ani ilość atrybutów, ani ilość instancji nie ma wpływu na jakość i popularność zbioru danych.
 
-\begin{center}
-  \begin{table}[ht]
-    \begin{tabular}{|l|rrr|}
-      \hline
-                          & Liczba instancji & Liczba atrybutów & Wyświetl. na dzień \\
-      \hline
-      Liczba instancji    & 1                & 0.099287         & 0.126046           \\
-      Liczba atrybutów    & 0.099287         & 1                & -0.024657          \\
-      Wyświetl. na dzień  & 0.126046         & -0.024657        & 1                  \\
-      \hline
-    \end{tabular}
-    \caption{Macierz korelacji liniowej między wartościami numerycznymi w analizowanym zbiorze danych}
-    \label{tab:correlation}
-  \end{table}
-\end{center}
-
 Zanim zaczniemy wyjaśniać wyniki poszczególnych eksperymentów warto zaznaczyć i omówić ogólny trend, który się pojawił.
 Konsekwentnie przy każdym podziale ze względu na różne charakterystyki i cechy, każdy analizowany podzbiór przejawiał identyczną cechę.
 Wszędzie mediana jest dużo niższa od średniej, uśredniając jest to około \( ~ 35\% \).
@@ -161,15 +161,21 @@ Pokazuje to wysoką skośność zbioru.
 Jest to sytuacja podobna, jak kiedy osoba niewiarygodnie bogata wprowadza się do podmiejskiej dzielnicy i w pojedynkę mocno zawyża średnią kapitału nie zmieniając przy tym szczególnie mediany.
 Tutaj mała część zbiorów posiada liczbę wyświetleń znacznie większą i odstającą od reszty, podnosząc tym samym średnią, jednak nie wpływając zasadniczo na medianę.
 
+\begin{figure}[ht]
+      \includegraphics[width=\textwidth]{Plots/DataSetCharacteristics}
+      \caption{Analiza średniej i mediany liczby dziennych wyświetleń zbiorów danych z podziałem względem ich charakterystyki}
+      \label{fig:datasetcharacteristics}
+\end{figure}
+
 Analiza charakterystyk zbiorów danych (rysunek \ref{fig:datasetcharacteristics}) pokazuje, że najbardziej użyteczne zbiory danych zawierają szeregi czasowe [\emph{Time-Series}].
 Co ciekawe, dane tekstowe są raczej mniej popularne.
 Z kolei zbiory zawierające dane domenowe [\emph{Domain-Theory}] otrzymują wyraźnie najmniej zainteresowania.
 Dane jednowymiarowe są również popularniejsze niż wielowymiarowe, chociaż tutaj różnica jest znacznie mniejsza.
 
 \begin{figure}[ht]
-  \includegraphics[width=\textwidth]{Plots/DataSetCharacteristics}
-  \caption{Analiza średniej i mediany liczby dziennych wyświetleń zbiorów danych z podziałem względem ich charakterystyki}
-  \label{fig:datasetcharacteristics}
+      \includegraphics[width=\textwidth]{Plots/AttributeCharacteristics}
+      \caption{Analiza średniej i mediany liczby dziennych wyświetleń zbiorów danych z podziałem względem charakterystyki zawartych w nich atrybutów}
+      \label{fig:attributecharacteristics}
 \end{figure}
 
 Analiza rodzaju danych atrybutów zawartych w zbiorach (rysunek \ref{fig:attributecharacteristics}) pokazuje, że największym zainteresowaniem cieszą się zbiory zawierające wartości rzeczywiste.
@@ -177,9 +183,9 @@ Zawieranie liczb całkowitych jest blisko mediany ogólnej, co mówi, że ogóln
 Dane kategorialne bowiem znacznie odbiegają od reszty i są zdecydowanie mniej popularne.
 
 \begin{figure}[ht]
-  \includegraphics[width=\textwidth]{Plots/AttributeCharacteristics}
-  \caption{Analiza średniej i mediany liczby dziennych wyświetleń zbiorów danych z podziałem względem charakterystyki zawartych w nich atrybutów}
-  \label{fig:attributecharacteristics}
+      \includegraphics[width=\textwidth]{Plots/AssociatedTasks}
+      \caption{Analiza średniej i mediany liczby dziennych wyświetleń zbiorów danych z podziałem względem powiązanych z nimi zadań}
+      \label{fig:associatedtasks}
 \end{figure}
 
 Przy analizie powiązanych zadań (rysunek \ref{fig:associatedtasks}) również można wyciągnąć dość wyraźne wnioski.
@@ -187,9 +193,9 @@ Najpopularniejsze są zbiory danych przeznaczone do przeprowadzania na nich regr
 Zbiory powiązane z klasyfikacją [\emph{Classification}] nie odbiegają od normy, a najmniejszym zainteresowaniem cieszą się te związane z analizą przyczynową [\emph{Causal-Discovery}].
 
 \begin{figure}[ht]
-  \includegraphics[width=\textwidth]{Plots/AssociatedTasks}
-  \caption{Analiza średniej i mediany liczby dziennych wyświetleń zbiorów danych z podziałem względem powiązanych z nimi zadań}
-  \label{fig:associatedtasks}
+  \includegraphics[width=\textwidth]{Plots/Area}
+  \caption{Analiza średniej i mediany liczby dziennych wyświetleń zbiorów danych z podziałem względem ich dziedziny}
+  \label{fig:area}
 \end{figure}
 
 Analizując bardziej semantyczną zawartość zbiorów danych, czyli ogólny obszar ich pochodzenia (rysunek \ref{fig:area}) widać, że wyraźnie najpopularniejsze są zbiory zawierające dane biznesowe.
@@ -204,9 +210,9 @@ Jedyną grupą wyróżniającą się z innych poza biznesową jest fizyczna.
 Są one mniej popularne zarówno patrząc na średnią, jak i medianę podzbioru.
 
 \begin{figure}[ht]
-  \includegraphics[width=\textwidth]{Plots/Area}
-  \caption{Analiza średniej i mediany liczby dziennych wyświetleń zbiorów danych z podziałem względem ich dziedziny}
-  \label{fig:area}
+      \includegraphics[width=\textwidth]{Plots/MissingValues}
+      \caption{Analiza średniej i mediany liczby dziennych wyświetleń zbiorów danych z podziałem względem brakujących w nich danych}
+      \label{fig:missingvalues}
 \end{figure}
 
 Ciekawą sytuację przedstawia analiza brakujących danych przedstawiona na rysunku \ref{fig:missingvalues}.
@@ -224,11 +230,5 @@ Jak widać to popularniejsze kategorie danych mają dużą zawartość brakując
 Wynikać to może z natury charakterystyk popularniejszych zbiorów danych, które z założenia posiadają więcej braków, jednak są one mało istotne z perspektywy użyteczności.
 Jest również możliwość, że istniejące algorytmy uzupełniania brakujących danych takie jak MICE czy PCA są na tyle dobre, że nieduże ubytki nie wpływają na jakoś uczenia czy analizy.
 Tłumaczyłoby to w szczególności różnicę między wpływem brakujących danych na liczby rzeczywiste, a dane kategorialne, jako, że dane liczbowe można uzupełnić wspomnianymi wcześniej metodami.
-
-\begin{figure}[ht]
-  \includegraphics[width=\textwidth]{Plots/MissingValues}
-  \caption{Analiza średniej i mediany liczby dziennych wyświetleń zbiorów danych z podziałem względem brakujących w nich danych}
-  \label{fig:missingvalues}
-\end{figure}
 
 \section{Dyskusja}
