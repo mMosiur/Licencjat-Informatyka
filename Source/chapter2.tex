@@ -1,12 +1,11 @@
 \chapter{Metodologia}
 
-Repozytorium baz danych UCI \cite{Dua:2021}, z którego metadane wykorzystam w badaniach i analizie, nie posiada możliwości dostępu do nich z poziomu programistycznego za pomocą API.
-Jedyną możliwością, aby uzyskać interesujące dane jest więc użycie programu typu \emph{scraper}.
-Dane uzyskane w ten sposób przeanalizować można na wiele sposobów, z których jednym jest wykorzystanie \emph{Microsoft Azure Machine Learning Studio (classic)} (\url{https://studio.azureml.net/}).
-Platforma ta pozwala na dużą swobodę podejścia oraz dostarcza wiele narzędzi zarówno do bezpośredniej analizy danych, jak i tworzenia klasyfikatorów i lub innych modeli AI.
-Otrzymane dane można przejrzeć, zwizualizować i ocenić używając do tego arkuszy kalkulacyjnych, takich jak \emph{Microsoft Excel}.
+Przeprowadzenie tego badania sprowadzać się będzie do dwóch głównych metodologicznych aspektów: pozyskanie danych oraz sama analiza.
 
 \section{Pozyskanie danych}
+
+Dane są dostępne w repozytorium baz danych UCI \cite{Dua:2021}, jednak dostęp programistyczny niezbędny przy zbieraniu tak dużych ilości danych jest utrudniony ze względu na brak API.
+W takim wypadku trzeba posłużyć się starszym i toporniejszym, ale bardziej uniwersalnym \emph{scraperem}.
 
 \subsection{API (Application Programming Interface)}
 
@@ -85,7 +84,7 @@ Przykładowo może być to zamienienie kolumny zawierającej datę publikacji na
 
 Największą wartość z wydobytych danych można uzyskać dopiero, gdy przetworzy się je i przeanalizuje.
 Istnieje wiele sposobów na przeprowadzenie takiej analizy, z których jednym jest użycie wspomnianej biblioteki \texttt{pandas}.
-Dodatkowym atutem wyboru tego narzędzia jest możliwość ściślejszego powiązania części analizującej programu z jego częścią wydobywającą dane.\
+Dodatkowym atutem wyboru tego narzędzia jest możliwość ściślejszego powiązania części analizującej programu z jego częścią wydobywającą dane.
 Jednak użycie tej biblioteki nie jest idealnym rozwiązaniem, gdy głównym celem jest eksploracja uzyskanych danych, gdzie wykorzystanie narzędzi wizualnych jest bardziej optymalne.
 
 \subsection{Microsoft Azure Machine Learning Studio}
