@@ -72,6 +72,7 @@ class UCIScraper:
                 print(*dataset, sep="\t", file=links_file)
         self.log("Datasets file generated, saved as '{}'".format(filename))
 
-scraper = UCIScraper(verbose=True)
-scraper.generate_links_file("links.tsv")
-scraper.generate_datasets_file("fixed_links.tsv", "datasets.tsv")
+if __name__ == "__main__":
+    scraper = UCIScraper(verbose=True)
+    scraper.generate_links_file("links.tsv")
+    scraper.generate_datasets_file("fixed_links.tsv", "datasets.tsv")

@@ -1,6 +1,8 @@
+#%% Imports
 import re
 from typing import List
 
+#%% Define patterns
 # Pattern tuples: (pattern, replacement)
 patterns = (
 	(r" ?\\cite\{[^{;]+\}\n?", r""),
@@ -12,6 +14,7 @@ patterns = (
 	(r"(``)|('')\n?", r"\""),
 )
 
+#%% Define include fetching function
 def get_includes_from(filename: str) -> List[str]:
 	""" Gets files that are included in given file using \include{<filename>} directive """
 	f = open(filename, "r")
@@ -19,6 +22,7 @@ def get_includes_from(filename: str) -> List[str]:
 	f.close()
 	return re.findall(r"^\\include\{(.+)\}", content, re.MULTILINE)
 
+#%% Define detexifying function
 def detexify(text: str) -> str:
 	""" Returns the detexified version of provided text """
 	detexified_text = text
@@ -26,6 +30,7 @@ def detexify(text: str) -> str:
 		detexified_text = re.sub(pattern, replacement, detexified_text)
 	return detexified_text
 
+#%% Detexify includes from root file 
 for file in get_includes_from("thesis.tex"):
 	f = open(file+".tex", "r")
 	content = f.read()
