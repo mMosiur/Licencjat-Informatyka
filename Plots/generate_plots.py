@@ -1,18 +1,19 @@
+#%% Imports
 import matplotlib.pyplot as plt
 import pandas as pd
 import numpy as np
 
-
+#%% Setup variables
 # Set destination folder for the output
-# (must end with '/' or be empty)
 output_dir = "Source/Images/Plots/"
-
 MEDIAN_COLOR = "#5B7EBD"
 ALL_MEDIAN_COLOR = "#0000CC"
 MEAN_COLOR = "#EE854A"
 ALL_MEAN_COLOR = "#CC0000"
+if output_dir != "" and not output_dir.endswith("/"):
+    output_dir += "/"
 
-
+#%% Define plotting function
 def plot_to_file(filename, xlabel, labels, means, medians, overall_mean, overall_median, x_tick_rotation=0):
     plt.xlabel(xlabel, fontsize="large")
     plt.ylabel("Ilość wyświetleń na dzień", fontsize="large")
@@ -28,7 +29,7 @@ def plot_to_file(filename, xlabel, labels, means, medians, overall_mean, overall
     plt.close()
 
 
-# Area
+#%% Generate area plt
 plotname = "Area"
 labels = [
     "Biznes",
@@ -63,7 +64,7 @@ plot_to_file(
     overall_median
 )
 
-# Associated Tasks
+# %% Generate associated tasks plot
 plotname = "AssociatedTasks"
 labels = [
     "Regresja",
@@ -95,7 +96,7 @@ plot_to_file(
     overall_median
 )
 
-# Attribute Characteristics
+# %% Generate attribute characteristics plot
 plotname = "AttributeCharacteristics"
 labels = [
     "Rzeczywiste",
@@ -124,7 +125,7 @@ plot_to_file(
     overall_median
 )
 
-# Data Set Characteristics
+# %% Generate data set characteristics
 plotname = "DataSetCharacteristics"
 labels = [
     "Szeregi czasowe",
@@ -163,7 +164,7 @@ plot_to_file(
     x_tick_rotation=10
 )
 
-# Missing Values
+# %% Generate missing values plot
 plotname = "MissingValues"
 labels = [
     "Tak",
