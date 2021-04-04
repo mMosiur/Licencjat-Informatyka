@@ -91,14 +91,23 @@ Bez tego ich analiza staje się niezwykle trudna lub niemal niemożliwa.
 	Metaanaliza jest pojęciem szerszym niż analiza metadanych.
 	Pierwsze zajmuje się także badaniem, porównaniem i agregacją wyników różnych badań \cite{rosenthal2002meta}, gdzie drugie opiera się wyłącznie na analizie czystych danych meta-poziomu.
 
-	Metadane z założenia nie niosą tak wiele wartości semantycznej, co dane zawarte w zbiorze.
+	Metadane z założenia nie niosą tyle wartości semantycznej, co dane zawarte w zbiorze.
 	Jednak dotychczas przeprowadzane metaanalizy sugerują, że otrzymane w ten sposób wyniki może prowadzić do istotnych wniosków czy konkluzji.
-	Badano, czy owe metadane pozwalają na przewidzenie skuteczności działania algorytmów klasyfikujących.
-	Wykorzystane dane zawierały liczbę rekordów w zbiorze, liczbę atrybutów, proporcje danych binarnych, kategorialnych, nieznanych oraz parę bardziej złożonych miar statystycznych.
+	Badano, czy owe metadane pozwalają na przewidzenie skuteczności działania algorytmów klasyfikujących \cite{brazdil1994characterizing}.
+
+	Wykorzystane metadane dotyczyły różnych cech podstawowych takich jak liczba przykładów (rekordów) w zbiorze, liczba przykładów w zbiorze testowym, ogólna liczba atrybutów, liczba klas oraz atrybutów binarnych. Poza tymi cechami podstawowymi zawarto również wiele bardziej złożonych miar statystycznych.
 
 	Jak w każdej analizie, po zebraniu informacji w postaci rekordów danych istotne jest aby zestawić je ze sobą na bazie porównania przypisanej im metryki.
 	Wspomniane wcześniej badanie \cite{brazdil1994characterizing} za metrykę obrało znormalizowany błąd generowany przez konkretny algorytm przy kategoryzacji konkretnego zbioru.
+
 	Jeśli analiza opiera się na tylko jednym atrybucie przeznaczonym do oceny nazywa się ją \emph{jednowymiarową}, a gdy jest ich więcej - \emph{wielowymiarową}.
+	W tym wypadku mamy przykład tej pierwszej.
+	Analizy jednowymiarowe są z reguły znacznie prostsze to przeprowadzenia, a klasyfikatory na niej oparte są prostsze do nauczenia i skuteczniejsze w swoim działaniu.
+	Dąży się więc, aby zbiory danych bardziej złożone przetworzyć lub podzielić w taki sposób, aby móc przeprowadzić na nim analizę jednowymiarową, albo aby móc przeprowadzić ją najpierw na jego podzbiorach, a następnie powstałych wynikach.
+
+	Autorzy przeprowadzili takie analizy podsumowujące, aby zbudować zbiór zawierający ich rezultaty, czyli wspomniane złożone miary statystyczne.
+	Końcową metrykę również uzyskali na bazie wcześniej wykonanego uczenia danymi algorytmami.
+	W ten sposób uzyskali zbiór, na którym można było nauczyć klasyfikator przy użyciu analizy jednowymiarowej.
 
 	W innym badaniu przeprowadzono analizę problemów związanych z metadanymi \cite{yasser2011analysis}.
 	Obiektem analizy tutaj są więc same metadane oraz ich jakość.
@@ -122,4 +131,13 @@ Bez tego ich analiza staje się niezwykle trudna lub niemal niemożliwa.
 	\end{enumerate}
 
 	Tylko jeden z tych problemów - brakujące dane - jest stosunkowo prosty do wykrycia.
-	Pozostałe często są praktycznie niewykrywalne lub wymagają recenzji specjalisty, osoby zaznajomionej z dziedziną albo głębszej analizy.
+	Pozostałe często są niemal niewykrywalne i wymagają recenzji specjalisty, osoby zaznajomionej z dziedziną albo głębszej analizy.
+	Stąd zaznaczają jak istotne jest utrzymywanie jakości metadanych.
+
+	To badanie skupiało się na metadanych znajdujących się we wpisach cyfrowych bibliotekach i zbiorach.
+	Warto tutaj zaznaczyć, że powstały prace, w których zaproponowano specjalny rodzaj reprezentacji jakości metadanych zbiorów \cite{debattista2014daq}.
+	Nazywa się ona ontologią daQ (ang. \emph{Dataset Quality Ontology}).
+	Autorzy przedstawiają semantykę reprezentacyjną języka, która pozwoliłaby na badanie i ocenianie jakości metadanych zbioru.
+	W dalszych pracach \cite{debattista2014representing} przedstawiają również techniczne szczegóły implementacyjne.
+
+	Mimo potencjalnej możliwości reprezentowania jakości metadanych ich wpływ na jakość czy atrakcyjność samego zbioru jest nadal niezbadana.
