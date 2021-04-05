@@ -1,24 +1,3 @@
-% Analiza danych o~otaczającym nas świecie jest jedną z~kluczowych metod postępu, zarówno naukowego jak i~technologicznego.
-% Skuteczność takiej analizy jest jednak zależna od jakości dostępnych danych.
-
-% Problem z~nieustrukturyzowanymi danymi zauważalny był jeszcze długo zanim ilości generowanych danych sięgały ułamka dzisiejszego natłoku informacji \cite{blumberg2003problem}, a~wraz z~czasem problem ten się tylko nasila.
-% Aby móc skutecznie wnioskować z~użyciem danego zbioru informacji powinien on być ustrukturyzowany.
-% Najpowszechniejszym przykładem ustrukturyzowania są zbiory danych (\textit{datasets}), najczęściej w~postaci tabelarycznej.
-% Często używane jest pojęcie \textit{baz danych} zamiennie ze zbiorami danych, jednak nie jest to prawidłowe.
-% Bazy danych to kontenery zawierające zarówno zbiory danych, jak i~całą infrastrukturę służącą do interakcji i~manipulacji danymi znajdującymi się wewnątrz.
-% Zawartych zbiorów często jest więcej niż jeden i~są powiązane relacyjnie między sobą.
-% Istnieją archiwa przechowujące tego typu ustrukturyzowane zbiory danych i~udostępniające je publicznie do wykorzystania najczęściej do celów badawczych.
-% Jedno z~nich to UC Irvin Machine Learning Repository (\url{https://archive.ics.uci.edu/}), gdzie poza samymi zbiorami danych znajdują się na ich metadane.
-
-% Metadane zbioru danych to cechy opisujące sam zbiór, takie jak ilość rekordów (krotek, wierszy) czy atrybutów (kolumn).
-% Oczywistym jest, że w~użyteczności danego zbioru najistotniejsza jest jego semantyka, informacje w~nim zawarte.
-% Jednak syntaktyka również odgrywa swoją rolę; jednym z~bardziej oczywistych przykładów może być ilość danych.
-% W~zdecydowanej większości im więcej danych zawartych jest w~zbiorze tym lepiej, chociaż i~od tej reguły pojawiają się wyjątki \cite{gasco2012does,boivin2006more}.
-% Na jakość zbioru wpływ ma także obecność brakujących danych, mimo istnienia algorytmów pozwalających na ich uzupełnienie \cite{acuna2004treatment}.
-
-% W~tej pracy przeanalizuję metadane zbiorów danych i~ich wpływ na popularność i~użyteczność zbioru.
-% Przedstawię również projekt badawczy analogiczny do mojego pozwalający na dokładniejszą i~rozszerzoną metaanalizę, aby docelowo odnaleźć zależności syntaktyczne i~pomóc w~tworzeniu zbiorów danych bogatszych i~łatwiejszych w~analizie.
-
 \chapter*{Wstęp}
 \addcontentsline{toc}{chapter}{Wstęp}
 \label{ch:introduction}
@@ -49,7 +28,7 @@ W kontekście zbiorów danych ich syntaktyka może być reprezentowane przez ich
 Jeśli zbierzemy wszystkie te cechy w~postaci metadanych, można przeprowadzić ich analizę w~celu znalezienia zależności i~powiązań.
 
 Zależności między metadanymi a~jakością i~użytecznością ich zbiorów danych nie były dotychczas dobrze przebadane.
-Obecnie jedyne dostępne metaanalizy opierające się na metadanych zbiorów, które zostały przeprowadzone, opierają się na innych kontekstach, takich jak aplikowalność algorytmów uczenia maszynowego \cite{brazdil1994characterizing}.
+Obecnie jedyne dostępne metaanalizy opierające się na metadanych zbiorów, które zostały przeprowadzone, opierają się na innych kontekstach, takich jak stosowalność algorytmów uczenia maszynowego \cite{brazdil1994characterizing}.
 
 W tej pracy przeanalizuję metadane reprezentujące cechy i~własności zbiorów danych zawartych w~UC Irvin Machine Learning Repository \cite{Dua:2021}.
 Dodatkowo przedstawię sposób pozyskania danych i~skonstruowania zbioru przy braku publicznie dostępnego API oraz sposób analizy takich danych.
