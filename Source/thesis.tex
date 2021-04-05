@@ -19,6 +19,12 @@
 
 \AtBeginDocument{\let\textlabel\label}
 
+% Define a table as a figure so that it appears in a list of figures
+\def\table{\def\figurename{Table}\figure}
+\let\endtable\endfigure
+% Redefine the name of the list of figures to include tables
+\renewcommand\listfigurename{Spis rysunków i tabel}
+
 %end the preamble and start the document
 \begin{document}
 
