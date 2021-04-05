@@ -1,56 +1,56 @@
-% Analiza danych o otaczającym nas świecie jest jedną z kluczowych metod postępu, zarówno naukowego jak i technologicznego.
+% Analiza danych o~otaczającym nas świecie jest jedną z~kluczowych metod postępu, zarówno naukowego jak i~technologicznego.
 % Skuteczność takiej analizy jest jednak zależna od jakości dostępnych danych.
 
-% Problem z nieustrukturyzowanymi danymi zauważalny był jeszcze długo zanim ilości generowanych danych sięgały ułamka dzisiejszego natłoku informacji \cite{blumberg2003problem}, a wraz z czasem problem ten się tylko nasila.
-% Aby móc skutecznie wnioskować z użyciem danego zbioru informacji powinien on być ustrukturyzowany.
-% Najpowszechniejszym przykładem ustrukturyzowania są zbiory danych (\textit{datasets}), najczęściej w postaci tabelarycznej.
+% Problem z~nieustrukturyzowanymi danymi zauważalny był jeszcze długo zanim ilości generowanych danych sięgały ułamka dzisiejszego natłoku informacji \cite{blumberg2003problem}, a~wraz z~czasem problem ten się tylko nasila.
+% Aby móc skutecznie wnioskować z~użyciem danego zbioru informacji powinien on być ustrukturyzowany.
+% Najpowszechniejszym przykładem ustrukturyzowania są zbiory danych (\textit{datasets}), najczęściej w~postaci tabelarycznej.
 % Często używane jest pojęcie \textit{baz danych} zamiennie ze zbiorami danych, jednak nie jest to prawidłowe.
-% Bazy danych to kontenery zawierające zarówno zbiory danych, jak i całą infrastrukturę służącą do interakcji i manipulacji danymi znajdującymi się wewnątrz.
-% Zawartych zbiorów często jest więcej niż jeden i są powiązane relacyjnie między sobą.
-% Istnieją archiwa przechowujące tego typu ustrukturyzowane zbiory danych i udostępniające je publicznie do wykorzystania najczęściej do celów badawczych.
-% Jedno z nich to UC Irvin Machine Learning Repository (\url{https://archive.ics.uci.edu/}), gdzie poza samymi zbiorami danych znajdują się na ich metadane.
+% Bazy danych to kontenery zawierające zarówno zbiory danych, jak i~całą infrastrukturę służącą do interakcji i~manipulacji danymi znajdującymi się wewnątrz.
+% Zawartych zbiorów często jest więcej niż jeden i~są powiązane relacyjnie między sobą.
+% Istnieją archiwa przechowujące tego typu ustrukturyzowane zbiory danych i~udostępniające je publicznie do wykorzystania najczęściej do celów badawczych.
+% Jedno z~nich to UC Irvin Machine Learning Repository (\url{https://archive.ics.uci.edu/}), gdzie poza samymi zbiorami danych znajdują się na ich metadane.
 
 % Metadane zbioru danych to cechy opisujące sam zbiór, takie jak ilość rekordów (krotek, wierszy) czy atrybutów (kolumn).
-% Oczywistym jest, że w użyteczności danego zbioru najistotniejsza jest jego semantyka, informacje w nim zawarte.
-% Jednak syntaktyka również odgrywa swoją rolę; jednym z bardziej oczywistych przykładów może być ilość danych.
-% W zdecydowanej większości im więcej danych zawartych jest w zbiorze tym lepiej, chociaż i od tej reguły pojawiają się wyjątki \cite{gasco2012does,boivin2006more}.
+% Oczywistym jest, że w~użyteczności danego zbioru najistotniejsza jest jego semantyka, informacje w~nim zawarte.
+% Jednak syntaktyka również odgrywa swoją rolę; jednym z~bardziej oczywistych przykładów może być ilość danych.
+% W~zdecydowanej większości im więcej danych zawartych jest w~zbiorze tym lepiej, chociaż i~od tej reguły pojawiają się wyjątki \cite{gasco2012does,boivin2006more}.
 % Na jakość zbioru wpływ ma także obecność brakujących danych, mimo istnienia algorytmów pozwalających na ich uzupełnienie \cite{acuna2004treatment}.
 
-% W tej pracy przeanalizuję metadane zbiorów danych i ich wpływ na popularność i użyteczność zbioru.
-% Przedstawię również projekt badawczy analogiczny do mojego pozwalający na dokładniejszą i rozszerzoną metaanalizę, aby docelowo odnaleźć zależności syntaktyczne i pomóc w tworzeniu zbiorów danych bogatszych i łatwiejszych w analizie.
+% W~tej pracy przeanalizuję metadane zbiorów danych i~ich wpływ na popularność i~użyteczność zbioru.
+% Przedstawię również projekt badawczy analogiczny do mojego pozwalający na dokładniejszą i~rozszerzoną metaanalizę, aby docelowo odnaleźć zależności syntaktyczne i~pomóc w~tworzeniu zbiorów danych bogatszych i~łatwiejszych w~analizie.
 
 \chapter*{Wstęp}
 \addcontentsline{toc}{chapter}{Wstęp}
 \label{ch:introduction}
 
-Uczenie maszynowe jest fantastycznym narzędziem pozwalającym na wykonywanie zadań dotychczas niedostępnych tradycyjnym algorytmom poprzez wykorzystanie kluczowej zdolności uczenia się i samo-ulepszenia.
-Trzema najważniejszymi jego zastosowaniami są programy samo-przystosowujące, aplikacje, których nie można zaprogramować ręcznie ze względu na ich złożoność oraz użycie danych historycznych w celu ulepszenia przewidywania i podejmowania decyzji \cite{mitchell1997machine}.
-Żadne z tych zastosowań nie byłoby jednak możliwe bez dostępności odpowiednich danych.
+Uczenie maszynowe jest fantastycznym narzędziem pozwalającym na wykonywanie zadań dotychczas niedostępnych tradycyjnym algorytmom poprzez wykorzystanie kluczowej zdolności uczenia się i~samo-ulepszenia.
+Trzema najważniejszymi jego zastosowaniami są programy samo-przystosowujące, aplikacje, których nie można zaprogramować ręcznie ze względu na ich złożoność oraz użycie danych historycznych w~celu ulepszenia przewidywania i~podejmowania decyzji \cite{mitchell1997machine}.
+Żadne z~tych zastosowań nie byłoby jednak możliwe bez dostępności odpowiednich danych.
 
-Dane i zbiory danych są kluczowym elementem systemów uczenia maszynowego.
-Potrzebne w konkretnym zastosowaniu dane można wygenerować lub zebrać osobiście, jednak istnieją dedykowane repozytoria pozwalające na wyszukanie i wykorzystanie interesujących zbiorów danych oraz dotację tych przez nas zebranych.
-Taka ogólnodostępność pozwala na wielokrotne użycie tych samych danych w różnych zastosowaniach lub przez różne osoby.
+Dane i~zbiory danych są kluczowym elementem systemów uczenia maszynowego.
+Potrzebne w~konkretnym zastosowaniu dane można wygenerować lub zebrać osobiście, jednak istnieją dedykowane repozytoria pozwalające na wyszukanie i~wykorzystanie interesujących zbiorów danych oraz dotację tych przez nas zebranych.
+Taka ogólnodostępność pozwala na wielokrotne użycie tych samych danych w~różnych zastosowaniach lub przez różne osoby.
 Jako przykład można podać znany wielu osobom zbiór odręcznie zapisanych cyfr MNIST \cite{mnist}.
-Autorzy zbioru zadbali o jego jakość, znormalizowali wielkość obecnych tam cyfr, zastosowali antyaliasing oraz wycentrowali powstałe obrazki względem ich środka ciężkości.
-Zabieg ten był niezwykle istotny, ponieważ pośrednio wpłynął na jakość wszystkich badań i analiz prowadzonych z użyciem tego zbioru danych.
+Autorzy zbioru zadbali o~jego jakość, znormalizowali wielkość obecnych tam cyfr, zastosowali antyaliasing oraz wycentrowali powstałe obrazki względem ich środka ciężkości.
+Zabieg ten był niezwykle istotny, ponieważ pośrednio wpłynął na jakość wszystkich badań i~analiz prowadzonych z~użyciem tego zbioru danych.
 
 Obrazuje to wagę, jaką powinno się przykładać do utrzymania jakości zbiorów danych.
-Ma tutaj bowiem zastosowanie popularna w informatyce zasada \textit{śmieci na wejściu - śmieci na wyjściu} (ang. \textit{"garbage in -- garbage out"}).
-Mówi ona, że nawet w przypadku idealnej logiki programu, podanie na wejściu niepoprawnych danych wygeneruje niepoprawne wyniki.
-W tym kontekście uczenie systemu z wykorzystaniem danych o niskiej jakości spowoduje, że rezultaty generowane przez ten system również będą niskiej jakości, nieprecyzyjne czy po prostu niepoprawne.
+Ma tutaj bowiem zastosowanie popularna w~informatyce zasada \textit{śmieci na wejściu - śmieci na wyjściu} (ang. \textit{"garbage in -- garbage out"}).
+Mówi ona, że nawet w~przypadku idealnej logiki programu, podanie na wejściu niepoprawnych danych wygeneruje niepoprawne wyniki.
+W tym kontekście uczenie systemu z~wykorzystaniem danych o~niskiej jakości spowoduje, że rezultaty generowane przez ten system również będą niskiej jakości, nieprecyzyjne czy po prostu niepoprawne.
 
-Przez taką jakość można rozumieć semantyczną zawartość zbioru, gdzie obecność błędnych danych w sposób oczywisty wpływa na działanie systemu.
+Przez taką jakość można rozumieć semantyczną zawartość zbioru, gdzie obecność błędnych danych w~sposób oczywisty wpływa na działanie systemu.
 Jednak często pomijana jest \textit{syntaktyka zbioru danych}, czyli sposób ustrukturyzowania czy reprezentacji zawartych danych.
 Zmiany wprowadzone do zbioru MNIST przez jego autorów można, przynajmniej częściowo, uznać za zmiany tego właśnie typu.
-Powstaje pytanie jakie z tych wartości syntaktycznych mają wpływ na jakość zbioru oraz w jaki sposób na niego oddziałują.
-Niektóre z nich, takie jak właśnie ilość zawartych rekordów czy obecność brakujących danych wydają się mieć oczywisty wpływ.
+Powstaje pytanie jakie z~tych wartości syntaktycznych mają wpływ na jakość zbioru oraz w~jaki sposób na niego oddziałują.
+Niektóre z~nich, takie jak właśnie ilość zawartych rekordów czy obecność brakujących danych wydają się mieć oczywisty wpływ.
 Można się jednak zastanowić nad innymi, jak rodzaj zawartych danych czy ilość atrybutów.
 W kontekście zbiorów danych ich syntaktyka może być reprezentowane przez ich \textit{metadane}.
-Jeśli zbierzemy wszystkie te cechy w postaci metadanych, można przeprowadzić ich analizę w celu znalezienia zależności i powiązań.
+Jeśli zbierzemy wszystkie te cechy w~postaci metadanych, można przeprowadzić ich analizę w~celu znalezienia zależności i~powiązań.
 
-Zależności między metadanymi a jakością i użytecznością ich zbiorów danych nie były dotychczas dobrze przebadane.
+Zależności między metadanymi a~jakością i~użytecznością ich zbiorów danych nie były dotychczas dobrze przebadane.
 Obecnie jedyne dostępne metaanalizy opierające się na metadanych zbiorów, które zostały przeprowadzone, opierają się na innych kontekstach, takich jak aplikowalność algorytmów uczenia maszynowego \cite{brazdil1994characterizing}.
 
-W tej pracy przeanalizuję metadane reprezentujące cechy i własności zbiorów danych zawartych w UC Irvin Machine Learning Repository \cite{Dua:2021}.
-Dodatkowo przedstawię sposób pozyskania danych i skonstruowania zbioru przy braku publicznie dostępnego API oraz sposób analizy takich danych.
-% Dostęp do upublicznionego zbioru i kodu Scrapera?
+W tej pracy przeanalizuję metadane reprezentujące cechy i~własności zbiorów danych zawartych w~UC Irvin Machine Learning Repository \cite{Dua:2021}.
+Dodatkowo przedstawię sposób pozyskania danych i~skonstruowania zbioru przy braku publicznie dostępnego API oraz sposób analizy takich danych.
+% Dostęp do upublicznionego zbioru i~kodu Scrapera?
