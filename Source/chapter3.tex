@@ -239,10 +239,13 @@ Niektóre wyniki mogą być jednak częściowo porównane z~innymi badaniami ró
 
 Moje rezultaty odnoszące się do wpływu wielkości zbioru danych (tabela \ref{tab:correlation}) pokazują, że ilość instancji oraz atrybutów nie wpływają zasadniczo na wynik analizy.
 Pokrywa się to z~innymi badaniami \cite{brazdil1994characterizing}, w~których stwierdzono, że ilość danych zawartych w~zbiorze nie wpływa zasadniczo na ich wyniki związane z~aplikowalnością algorytmów uczenia maszynowego.
+Także inne prace zauważają, że więcej danych nie zawsze wpływa pozytywnie na analizy czynnikowe \cite{boivin2006more} czy tłumaczenia \cite{gasco2012does}.
 
 Z kolei wpływ brakujących danych na atrakcyjność zbioru jest sprzeczny z~innymi pracami oraz ogólną intuicją.
 Moje wyniki (rysunek \ref{fig:missingvalues}) pokazują, że brakujące dane w~zbiorze nie wpływa negatywnie na jego atrakcyjność, a~nawet przeciwnie.
 Inne prace \cite{yasser2011analysis} natomiast wyodrębniły brakujące dane jako jeden z~zasadniczych problemów metadanych.
+Rezultaty tej pracy można częściowo wytłumaczyć biorąc pod uwagę fakt, że istnieją bardzo dobre algorytmy uzupełniające braki danych minimalizując ich wpływ na precyzyjność i dokładność klasyfikatorów \cite{acuna2004treatment} oraz że tego typu algorytmy najlepiej radzą sobie z danymi numerycznymi.
+W zbiorach posiadających głównie dane liczbowe (czyli tych, które z moich analiz są ukazane jako najatrakcyjniejsze) obecność brakujących danych ma więc zminimalizowany, a czasem nawet zerowy efekt.
 
 Pozostałych analiz przeze mnie przeprowadzonych nie jestem w~stanie zestawić z~innymi.
 Warto jednak wspomnieć o~możliwym powiązaniu między dwoma wynikami przez mnie osiągniętymi.
