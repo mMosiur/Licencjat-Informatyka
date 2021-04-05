@@ -24,7 +24,7 @@
 # these rules might exclude image files for figures etc.
 # *.ps
 # *.eps
-# *.pdf
+*.pdf
 
 ## Generated if empty string is given at "Please type another file name for output:"
 .pdf
@@ -444,4 +444,5 @@ dmypy.json
 # End of https://www.toptal.com/developers/gitignore/api/latex,vscode,python
 
 References
-thesis.pdf
+# Some resources are in the .pdf format and we need to keep them
+!Source/Images/*.pdf
