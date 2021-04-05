@@ -5,7 +5,6 @@
 \usepackage{polski}
 \usepackage{url}
 \usepackage{hyperref}
-\usepackage[table,xcdraw]{xcolor}
 \hypersetup{
 	pdftitle={Metaanaliza zbiorów danych do zastosowań w uczeniu maszynowym},
 	pdfsubject={Praca licencjacka},
@@ -20,15 +19,6 @@
 
 \AtBeginDocument{\let\textlabel\label}
 
-\title{Metaanaliza zbiorów danych do zastosowań w uczeniu maszynowym}
-
-\author{Mateusz Piotr Moruś}
-\college{Instytut Informatyki}
-\university{Uniwersytet Marii Curie-Skłodowskiej w Lublinie}
-\submittedtext{Praca licencjacka}
-\degree{Informatyka}
-\degreedate{Lublin 2021}
-
 %end the preamble and start the document
 \begin{document}
 
@@ -39,11 +29,14 @@
 \setcounter{secnumdepth}{3}
 \setcounter{tocdepth}{3}
 
+\include{titilepage_pl} % add a title page in polish
+\include{abstract_pl}          % include the abstract in polish
+% \include{titlepage_en} % add a title page in english
+% \include{abstract_en}          % include the abstract in english
 
-\maketitle                  % create a title page from the preamble info
 % \include{dedication}        % include a dedication.tex file
 % \include{acknowledgements}  % include an acknowledgements.tex file
-% \include{abstract}          % include the abstract
+
 
 \begin{romanpages}          % start roman page numbering
 	\tableofcontents            % generate and include a table of contents
