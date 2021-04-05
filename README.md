@@ -8,6 +8,10 @@ Autor: Mateusz Piotr Moruś
 
 Praca pisana pod przewodnictwem [dr hab. Grzegorza Wójcika](https://gmwojcik.pl/).
 
+## Najnowsze wydanie
+
+Najnowsza wersja pracy do pobrania [tutaj](https://github.com/mMosiur/Licencjat-Informatyka/releases/download/latest/Licencjat.pdf).
+
 ## Kompilacja
 
 Wymagany `texlive` wraz z narzędziem do kompilacji `latexmk`
