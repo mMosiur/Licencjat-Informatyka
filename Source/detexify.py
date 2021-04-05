@@ -12,6 +12,8 @@ patterns = (
 	(r"\\item\n?", r"-"),
 	(r"\\[^{;]+\{([^{;]*)\}\n?", r"\1"),
 	(r"(``)|('')\n?", r"\""),
+	(r"~", r" "),
+	(r"--", r"–"),
 )
 
 #%% Define include fetching function

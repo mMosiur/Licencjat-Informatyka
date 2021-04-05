@@ -1,62 +1,62 @@
-\chapter{Metaanaliza i analiza metadanych}
+\chapter{Metaanaliza i~analiza metadanych}
 
-Metaanaliza oznacza wtórne odkrywanie wiedzy za pomocą uogólnienia informacji znajdujących się w pierwotnych źródłach \cite{higgins2019cochrane}.
-W przypadku tej pracy istotny jest aspekt metaanalizy polegający na \textit{analizie metadanych}, czyli przeprowadzeniu analizy z użyciem standardowych narzędzi, ale na metadanych zbioru zamiast danych właściwych.
+Metaanaliza oznacza wtórne odkrywanie wiedzy za pomocą uogólnienia informacji znajdujących się w~pierwotnych źródłach \cite{higgins2019cochrane}.
+W przypadku tej pracy istotny jest aspekt metaanalizy polegający na \textit{analizie metadanych}, czyli przeprowadzeniu analizy z~użyciem standardowych narzędzi, ale na metadanych zbioru zamiast danych właściwych.
 W rezultacie warto najpierw przyjrzeć się samej analizie danych.
 
 \section{Analiza danych}
 
-Otacza nas niemal nieskończony zasób informacji o świecie.
-Nawet biorąc pod uwagę jedynie dane cyfrowe IDC (\textit{International Data Corporation}) estymowała, że rocznie w roku 2020 wytwarzanych będzie 35 zetabajtów danych \cite{tien2013big}.
-Ilość ta została osiągnięta już dwa lata wcześniej; W 2018 pojawiały się wzmianki mówiące, że już wtedy roczna ilość wytwarzanych danych osiągnęła 33 zetabajty \cite{Patrizio:2018}, a aktualnie IDC mówi o nawet 59 zetabajtach \cite{IDC:2020}.
+Otacza nas niemal nieskończony zasób informacji o~świecie.
+Nawet biorąc pod uwagę jedynie dane cyfrowe IDC (\textit{International Data Corporation}) estymowała, że rocznie w~roku 2020 wytwarzanych będzie 35 zetabajtów danych \cite{tien2013big}.
+Ilość ta została osiągnięta już dwa lata wcześniej; W~2018 pojawiały się wzmianki mówiące, że już wtedy roczna ilość wytwarzanych danych osiągnęła 33 zetabajty \cite{Patrizio:2018}, a~aktualnie IDC mówi o~nawet 59 zetabajtach \cite{IDC:2020}.
 Mimo, że generowane są tak potężne zasoby danych, aby móc je wykorzystać trzeba do nich dotrzeć oraz odpowiednio przygotować.
 Bez tego ich analiza staje się niezwykle trudna lub niemal niemożliwa.
 
-	\subsection{Zdobywanie i przetwarzanie danych}
-	Sama obecność informacji w środowisku nie jest wystarczająca aby móc je w jakikolwiek sposób wykorzystać.
-	Proces \textit{Data Science} składa się z pięciu kroków, z których pierwszym jest właśnie wydobycie danych.
+	\subsection{Zdobywanie i~przetwarzanie danych}
+	Sama obecność informacji w~środowisku nie jest wystarczająca aby móc je w~jakikolwiek sposób wykorzystać.
+	Proces \textit{Data Science} składa się z~pięciu kroków, z~których pierwszym jest właśnie wydobycie danych.
 
-	W nauce eksperymentalnej, w tym nawet w jej najświeższych gałęziach na początku fazy opisu jakościowego, badania zjawisk oparte są na pomiarach \cite{brandt1998data}.
-	Dzisiaj wszelkie pomiary, zarówno w nauce jak zastosowaniach praktycznych, są w zdecydowanej większości rezultatem działania sensorów.
-	Struktura i sposób ich działania może być zróżnicowany i złożony \cite{deshpande2004model,boyer2009scada}, ale cel jest jeden - przechwycić interesujące nas dane o świecie zewnętrznym.
-	Działanie takich sensorów niestety często generuje dane nieustrukturyzowane, które sprawiają duży problem w zarządzaniu i są trudne do efektywnego przeanalizowania \cite{blumberg2003problem}.
+	W nauce eksperymentalnej, w~tym nawet w~jej najświeższych gałęziach na początku fazy opisu jakościowego, badania zjawisk oparte są na pomiarach \cite{brandt1998data}.
+	Dzisiaj wszelkie pomiary, zarówno w~nauce jak zastosowaniach praktycznych, są w~zdecydowanej większości rezultatem działania sensorów.
+	Struktura i~sposób ich działania może być zróżnicowany i~złożony \cite{deshpande2004model,boyer2009scada}, ale cel jest jeden -- przechwycić interesujące nas dane o~świecie zewnętrznym.
+	Działanie takich sensorów niestety często generuje dane nieustrukturyzowane, które sprawiają duży problem w~zarządzaniu i~są trudne do efektywnego przeanalizowania \cite{blumberg2003problem}.
 
-	Z reguły dąży się, aby uzyskane dane doprowadzić do stanu jak najlepszej używalności i przetwarzalności, a co za tym idzie, aby w jakiś sposób je ustrukturyzować.
-	Istnieją bowiem techniki, które pozwalają na taką strukturyzację danych pierwotnie nieustrukturyzowanych, jedną z nich jest zareprezentowanie danych i ich schematu za pomocą grafów z opisanymi krawędziami \cite{buneman1997adding}.
+	Z reguły dąży się, aby uzyskane dane doprowadzić do stanu jak najlepszej używalności i~przetwarzalności, a~co za tym idzie, aby w~jakiś sposób je ustrukturyzować.
+	Istnieją bowiem techniki, które pozwalają na taką strukturyzację danych pierwotnie nieustrukturyzowanych, jedną z~nich jest zareprezentowanie danych i~ich schematu za pomocą grafów z~opisanymi krawędziami \cite{buneman1997adding}.
 	Jeśli jednak ustrukturyzowanie danych nie jest możliwe, zostały zaproponowane techniki pozwalające na przynajmniej częściowe przeprowadzenie analizy danych nieustrukturyzowanych \cite{boulton1996analysis}.
-	Często taka analiza prowadzi do utworzenia zbioru z jej wynikami będącego zbiorem danych ustrukturyzowanym, który następnie wykorzystywany jest w dalszych badaniach.
+	Często taka analiza prowadzi do utworzenia zbioru z~jej wynikami będącego zbiorem danych ustrukturyzowanym, który następnie wykorzystywany jest w~dalszych badaniach.
 
 	\subsection{Analiza danych}
 
-	Otrzymane i przetworzone dane zawierają w sobie potencjalną wartość, która jednak bez dalszej obróbki nie jest w żaden sposób pożyteczna.
-	Bardzo znana i popularna piramida DIWM (dane, informacja, wiedza, mądrość) \cite{rowley2007wisdom}, nazywana także hierarchią wiedzy, dobrze obrazuje ten koncept.
+	Otrzymane i~przetworzone dane zawierają w~sobie potencjalną wartość, która jednak bez dalszej obróbki nie jest w~żaden sposób pożyteczna.
+	Bardzo znana i~popularna piramida DIWM (dane, informacja, wiedza, mądrość) \cite{rowley2007wisdom}, nazywana także hierarchią wiedzy, dobrze obrazuje ten koncept.
 	W tej piramidzie dane są najniższym stopniem, podstawą dla wszystkich pozostałych, najszersza ze względu na swój brak przetworzenia.
 	Dane są definiowane jako ilościowy lub jakościowy zbiór symboli.
 	Informacja natomiast to zbiór znaczących znaków, które mają możliwość wytworzenia wiedzy \cite{zins2007conceptual}.
 	Idąc za tym konceptualnym podziałem, zbiory danych, które zostały poddane obróbce czy przetworzeniu zawierają nie tylko dane, ale także informacje.
-	Poddanie takiego zbioru analizie można w uproszczeniu opisać jako proces zamiany tej informacji w wiedzę.
-	W rzeczywistości, trzymając się modelu piramidy DIWM analiza będzie odpowiednikiem przetworzenia dużej ilości informacji w mały podzbiór informacji, która będzie znacznie bogatsza znaczeniowo.
-	Jednak biorąc pod uwagę, że z samego założenia przetwarzania danych ten podzbiór ma docelowo być zinterpretowany i zamieniony w wiedzę, uproszczenie to nie odbiega bardzo od rzeczywistości.
+	Poddanie takiego zbioru analizie można w~uproszczeniu opisać jako proces zamiany tej informacji w~wiedzę.
+	W rzeczywistości, trzymając się modelu piramidy DIWM analiza będzie odpowiednikiem przetworzenia dużej ilości informacji w~mały podzbiór informacji, która będzie znacznie bogatsza znaczeniowo.
+	Jednak biorąc pod uwagę, że z~samego założenia przetwarzania danych ten podzbiór ma docelowo być zinterpretowany i~zamieniony w~wiedzę, uproszczenie to nie odbiega bardzo od rzeczywistości.
 
-	Można zdefiniować dwa główne rodzaje rozróżnienia analiz danych: analizy wyjaśniające/potwierdzające, a także analizy deskryptywne/indukcyjne \cite{berthold2003intelligent}.
+	Można zdefiniować dwa główne rodzaje rozróżnienia analiz danych: analizy wyjaśniające/potwierdzające, a~także analizy deskryptywne/indukcyjne \cite{berthold2003intelligent}.
 	Pierwsze rozróżnienie jest dość oczywiste.
-	Analizę danych można przeprowadzać w celu wyjaśnienia zaistnienia pewnego zjawiska lub aby potwierdzić jego istnienie.
+	Analizę danych można przeprowadzać w~celu wyjaśnienia zaistnienia pewnego zjawiska lub aby potwierdzić jego istnienie.
 	Drugie nie jest aż tak intuicyjne, chociaż nadal uzasadnione.
-	Analizy deskryptywne, inaczej nazywane podsumowującymi mają na celu znalezienia prawidłowości i cech o całości zebranych danych, na przykład jaki jest odsetek kobiet w populacji.
-	Natomiast analizy indukcyjne próbują wyciągnąć wnioski generalizujące zaobserwowane trendy, na przykład jaki będzie prawdopodobny odsetek kobiet w populacji w przyszłym roku.
-	Tego typu analiza jest szczególnie przydatna, kiedy nie ma dostępnych danych na temat całości populacji czy dziedziny danych zawartych w zbiorze, co ma miejsce w przeważającej części przypadków.
+	Analizy deskryptywne, inaczej nazywane podsumowującymi mają na celu znalezienia prawidłowości i~cech o~całości zebranych danych, na przykład jaki jest odsetek kobiet w~populacji.
+	Natomiast analizy indukcyjne próbują wyciągnąć wnioski generalizujące zaobserwowane trendy, na przykład jaki będzie prawdopodobny odsetek kobiet w~populacji w~przyszłym roku.
+	Tego typu analiza jest szczególnie przydatna, kiedy nie ma dostępnych danych na temat całości populacji czy dziedziny danych zawartych w~zbiorze, co ma miejsce w~przeważającej części przypadków.
 	Wtedy za pomocą analizy indukcyjnej wyciąga się wnioski generalizując tendencje podzbioru populacji czy dziedziny na cały zbiór.
 
 \section{Metaanaliza}
 
 	Analizowanie danych pozwala wyciągnąć wnioski na temat dziedziny, którą opisują.
-	Metaanaliza natomiast pozwala na wyciągnięcie wniosków o samym zbiorze danych, co często jest nieosiągalne w inny sposób.
-	Wyniki takiej analizy mogą być wysoce przydatne zarówno w podejmowaniu decyzji na temat zbioru, jak również w dalszych analizach, które dadzą już w rezultacie informacje szersze, niż dotychczas było to możliwe.
+	Metaanaliza natomiast pozwala na wyciągnięcie wniosków o~samym zbiorze danych, co często jest nieosiągalne w~inny sposób.
+	Wyniki takiej analizy mogą być wysoce przydatne zarówno w~podejmowaniu decyzji na temat zbioru, jak również w~dalszych analizach, które dadzą już w~rezultacie informacje szersze, niż dotychczas było to możliwe.
 
 	\subsection{Metadane}
 
 	Metadane to dane, które dostarczają informacji na temat innych danych.
-	Zobrazować to można wysłaniem wiadomości na portalu społecznościowym, który zapisuje w serwisie nie tylko treść wiadomości, ale także inne informacje o niej: datę i godzinę wysłania, autora, adresata, status dostarczenia czy odczytania.
+	Zobrazować to można wysłaniem wiadomości na portalu społecznościowym, który zapisuje w~serwisie nie tylko treść wiadomości, ale także inne informacje o~niej: datę i~godzinę wysłania, autora, adresata, status dostarczenia czy odczytania.
 
 	Wyróżnia się cztery główne grupy określane jako metadane \cite{riley2017understanding}:
 
@@ -65,51 +65,51 @@ Bez tego ich analiza staje się niezwykle trudna lub niemal niemożliwa.
 		Informacje na temat zawartości zasobu służące jego lepszemu zrozumieniu.
 
 		\item Metadane administracyjne (\emph{Administrative metadata}) \\
-		Zawiera w sobie metadane techniczne służące dekodowaniu czy renderowaniu zawartych danych, a także metadane prawne do oznaczenia własności intelektualnej.
+		Zawiera w~sobie metadane techniczne służące dekodowaniu czy renderowaniu zawartych danych, a~także metadane prawne do oznaczenia własności intelektualnej.
 
 		\item Metadane strukturalne (\emph{Structural metadata}) \\
 		Opisuje wzajemne relacje między częściami zasobu.
 
 		\item Języki znacznikowe (\emph{Markup languages}) \\
-		Języki mieszające zawartość oraz metadane w całość.
+		Języki mieszające zawartość oraz metadane w~całość.
 		Przykładem takiego języka jest Markdown służący do pisania sformatowanego tekstu.
 	\end{itemize}
 
-	Wspomniane informacje o wiadomości na portalu społecznościowym zaliczyć można do \emph{metadanych opisowych}.
-	Z kolei treść zawarta w tagu \lstinline{<meta charset="UTF-8">} używany w języku HTML zaliczymy do \emph{metadanych technicznych}, służy bowiem rozpoznaniu kodowania, które powinno zostać użyte przy odczytywaniu zawartości.
+	Wspomniane informacje o~wiadomości na portalu społecznościowym zaliczyć można do \emph{metadanych opisowych}.
+	Z kolei treść zawarta w~tagu \lstinline{<meta charset="UTF-8">} używany w~języku HTML zaliczymy do \emph{metadanych technicznych}, służy bowiem rozpoznaniu kodowania, które powinno zostać użyte przy odczytywaniu zawartości.
 	Co więcej, sam HTML podpada pod kategorię \emph{języka znacznikowego}.
 
 	W odniesieniu do zbiorów danych metadanymi technicznymi będzie na przykład informacja, jaki jest używany separator: przecinek, tabulator czy inny, mniej popularny znak.
 	Natomiast szerzej niż się pierwotnie wydaje można objąć termin \emph{metadanych opisowych}.
-	Zaliczyć bowiem możemy tutaj informacje opisujące rodzaj danych zawartych w zbiorze, jak i samą jego strukturę.
-	Do przykładów takich informacji możemy zaliczyć liczbę zawartych rekordów czy opisanych atrybutów, dziedzina, typ danych, przeznaczenie zbioru oraz wiele innych danych nie wynikających bezpośrednio z zawartości, ale opisujących ją.
+	Zaliczyć bowiem możemy tutaj informacje opisujące rodzaj danych zawartych w~zbiorze, jak i~samą jego strukturę.
+	Do przykładów takich informacji możemy zaliczyć liczbę zawartych rekordów czy opisanych atrybutów, dziedzina, typ danych, przeznaczenie zbioru oraz wiele innych danych nie wynikających bezpośrednio z~zawartości, ale opisujących ją.
 
-	Dane takie, jak się okazuje, mogą pozwolić na wyciągnięcie z ich analizy wniosków, do których ciężej trafić innymi sposobami.
+	Dane takie, jak się okazuje, mogą pozwolić na wyciągnięcie z~ich analizy wniosków, do których ciężej trafić innymi sposobami.
 
 	\subsection{Analiza metadanych}
 
 	Metaanaliza jest pojęciem szerszym niż analiza metadanych.
-	Pierwsze zajmuje się także badaniem, porównaniem i agregacją wyników różnych badań \cite{rosenthal2002meta}, gdzie drugie opiera się wyłącznie na analizie czystych danych meta-poziomu.
+	Pierwsze zajmuje się także badaniem, porównaniem i~agregacją wyników różnych badań \cite{rosenthal2002meta}, gdzie drugie opiera się wyłącznie na analizie czystych danych meta-poziomu.
 
-	Metadane z założenia nie niosą tyle wartości semantycznej, co dane zawarte w zbiorze.
-	Jednak dotychczas przeprowadzane metaanalizy sugerują, że otrzymane w ten sposób wyniki może prowadzić do istotnych wniosków czy konkluzji.
+	Metadane z~założenia nie niosą tyle wartości semantycznej, co dane zawarte w~zbiorze.
+	Jednak dotychczas przeprowadzane metaanalizy sugerują, że otrzymane w~ten sposób wyniki może prowadzić do istotnych wniosków czy konkluzji.
 	Badano, czy owe metadane pozwalają na przewidzenie skuteczności działania algorytmów klasyfikujących \cite{brazdil1994characterizing}.
 
-	Wykorzystane metadane dotyczyły różnych cech podstawowych takich jak liczba przykładów (rekordów) w zbiorze, liczba przykładów w zbiorze testowym, ogólna liczba atrybutów, liczba klas oraz atrybutów binarnych. Poza tymi cechami podstawowymi zawarto również wiele bardziej złożonych miar statystycznych.
+	Wykorzystane metadane dotyczyły różnych cech podstawowych takich jak liczba przykładów (rekordów) w~zbiorze, liczba przykładów w~zbiorze testowym, ogólna liczba atrybutów, liczba klas oraz atrybutów binarnych. Poza tymi cechami podstawowymi zawarto również wiele bardziej złożonych miar statystycznych.
 
-	Jak w każdej analizie, po zebraniu informacji w postaci rekordów danych istotne jest aby zestawić je ze sobą na bazie porównania przypisanej im metryki.
+	Jak w~każdej analizie, po zebraniu informacji w~postaci rekordów danych istotne jest aby zestawić je ze sobą na bazie porównania przypisanej im metryki.
 	Wspomniane wcześniej badanie \cite{brazdil1994characterizing} za metrykę obrało znormalizowany błąd generowany przez konkretny algorytm przy kategoryzacji konkretnego zbioru.
 
-	Jeśli analiza opiera się na tylko jednym atrybucie przeznaczonym do oceny nazywa się ją \emph{jednowymiarową}, a gdy jest ich więcej - \emph{wielowymiarową}.
+	Jeśli analiza opiera się na tylko jednym atrybucie przeznaczonym do oceny nazywa się ją \emph{jednowymiarową}, a~gdy jest ich więcej -- \emph{wielowymiarową}.
 	W tym wypadku mamy przykład tej pierwszej.
-	Analizy jednowymiarowe są z reguły znacznie prostsze to przeprowadzenia, a klasyfikatory na niej oparte są prostsze do nauczenia i skuteczniejsze w swoim działaniu.
-	Dąży się więc, aby zbiory danych bardziej złożone przetworzyć lub podzielić w taki sposób, aby móc przeprowadzić na nim analizę jednowymiarową, albo aby móc przeprowadzić ją najpierw na jego podzbiorach, a następnie powstałych wynikach.
+	Analizy jednowymiarowe są z~reguły znacznie prostsze to przeprowadzenia, a~klasyfikatory na niej oparte są prostsze do nauczenia i~skuteczniejsze w~swoim działaniu.
+	Dąży się więc, aby zbiory danych bardziej złożone przetworzyć lub podzielić w~taki sposób, aby móc przeprowadzić na nim analizę jednowymiarową, albo aby móc przeprowadzić ją najpierw na jego podzbiorach, a~następnie powstałych wynikach.
 
 	Autorzy przeprowadzili takie analizy podsumowujące, aby zbudować zbiór zawierający ich rezultaty, czyli wspomniane złożone miary statystyczne.
 	Końcową metrykę również uzyskali na bazie wcześniej wykonanego uczenia danymi algorytmami.
 	W ten sposób uzyskali zbiór, na którym można było nauczyć klasyfikator przy użyciu analizy jednowymiarowej.
 
-	W innym badaniu przeprowadzono analizę problemów związanych z metadanymi \cite{yasser2011analysis}.
+	W innym badaniu przeprowadzono analizę problemów związanych z~metadanymi \cite{yasser2011analysis}.
 	Obiektem analizy tutaj są więc same metadane oraz ich jakość.
 	Wyróżniono tam ich pięć kategorii:
 
@@ -127,17 +127,17 @@ Bez tego ich analiza staje się niezwykle trudna lub niemal niemożliwa.
 		Wartość elementu jest przypisana do elementu, którego semantyka jest ogólniejsza.
 
 		\item Niekonsekwentna reprezentacja danych \\
-		Wartości są zapisywane w różnych formatach.
+		Wartości są zapisywane w~różnych formatach.
 	\end{enumerate}
 
-	Tylko jeden z tych problemów - brakujące dane - jest stosunkowo prosty do wykrycia.
-	Pozostałe często są niemal niewykrywalne i wymagają recenzji specjalisty, osoby zaznajomionej z dziedziną albo głębszej analizy.
+	Tylko jeden z~tych problemów -- brakujące dane -- jest stosunkowo prosty do wykrycia.
+	Pozostałe często są niemal niewykrywalne i~wymagają recenzji specjalisty, osoby zaznajomionej z~dziedziną albo głębszej analizy.
 	Stąd zaznaczają jak istotne jest utrzymywanie jakości metadanych.
 
-	To badanie skupiało się na metadanych znajdujących się we wpisach cyfrowych bibliotekach i zbiorach.
-	Warto tutaj zaznaczyć, że powstały prace, w których zaproponowano specjalny rodzaj reprezentacji jakości metadanych zbiorów \cite{debattista2014daq}.
+	To badanie skupiało się na metadanych znajdujących się we wpisach cyfrowych bibliotekach i~zbiorach.
+	Warto tutaj zaznaczyć, że powstały prace, w~których zaproponowano specjalny rodzaj reprezentacji jakości metadanych zbiorów \cite{debattista2014daq}.
 	Nazywa się ona ontologią daQ (ang. \emph{Dataset Quality Ontology}).
-	Autorzy przedstawiają semantykę reprezentacyjną języka, która pozwoliłaby na badanie i ocenianie jakości metadanych zbioru.
+	Autorzy przedstawiają semantykę reprezentacyjną języka, która pozwoliłaby na badanie i~ocenianie jakości metadanych zbioru.
 	W dalszych pracach \cite{debattista2014representing} przedstawiają również techniczne szczegóły implementacyjne.
 
 	Mimo potencjalnej możliwości reprezentowania jakości metadanych ich wpływ na jakość czy atrakcyjność samego zbioru jest nadal niezbadana.
