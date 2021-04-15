@@ -22,7 +22,7 @@ def plot_to_file(filename, xlabel, labels, means, medians, overall_mean, overall
     plt.bar(labels, means, label="Średnia podzbioru", color=MEAN_COLOR)
     plt.bar(labels, medians, label="Mediana podzbioru", color=MEDIAN_COLOR)
     plt.axhline(y=overall_mean, label="Średnia ogólna", linestyle="dashed", color=ALL_MEAN_COLOR)
-    plt.axhline(y=overall_median, label="Mediana ogólna", linestyle="dashed", color=ALL_MEDIAN_COLOR)
+    plt.axhline(y=overall_median, label="Mediana ogólna", linestyle="dotted", color=ALL_MEDIAN_COLOR)
     plt.legend()
     plt.tight_layout()
     plt.savefig(filename)
@@ -33,23 +33,23 @@ def plot_to_file(filename, xlabel, labels, means, medians, overall_mean, overall
 plotname = "Area"
 labels = [
     "Biznes",
+    "Społeczne",
     "Życie",
     "Komputer",
-    "Społeczne",
     "Fizyczne"
 ]
 web_hits_per_day_means = [
     97.5026251466547,
+    61.1283855315268,
     46.6719117823716,
     40.7990616728854,
-    61.1283855315268,
     39.1768414327089
 ]
 web_hits_per_day_medians = [
     68.3113043478261,
+    28.0968992248062,
     29.8797767282095,
     28.6781651376147,
-    28.0968992248062,
     24.0927460092948
 ]
 overall_mean = 48.0151966575709
