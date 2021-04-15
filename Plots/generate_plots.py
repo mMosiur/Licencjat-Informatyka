@@ -22,7 +22,7 @@ def plot_to_file(filename, xlabel, labels, means, medians, overall_mean, overall
     plt.bar(labels, means, label="Średnia podzbioru", color=MEAN_COLOR)
     plt.bar(labels, medians, label="Mediana podzbioru", color=MEDIAN_COLOR)
     plt.axhline(y=overall_mean, label="Średnia ogólna", linestyle="dashed", color=ALL_MEAN_COLOR)
-    plt.axhline(y=overall_median, label="Mediana ogólna", linestyle="dashed", color=ALL_MEDIAN_COLOR)
+    plt.axhline(y=overall_median, label="Mediana ogólna", linestyle="dotted", color=ALL_MEDIAN_COLOR)
     plt.legend()
     plt.tight_layout()
     plt.savefig(filename)
