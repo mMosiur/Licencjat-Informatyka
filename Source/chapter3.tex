@@ -88,8 +88,8 @@ Jeden z~eksperymentów bada zależności między atrybutami numerycznymi, a~pozo
 
 W Azure ML moduł odpowiedzialny za badanie zależności przy kolumnach numerycznych bazuje na wyliczeniu współczynnika korelacji liniowej Pearsona.
 Zestawia on atrybuty na zasadzie ``każdy z~każdym'' i~liczy korelację liniową między nimi.
-W ten sposób powstaje macierz korelacji, która na przekątnej będzie miała wartości \( 1~\) (każdy atrybut zestawiony jest również ze sobą, jest to więc autokorelacja).
-Współczynnik korelacji mieści się w~przedziale domkniętym \( [-1, 1] \).
+W ten sposób powstaje macierz korelacji, która na przekątnej będzie miała wartości \(1\) (każdy atrybut zestawiony jest również ze sobą, jest to więc autokorelacja).
+Współczynnik korelacji mieści się w~przedziale domkniętym \([-1, 1]\).
 Wartość ujemna mówi, że gdy jeden atrybut rośnie, drugi maleje, a~dodatnia, że oba atrybuty wspólnie rosną i~maleją.
 Dodatkowo wartość bezwzględna współczynnika opisuje, jak silna jest zależność pomiędzy atrybutami.
 
@@ -135,9 +135,9 @@ Na wykresach znajdą się słupki średniej (pomarańczowe) oraz mediany (jasne 
           \hline
                               & Liczba instancji & Liczba atrybutów & Wyświetl. na dzień \\
           \hline
-          Liczba instancji    & 1~               & 0.099287         & 0.126046           \\
-          Liczba atrybutów    & 0.099287         & 1~               & -0.024657          \\
-          Wyświetl. na dzień  & 0.126046         & -0.024657        & 1~                 \\
+          Liczba instancji    & 1                & 0.099287         & 0.126046           \\
+          Liczba atrybutów    & 0.099287         & 1                & -0.024657          \\
+          Wyświetl. na dzień  & 0.126046         & -0.024657        & 1                  \\
           \hline
         \end{tabular}
         \caption{Macierz korelacji liniowej między wartościami numerycznymi w~analizowanym zbiorze danych}
@@ -147,8 +147,8 @@ Na wykresach znajdą się słupki średniej (pomarańczowe) oraz mediany (jasne 
 
 Tabela \ref{tab:correlation} przedstawia macierz korelacji atrybutów numerycznych zbioru.
 Oprócz trywialnej autokorelacji nie pojawia się nigdzie żadna silna zależność.
-Najwyższa wartość ( \( \sim 0.13 \) ) występuje pomiędzy ilością instancji w~zbiorze a~obraną metryką liczby wyświetleń na dzień.
-Najniższa z~kolei ( \( \sim -0.02 \) ) zachodzi między wyświetleniami a~ilością atrybutów.
+Najwyższa wartość (\(\sim 0.13\)) występuje pomiędzy ilością instancji w~zbiorze a~obraną metryką liczby wyświetleń na dzień.
+Najniższa z~kolei (\(\sim -0.02\)) zachodzi między wyświetleniami a~ilością atrybutów.
 Sugerowało by to, większa liczba instancji w~zbiorze zwiększa jego popularność, natomiast liczba atrybutów na nią nie wpływa.
 Korelacja ta jest jednak bardzo niska.
 Takie wartości w~większości przypadków się określa po prostu jako brak korelacji.
@@ -156,7 +156,7 @@ Można z~tego wyciągnąć wniosek, że ani ilość atrybutów, ani ilość inst
 
 Zanim zaczniemy wyjaśniać wyniki poszczególnych eksperymentów warto zaznaczyć i~omówić ogólny trend, który się pojawił.
 Konsekwentnie przy każdym podziale ze względu na różne charakterystyki i~cechy, każdy analizowany podzbiór przejawiał identyczną cechę.
-Wszędzie mediana jest dużo niższa od średniej, uśredniając jest to około \( ~ 35\% \).
+Wszędzie mediana jest dużo niższa od średniej, uśredniając jest to około \(35\%\).
 Pokazuje to wysoką skośność zbioru.
 Jest to sytuacja podobna, jak kiedy osoba niewiarygodnie bogata wprowadza się do podmiejskiej dzielnicy i~w pojedynkę mocno zawyża średnią kapitału nie zmieniając przy tym szczególnie mediany.
 Tutaj mała część zbiorów posiada liczbę wyświetleń znacznie większą i~odstającą od reszty, podnosząc tym samym średnią, jednak nie wpływając zasadniczo na medianę.
@@ -203,7 +203,7 @@ Analizując bardziej semantyczną zawartość zbiorów danych, czyli ogólny obs
 Biorąc pod uwagę ten fakt i~naturę relacji między średnią a~medianą można wyciągnąć wniosek, że w~tym obszarze kilka najczęściej odwiedzanych zbiorów mocno wybiega popularnością poza pozostałe.
 95. percentyl jest równy \(215.98\), co jest prawie najwyższą wartością, jedynie za biznesem (\(303.41\)).
 Z kolei 5. percentyl nie odbiega mocno od pozostałych.
-W odwrotnej sytuacji są zbiory informatyczne, których 95. percentyl wynosi zaledwie \(98.93\), tylko \(75\%\) następnej najniższej wartości (obszaru fizyki).
+W odwrotnej sytuacji są zbiory informatyczne, których 95. percentyl wynosi zaledwie \(98.93\), tylko \(\sim 75\%\) następnej najniższej wartości (obszaru fizyki).
 Ta grupa ma z~kolei sporo zbiorów wyjątkowo mało popularnych.
 Jednak ich mediana również się nie wyróżnia.
 Jedyną grupą wyróżniającą się z~innych poza biznesową jest fizyczna.
@@ -219,12 +219,12 @@ Ciekawą sytuację przedstawia analiza brakujących danych przedstawiona na rysu
 Sugeruje ona, że zbiory posiadające brakujące dane przyciągają więcej osób niż te, które ich nie mają.
 Jest to sprzeczne z~tym, czego można by się spodziewać zarówno intuicyjnie, jak i~biorąc pod uwagę ocenę jakości zbiorów danych.
 Można to jednak wytłumaczyć biorąc pod uwagę inne cechy zbiorów.
-Biorąc pod uwagę szeregi czasowe, najpopularniejszy rodzaj danych, 27 z~32 rekordów zawierających na ten temat informacje posiada brakujące dane (\(~84\%\).
-Z kolei najmniej popularne dane domenowe wykazują odwrotną tendencję, gdzie \(75\%\) z~nich nie zawiera brakujących danych.
+Biorąc pod uwagę szeregi czasowe, najpopularniejszy rodzaj danych, 27 z~32 rekordów zawierających na ten temat informacje posiada brakujące dane (\(\sim 84\%\)).
+Z kolei najmniej popularne dane domenowe wykazują odwrotną tendencję, gdzie \(\sim 75\%\) z~nich nie zawiera brakujących danych.
 
 Podobna sytuacja ma miejsce gdy weźmiemy pod uwagę rodzaj atrybutów.
-Zdecydowanie najpopularniejsze zbiory zawierające liczby rzeczywiste posiadają brakujące dane w~\(~72\%\) przypadków (71 z~98), a~najmniej pożądane dane kategorialne odwrotnie, nie posiadają brakujących danych w~\(55\%\) przypadków (40 z~73).
-Najpopularniejszy rodzaj docelowego przeznaczenia, regresja, także wykazuje ponadprzeciętną zawartość brakujących danych (34 z~39, czyli \(~87\%\)).
+Zdecydowanie najpopularniejsze zbiory zawierające liczby rzeczywiste posiadają brakujące dane w~\(\sim 72\%\) przypadków (71 z~98), a~najmniej pożądane dane kategorialne odwrotnie, nie posiadają brakujących danych w~\(\sim 55\%\) przypadków (40 z~73).
+Najpopularniejszy rodzaj docelowego przeznaczenia, regresja, także wykazuje ponadprzeciętną zawartość brakujących danych (34 z~39, czyli \(\sim 87\%\)).
 
 Jak widać to popularniejsze kategorie danych mają dużą zawartość brakujących danych, natomiast mniej popularne mają ich znacznie mniej.
 Wynikać to może z~natury charakterystyk popularniejszych zbiorów danych, które z~założenia posiadają więcej braków, jednak są one mało istotne z~perspektywy użyteczności.
