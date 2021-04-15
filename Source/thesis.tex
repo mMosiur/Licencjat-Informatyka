@@ -17,14 +17,10 @@
 \graphicspath{ {./Images/} }
 \AtBeginDocument{\let\textlabel\label}
 
-% Define a table as a figure so that it appears in a list of figures
-\def\table{\def\figurename{Table}\figure}
-\let\endtable\endfigure
-% Redefine the name of the list of figures to include tables
-\renewcommand\listfigurename{Spis rysunków i tabel}
-
 % Make the numbering of figures continuous
 \counterwithout{figure}{chapter}
+% Make the numbering of tables continuous
+\counterwithout{table}{chapter}
 
 \begin{document}
 
@@ -36,20 +32,26 @@
 \setcounter{tocdepth}{3}
 
 % Add a title page in polish
-\include{titilepage_pl}
+\include{titlepage_pl}
 % Add an abstract in polish
 \include{abstract_pl}
 % Add a title page in english
-\include{titilepage_en}
+%\include{titlepage_en}
 % Add an abstract in english
-\include{abstract_en}
+%\include{abstract_en}
 
 % Start roman page numbering
 \begin{romanpages}
 	% Generate and include a table of contents
 	\tableofcontents
+	% Create a group for list of figures and list of tables to fit both on one page
+	\begingroup
+	\let\clearpage\relax
 	% Generate and include a list of figures
 	\listoffigures
+	% Generate and include a list of tables
+	\listoftables
+	\endgroup
 % End roman page numbering
 \end{romanpages}
 
