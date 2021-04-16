@@ -12,5 +12,5 @@ jobs:
       - uses: actions/checkout@v2
 
       - name: Compile LaTeX source
-        run: latexmk -synctex=1 -interaction=nonstopmode -file-line-error -pdf thesis.tex
+        run: latexmk -synctex=1 -interaction=nonstopmode -file-line-error -pdf -outdir=out thesis.tex
         working-directory: ./Source
