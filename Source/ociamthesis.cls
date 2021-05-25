@@ -26,16 +26,26 @@
 % These macros are used to declare arguments needed for the
 % construction of the title page and other preamble.
 
-% The year and term the thesis is submitted 
+% Title in english
+\def\engtitle#1{\gdef\@engtitle{#1}}
+% The year and term the thesis is submitted
 \def\degreedate#1{\gdef\@degreedate{#1}}
-% The full (unabbreviated) name of the degree
-\def\degree#1{\gdef\@degree{#1}}
-% The name of your university college (e.g. Christ Church, Pembroke)
-\def\college#1{\gdef\@college{#1}}
 % The name of your univesity
 \def\university#1{\gdef\@university{#1}}
+% The name of your university college
+\def\college#1{\gdef\@college{#1}}
+% The name of the field
+\def\field#1{\gdef\@field{#1}}
+% The name of the speciality
+\def\speciality#1{\gdef\@speciality{#1}}
+% The name of the department where thesis was written
+\def\department#1{\gdef\@department{#1}}
+% The number of author's album
+\def\albumnumber#1{\gdef\@albumnumber{#1}}
 % The name of the type of this paper
 \def\submittedtext#1{\gdef\@submittedtext{#1}}
+% The degree and name of thesis's promoter
+\def\promoter#1{\gdef\@promoter{#1}}
 
 %
 % Setup choosen crest/logo
@@ -98,23 +108,30 @@
     \renewcommand{\footnotesize}{\small}
     \renewcommand{\footnoterule}{\relax}
     \thispagestyle{empty}
-  \null\vfill
-  \begin{center}
-    { \Huge {\bfseries {\@title}} \par}
-{\large \vspace*{40mm} {\logo \par} \vspace*{25mm}}
-    {{\Large \@author} \par}
-{\large \vspace*{1ex}
-    {{\@college} \par}
+\null\vfill
+\setlength{\parindent}{0em}
+  { \large {\logo \par} }
+\vspace*{10mm}
+  {\LARGE \@university \par}
 \vspace*{1ex}
-    {\@university \par}
-\vspace*{25mm}
-    {{\@submittedtext} \par}
-\vspace*{1ex}
-    {\it {\@degree} \par}
+  {\Large \@college \par}
+  \vspace*{20mm}
+  {\large Kierunek: }{\@field \par}
+  {\large Specjalność: }{\@speciality \par}
 \vspace*{2ex}
-    {\@degreedate}}
-  \end{center}
-  \null\vfill
+  {\Large {\bfseries {\@author}} \par}
+  {\large Nr albumu: } { \@albumnumber \par }
+\vspace*{10mm}
+  { \Huge {\bfseries {\@title}} \par}
+\vspace*{2ex}
+  { \Large {\bfseries {\@engtitle}} \par}
+\vspace*{25mm}
+  {\large \@submittedtext \par}
+  {\large {napisana w zakładzie }{\@department \par}}
+  {\large {pod kierunkiem }{\@promoter \par}}
+\vspace*{10mm}
+  {\large \@degreedate}
+\null\vfill
 \end{alwayssingle}}
 
 % DEDICATION
