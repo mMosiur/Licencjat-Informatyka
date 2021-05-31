@@ -17,6 +17,7 @@
 
 \RequirePackage{graphicx} % needed for latest frontpage logo
 \RequirePackage{ifthen}   % needed for option parsing for logo
+\RequirePackage{geometry}
 
 \raggedbottom
 
@@ -75,7 +76,7 @@
 {
 % Latest Logo, Square version (the default!)
 % you need an oxlogo.eps or oxlogo.pdf file as appropriate
-\def\logo{{\includegraphics[height=32mm]{Images/Logo/UMCS_rozsz_12G_PL_P431}}}
+\def\logo{{\includegraphics[height=25mm]{Images/Logo/UMCS_skrocone_12G_PL_gray}}}
 }{}
 
 %
@@ -103,36 +104,50 @@
        \else\newpage\thispagestyle{empty}\fi}
 
 %define title page layout
-\renewcommand{\maketitle}{%
-\begin{alwayssingle}
-    \renewcommand{\footnotesize}{\small}
-    \renewcommand{\footnoterule}{\relax}
-    \thispagestyle{empty}
+\renewcommand{\maketitle}
+{
+  \begin{alwayssingle}
+    \newgeometry{textwidth=5in, textheight=11.0in}
+    \tolerance=9999
+\emergencystretch=10pt
+\hyphenpenalty=10000
+\exhyphenpenalty=100
+  \renewcommand{\footnotesize}{\small}
+  \renewcommand{\footnoterule}{\relax}
+  \thispagestyle{empty}
+  \setlength{\topmargin}{-1.2in}
+    \setlength{\oddsidemargin}{8em}
+    \null\vfill
+    \setlength{\parindent}{0em}
+    {\hspace*{-1.3in} \logo \par}
+    \vspace*{0.3in}
+    \begin{flushleft}
+      {\LARGE \@university \par}
+      \vspace*{1ex}
+      {\Large \@college \par}
+      \vspace*{1.2in}
+      {Kierunek: }{\@field \par}
+      \vspace*{1ex}
+      {Specjalność: }{\@speciality \par}
+      \vspace*{3ex}
+      {{\bfseries {\@author}} \par}
+      \vspace*{1ex}
+      {Nr albumu: }{\@albumnumber \par }
+      \vspace*{0.5in}
+      { \LARGE {\bfseries {\@title}} \par}
+      \vspace*{4ex}
+      { \large {\bfseries {\@engtitle}} \par}
+      \vspace*{0.9in}
+      {\@submittedtext \par}
+      {{napisana w }{\@department \par}}
+      {{pod kierunkiem }{\@promoter \par}}
+      \vspace*{0.7in}
+      {\bfseries \@degreedate}
+    \end{flushleft}
 \null\vfill
-\setlength{\parindent}{0em}
-  { \large {\logo \par} }
-\vspace*{10mm}
-  {\LARGE \@university \par}
-\vspace*{1ex}
-  {\Large \@college \par}
-  \vspace*{20mm}
-  {\large Kierunek: }{\@field \par}
-  {\large Specjalność: }{\@speciality \par}
-\vspace*{2ex}
-  {\Large {\bfseries {\@author}} \par}
-  {\large Nr albumu: } { \@albumnumber \par }
-\vspace*{10mm}
-  { \Huge {\bfseries {\@title}} \par}
-\vspace*{2ex}
-  { \Large {\bfseries {\@engtitle}} \par}
-\vspace*{25mm}
-  {\large \@submittedtext \par}
-  {\large {napisana w zakładzie }{\@department \par}}
-  {\large {pod kierunkiem }{\@promoter \par}}
-\vspace*{10mm}
-  {\large \@degreedate}
-\null\vfill
-\end{alwayssingle}}
+\restoregeometry
+\end{alwayssingle}
+}
 
 % DEDICATION
 %
