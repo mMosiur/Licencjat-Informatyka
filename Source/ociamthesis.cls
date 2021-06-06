@@ -17,6 +17,7 @@
 
 \RequirePackage{graphicx} % needed for latest frontpage logo
 \RequirePackage{ifthen}   % needed for option parsing for logo
+\RequirePackage{geometry}
 
 \raggedbottom
 
@@ -26,16 +27,26 @@
 % These macros are used to declare arguments needed for the
 % construction of the title page and other preamble.
 
-% The year and term the thesis is submitted 
+% Title in english
+\def\engtitle#1{\gdef\@engtitle{#1}}
+% The year and term the thesis is submitted
 \def\degreedate#1{\gdef\@degreedate{#1}}
-% The full (unabbreviated) name of the degree
-\def\degree#1{\gdef\@degree{#1}}
-% The name of your university college (e.g. Christ Church, Pembroke)
-\def\college#1{\gdef\@college{#1}}
 % The name of your univesity
 \def\university#1{\gdef\@university{#1}}
+% The name of your university college
+\def\college#1{\gdef\@college{#1}}
+% The name of the field
+\def\field#1{\gdef\@field{#1}}
+% The name of the speciality
+\def\speciality#1{\gdef\@speciality{#1}}
+% The name of the department where thesis was written
+\def\department#1{\gdef\@department{#1}}
+% The number of author's album
+\def\albumnumber#1{\gdef\@albumnumber{#1}}
 % The name of the type of this paper
 \def\submittedtext#1{\gdef\@submittedtext{#1}}
+% The degree and name of thesis's promoter
+\def\promoter#1{\gdef\@promoter{#1}}
 
 %
 % Setup choosen crest/logo
@@ -65,7 +76,7 @@
 {
 % Latest Logo, Square version (the default!)
 % you need an oxlogo.eps or oxlogo.pdf file as appropriate
-\def\logo{{\includegraphics[height=32mm]{Images/Logo/UMCS_rozsz_12G_PL_P431}}}
+\def\logo{{\includegraphics[height=25mm]{Images/Logo/UMCS_skrocone_12G_PL_gray}}}
 }{}
 
 %
@@ -93,29 +104,55 @@
        \else\newpage\thispagestyle{empty}\fi}
 
 %define title page layout
-\renewcommand{\maketitle}{%
-\begin{alwayssingle}
-    \renewcommand{\footnotesize}{\small}
-    \renewcommand{\footnoterule}{\relax}
-    \thispagestyle{empty}
-  \null\vfill
-  \begin{center}
-    { \Huge {\bfseries {\@title}} \par}
-{\large \vspace*{40mm} {\logo \par} \vspace*{25mm}}
-    {{\Large \@author} \par}
-{\large \vspace*{1ex}
-    {{\@college} \par}
-\vspace*{1ex}
-    {\@university \par}
-\vspace*{25mm}
-    {{\@submittedtext} \par}
-\vspace*{1ex}
-    {\it {\@degree} \par}
-\vspace*{2ex}
-    {\@degreedate}}
-  \end{center}
-  \null\vfill
-\end{alwayssingle}}
+\renewcommand{\maketitle}
+{
+  \fontfamily{phv}\selectfont
+  \begin{alwayssingle}
+    \newgeometry{textwidth=5.5in, textheight=11.0in}
+    \tolerance=9999
+\emergencystretch=10pt
+\hyphenpenalty=10000
+\exhyphenpenalty=100
+  \renewcommand{\footnotesize}{\small}
+  \renewcommand{\footnoterule}{\relax}
+  \thispagestyle{empty}
+  \setlength{\topmargin}{-1.2in}
+    \setlength{\oddsidemargin}{8em}
+    \null\vfill
+    \setlength{\parindent}{0em}
+    {\hspace*{-1.4in} \logo \par}
+    \vspace*{0.3in}
+    \begin{flushleft}
+      {\Large \@university \par}
+      {\Large \@college \par}
+      \vspace*{1.1in}
+      \cbstart
+      \vspace*{0.1in}
+      {Kierunek: }{{\bfseries {\@field}} \par}
+      % \vspace*{1ex}
+      % {Specjalność: }{\@speciality \par}
+      \vspace*{3ex}
+      {{\bfseries {\@author}} \par}
+      \vspace*{1ex}
+      {Nr albumu: }{\@albumnumber \par }
+      \vspace*{0.8in}
+      { \LARGE {\bfseries {\@title}} \par}
+      \vspace*{4ex}
+      { \large {\bfseries {\@engtitle}} \par}
+      \vspace*{1.2in}
+      {\@submittedtext \par}
+      {{napisana w }{\@department \par}}
+      {{pod kierunkiem }{\@promoter \par}}
+      \vspace*{0.1in}
+      \cbend
+      \vspace*{0.6in}
+      {\bfseries \@degreedate}
+    \end{flushleft}
+\null\vfill
+\restoregeometry
+\end{alwayssingle}
+\fontfamily{cmr}\selectfont
+}
 
 % DEDICATION
 %

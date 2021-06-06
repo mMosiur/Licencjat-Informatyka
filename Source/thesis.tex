@@ -1,10 +1,12 @@
 \documentclass[12pt]{ociamthesis}
-
+\usepackage{helvet}
 \usepackage{amssymb}
 \usepackage[utf8]{inputenc}
-\usepackage{polski}
+\usepackage[T1]{polski}
 \usepackage{url}
-\usepackage{hyperref}
+\usepackage[hidelinks]{hyperref}
+\usepackage[table,xcdraw]{xcolor}
+\usepackage[leftbars]{changebar}
 \hypersetup{
 	pdftitle={Metaanaliza zbiorów danych do zastosowań w uczeniu maszynowym},
 	pdfsubject={Praca licencjacka},
@@ -14,6 +16,8 @@
 \usepackage{graphicx}
 \input{code_format_setup}
 
+\setlength{\changebarsep}{-5em}
+
 \graphicspath{ {./Images/} }
 \AtBeginDocument{\let\textlabel\label}
 
@@ -21,6 +25,19 @@
 \counterwithout{figure}{chapter}
 % Make the numbering of tables continuous
 \counterwithout{table}{chapter}
+
+\title{Metaanaliza zbiorów danych do zastosowań w uczeniu maszynowym}
+\engtitle{Meta-analysis of data sets for applications in machine learning}
+\author{Mateusz Piotr Moruś}
+\albumnumber{292540}
+\university{UNIWERSYTET MARII CURIE-SKŁODOWSKIEJ W~LUBLINIE}
+\college{Wydział Matematyki, Fizyki i Informatyki}
+\field{Informatyka}
+\speciality{-}
+\submittedtext{Praca licencjacka}
+\department{Katedrze Neuroinformatyki i Inżynierii Biomedycznej}
+\promoter{dr. hab. Grzegorza Marcina Wójcika, prof. UMCS}
+\degreedate{Lublin rok 2021}
 
 \begin{document}
 
@@ -31,14 +48,11 @@
 \setcounter{secnumdepth}{3}
 \setcounter{tocdepth}{3}
 
-% Add a title page in polish
-\include{titlepage_pl}
-% Add an abstract in polish
-\include{abstract_pl}
-% Add a title page in english
-%\include{titlepage_en}
-% Add an abstract in english
-%\include{abstract_en}
+% Add a title page
+\maketitle
+
+% Add an abstract
+\include{abstract}
 
 % Start roman page numbering
 \begin{romanpages}

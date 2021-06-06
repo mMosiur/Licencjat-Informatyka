@@ -447,3 +447,4 @@ References
 Source/out
 # Some resources are in the .pdf format and we need to keep them
 !Source/Images/*.pdf
+!Source/Images/Logo/*.pdf
