@@ -106,8 +106,9 @@
 %define title page layout
 \renewcommand{\maketitle}
 {
+  \fontfamily{phv}\selectfont
   \begin{alwayssingle}
-    \newgeometry{textwidth=5in, textheight=11.0in}
+    \newgeometry{textwidth=5.5in, textheight=11.0in}
     \tolerance=9999
 \emergencystretch=10pt
 \hyphenpenalty=10000
@@ -119,34 +120,38 @@
     \setlength{\oddsidemargin}{8em}
     \null\vfill
     \setlength{\parindent}{0em}
-    {\hspace*{-1.3in} \logo \par}
+    {\hspace*{-1.4in} \logo \par}
     \vspace*{0.3in}
     \begin{flushleft}
-      {\LARGE \@university \par}
-      \vspace*{1ex}
+      {\Large \@university \par}
       {\Large \@college \par}
-      \vspace*{1.2in}
-      {Kierunek: }{\@field \par}
-      \vspace*{1ex}
-      {Specjalność: }{\@speciality \par}
+      \vspace*{1.1in}
+      \cbstart
+      \vspace*{0.1in}
+      {Kierunek: }{{\bfseries {\@field}} \par}
+      % \vspace*{1ex}
+      % {Specjalność: }{\@speciality \par}
       \vspace*{3ex}
       {{\bfseries {\@author}} \par}
       \vspace*{1ex}
       {Nr albumu: }{\@albumnumber \par }
-      \vspace*{0.5in}
+      \vspace*{0.8in}
       { \LARGE {\bfseries {\@title}} \par}
       \vspace*{4ex}
       { \large {\bfseries {\@engtitle}} \par}
-      \vspace*{0.9in}
+      \vspace*{1.2in}
       {\@submittedtext \par}
       {{napisana w }{\@department \par}}
       {{pod kierunkiem }{\@promoter \par}}
-      \vspace*{0.7in}
+      \vspace*{0.1in}
+      \cbend
+      \vspace*{0.6in}
       {\bfseries \@degreedate}
     \end{flushleft}
 \null\vfill
 \restoregeometry
 \end{alwayssingle}
+\fontfamily{cmr}\selectfont
 }
 
 % DEDICATION
