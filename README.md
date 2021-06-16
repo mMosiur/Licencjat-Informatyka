@@ -10,7 +10,7 @@ Praca pisana pod przewodnictwem [dr hab. Grzegorza Wójcika](https://gmwojcik.pl
 
 ## Najnowsze wydanie
 
-Najnowsza wersja pracy do pobrania [tutaj](https://github.com/mMosiur/Licencjat-Informatyka/releases/download/latest/Licencjat.pdf).
+Najnowsza wersja pracy do pobrania [tutaj](https://github.com/mMosiur/Licencjat-Informatyka/releases/download/latest/Metaanaliza_uzytecznosci_zbiorow_danych_do_zastosowan_w_uczeniu_maszynowym.pdf).
 
 ## Kompilacja
 
