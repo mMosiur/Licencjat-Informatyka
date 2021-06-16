@@ -11,6 +11,10 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - name: Compile LaTeX source
-        run: latexmk -synctex=1 -interaction=nonstopmode -file-line-error -pdf -outdir=out thesis.tex
+      - name: Compile LaTeX source (one-sided)
+        run: latexmk -synctex=1 -interaction=nonstopmode -file-line-error -pdf -outdir=out thesis-onesided.tex
+        working-directory: ./Source
+
+      - name: Compile LaTeX source (two-sided)
+        run: latexmk -synctex=1 -interaction=nonstopmode -file-line-error -pdf -outdir=out thesis-twosided.tex
         working-directory: ./Source
