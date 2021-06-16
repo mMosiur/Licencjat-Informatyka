@@ -81,6 +81,9 @@ Następnie z~użyciem tego pola skrypt dodaje jeszcze jedną kolumnę zawierają
 
 Za metrykę zbioru danych, względem której przeprowadzam analizę, obrałem ilość wyświetleń danego zbioru na dzień.
 Wartość ta jest znormalizowana czasowo, co pozwala na uwzględnienie jej jako odzwierciedlenia popularności zbioru.
+Metryka ta powinna być pewnego rodzaju odzwierciedleniem omawianej użyteczności danego zbioru.
+Przedstawia ona bowiem jego popularność, która -- mimo, że z~użytecznością nie jest jednoznaczna -- to jest z~nią powiązana i~skorelowana.
+Pod koniec tego rozdziału opisuję, jakie można by przyjąć inne metryki, aby po odtworzeniu z~ich pomocą poniżej przedstawionej analizy, otrzymać dokładniejsze i~pewniejsze wyniki.
 
 Analiza została przeprowadzona przy użyciu portalu \emph{Azure Machine Learning Studio (classic)}.
 Utworzyłem 6~eksperymentów wykorzystujący wygenerowany przez scrapera zbiór danych.
@@ -244,8 +247,8 @@ Także inne prace zauważają, że więcej danych nie zawsze wpływa pozytywnie 
 Z kolei wpływ brakujących danych na atrakcyjność zbioru jest sprzeczny z~innymi pracami oraz ogólną intuicją.
 Moje wyniki (rysunek \ref{fig:missingvalues}) pokazują, że brakujące dane w~zbiorze nie wpływa negatywnie na jego atrakcyjność, a~nawet przeciwnie.
 Inne prace \cite{yasser2011analysis} natomiast wyodrębniły brakujące dane jako jeden z~zasadniczych problemów metadanych.
-Rezultaty tej pracy można częściowo wytłumaczyć biorąc pod uwagę fakt, że istnieją bardzo dobre algorytmy uzupełniające braki danych minimalizując ich wpływ na precyzyjność i dokładność klasyfikatorów \cite{acuna2004treatment} oraz że tego typu algorytmy najlepiej radzą sobie z danymi numerycznymi.
-W zbiorach posiadających głównie dane liczbowe (czyli tych, które z moich analiz są ukazane jako najatrakcyjniejsze) obecność brakujących danych ma więc zminimalizowany, a czasem nawet zerowy efekt.
+Rezultaty tej pracy można częściowo wytłumaczyć biorąc pod uwagę fakt, że istnieją bardzo dobre algorytmy uzupełniające braki danych minimalizując ich wpływ na precyzyjność i~dokładność klasyfikatorów \cite{acuna2004treatment} oraz że tego typu algorytmy najlepiej radzą sobie z~danymi numerycznymi.
+W zbiorach posiadających głównie dane liczbowe (czyli tych, które z~moich analiz są ukazane jako najatrakcyjniejsze) obecność brakujących danych ma więc zminimalizowany, a~czasem nawet zerowy efekt.
 
 Pozostałych analiz przeze mnie przeprowadzonych nie jestem w~stanie zestawić z~innymi.
 Warto jednak wspomnieć o~możliwym powiązaniu między dwoma wynikami przez mnie osiągniętymi.
@@ -257,4 +260,4 @@ Szeregi czasowe z~reguły zawierają duże ilości danych (na przykład dane pob
 
 Wskazane jest porównanie wyciągniętych w~tej pracy wniosków z~przyszłymi weryfikacjami, w~szczególności przeprowadzonymi z~pewniejszymi metrykami.
 Takimi mogłyby być tutaj niedoszła liczba cytacji, w~których dany zbiór się pojawia, albo -- nawet lepiej -- jego wpływ na \emph{wskaźnik cytowań} (ang. \emph{impact factor}) prac go używających.
-Należałoby jednak wziąć pod uwagę, że akurat te metryki skupiałyby się raczej na zastosowaniach naukowych, a~omijały komercyjne.
+Należałoby jednak wziąć pod uwagę, że akurat te metryki skupiałyby się raczej na zastosowaniach naukowych, a~omijały komercyjne, co również powinno być wzięte pod uwagę przy omawianiu użyteczności zbiorów do zastosowań w~uczeniu maszynowym.
