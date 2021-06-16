@@ -1,4 +1,5 @@
-\documentclass[12pt]{ociamthesis}
+% One-sided document
+\documentclass[12pt, oneside]{ociamthesis}
 \usepackage{helvet}
 \usepackage{amssymb}
 \usepackage[utf8]{inputenc}
@@ -8,10 +9,10 @@
 \usepackage[table,xcdraw]{xcolor}
 \usepackage[leftbars]{changebar}
 \hypersetup{
-	pdftitle={Metaanaliza zbiorów danych do zastosowań w uczeniu maszynowym},
+	pdftitle={Metaanaliza użyteczności zbiorów danych do zastosowań w~uczeniu maszynowym},
 	pdfsubject={Praca licencjacka},
 	pdfauthor={Mateusz Piotr Moruś},
-	pdfkeywords={}
+	pdfkeywords={metaanaliza, zbiory danych, uczenie maszynowe, web-scraping}
 }
 \usepackage{graphicx}
 \input{code_format_setup}
@@ -26,16 +27,16 @@
 % Make the numbering of tables continuous
 \counterwithout{table}{chapter}
 
-\title{Metaanaliza zbiorów danych do zastosowań w uczeniu maszynowym}
-\engtitle{Meta-analysis of data sets for applications in machine learning}
+\title{Metaanaliza użyteczności zbiorów danych do zastosowań w~uczeniu maszynowym}
+\engtitle{Meta-analysis of the utility of data sets for applications in machine learning}
 \author{Mateusz Piotr Moruś}
 \albumnumber{292540}
 \university{UNIWERSYTET MARII CURIE-SKŁODOWSKIEJ W~LUBLINIE}
-\college{Wydział Matematyki, Fizyki i Informatyki}
+\college{Wydział Matematyki, Fizyki i~Informatyki}
 \field{Informatyka}
 \speciality{-}
 \submittedtext{Praca licencjacka}
-\department{Katedrze Neuroinformatyki i Inżynierii Biomedycznej}
+\department{Katedrze Neuroinformatyki i~Inżynierii Biomedycznej}
 \promoter{dr. hab. Grzegorza Marcina Wójcika, prof. UMCS}
 \degreedate{Lublin rok 2021}
 
@@ -53,6 +54,8 @@
 
 % Add an abstract
 \include{abstract}
+% Add an abstract in english
+\include{abstract-en}
 
 % Start roman page numbering
 \begin{romanpages}

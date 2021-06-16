@@ -116,7 +116,7 @@
   \renewcommand{\footnotesize}{\small}
   \renewcommand{\footnoterule}{\relax}
   \thispagestyle{empty}
-  \setlength{\topmargin}{-1.2in}
+  \setlength{\topmargin}{-1.1in}
     \setlength{\oddsidemargin}{8em}
     \null\vfill
     \setlength{\parindent}{0em}
@@ -139,7 +139,7 @@
       { \LARGE {\bfseries {\@title}} \par}
       \vspace*{4ex}
       { \large {\bfseries {\@engtitle}} \par}
-      \vspace*{1.2in}
+      \vspace*{1in}
       {\@submittedtext \par}
       {{napisana w }{\@department \par}}
       {{pod kierunkiem }{\@promoter \par}}
@@ -243,6 +243,15 @@
   \begin{center}
   \vspace*{1.5cm}
   {\Large \bfseries  Streszczenie}
+  \end{center}
+  \vspace{0.5cm}
+   \begin{quote}}
+{\end{quote}\end{alwayssingle}}
+
+\newenvironment{abstract-en} {\begin{alwayssingle} \thispagestyle{empty}
+  \begin{center}
+  \vspace*{1.5cm}
+  {\Large \bfseries  Abstract}
   \end{center}
   \vspace{0.5cm}
    \begin{quote}}

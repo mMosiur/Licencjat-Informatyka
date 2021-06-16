@@ -1,4 +1,4 @@
-# Metaanaliza zbiorów danych do zastosowań w uczeniu maszynowym
+# Metaanaliza użyteczności zbiorów danych do zastosowań w uczeniu maszynowym
 
 [![build](https://github.com/mMosiur/Licencjat-Informatyka/actions/workflows/build.yml/badge.svg)](https://github.com/mMosiur/Licencjat-Informatyka/actions/workflows/build.yml)
 
@@ -19,5 +19,5 @@ Wymagany `texlive` wraz z narzędziem do kompilacji `latexmk`
 ``` bash
 cd Source
 latexmk -synctex=1 -interaction=nonstopmode -file-line-error -pdf -outdir=out thesis.tex
-cp out/thesis.pdf "../Metaanaliza zbiorów danych do zastosowań w uczeniu maszynowym.pdf"
+cp out/thesis.pdf "../Metaanaliza użyteczności zbiorów danych do zastosowań w uczeniu maszynowym.pdf"
 ```
